@@ -1,0 +1,3716 @@
+{
+  "meta": {
+    "version": "2026.1",
+    "description": "Mapping from ISO 18245 MCC codes to SKR03/SKR04 accounts for German business accounting",
+    "confidence_levels": {
+      "high": "MCC determines account in >90% of cases for typical SME",
+      "medium": "MCC suggests most likely account but alternatives are common (30-50%)",
+      "low": "MCC is ambiguous — multiple equally valid accounts possible"
+    },
+    "default_gegenkonto": "1200 (Bank) for SKR03, 1800 for SKR04",
+    "license": "MIT",
+    "status": "draft — contributions and corrections welcome",
+    "notes": "This mapping assumes a typical German SME (Einzelunternehmen, GmbH, UG). Industry-specific mappings may differ. Always confirm with Steuerberater for edge cases.",
+    "last_updated": "2026-04-03"
+  },
+  "mappings": [
+    {
+      "mcc": "0742",
+      "mcc_name": "Veterinary Services",
+      "category": "Professional Services",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [
+        {
+          "konto": "4946",
+          "condition": "If veterinary service is for business animal (e.g. guard dog)"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "0763",
+      "mcc_name": "Agricultural Co-operatives",
+      "category": "Agriculture",
+      "skr03": {
+        "primary": "3400",
+        "confidence": "medium"
+      },
+      "skr04_primary": "5400",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "0780",
+      "mcc_name": "Landscaping and Horticultural Services",
+      "category": "Services",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [
+        {
+          "konto": "4946",
+          "condition": "If contracted as Fremdleistung for client project"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "1520",
+      "mcc_name": "General Contractors",
+      "category": "Construction",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [
+        {
+          "konto": "3100",
+          "condition": "If subcontractor for client project"
+        },
+        {
+          "konto": "0027",
+          "condition": "If capital expenditure on building"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "1711",
+      "mcc_name": "Heating, Plumbing, A/C Contractors",
+      "category": "Construction",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "high"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "1731",
+      "mcc_name": "Electrical Contractors",
+      "category": "Construction",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "high"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "1740",
+      "mcc_name": "Masonry, Stonework, Tile Setting",
+      "category": "Construction",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "high"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "1750",
+      "mcc_name": "Carpentry Contractors",
+      "category": "Construction",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "high"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "1761",
+      "mcc_name": "Roofing, Siding, Sheet Metal",
+      "category": "Construction",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "high"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "2741",
+      "mcc_name": "Miscellaneous Publishing and Printing",
+      "category": "Business Services",
+      "skr03": {
+        "primary": "4600",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6600",
+      "alternatives": [
+        {
+          "konto": "4930",
+          "condition": "If printed office supplies"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "2791",
+      "mcc_name": "Typesetting, Plate Making",
+      "category": "Business Services",
+      "skr03": {
+        "primary": "4600",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6600",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "2842",
+      "mcc_name": "Specialty Cleaning, Polishing",
+      "category": "Services",
+      "skr03": {
+        "primary": "4250",
+        "confidence": "high"
+      },
+      "skr04_primary": "6335",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "3000-3350",
+      "mcc_name": "Airlines",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4673",
+        "confidence": "high"
+      },
+      "skr04_primary": "6673",
+      "alternatives": [
+        {
+          "konto": "4663",
+          "condition": "If employee travel, not owner"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Range covers all major airlines"
+    },
+    {
+      "mcc": "3351-3500",
+      "mcc_name": "Hotels/Motels",
+      "category": "Travel",
+      "skr03": {
+        "primary": "4676",
+        "confidence": "high"
+      },
+      "skr04_primary": "6680",
+      "alternatives": [
+        {
+          "konto": "4666",
+          "condition": "Employee travel, not owner"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Hotel-specific MCC range. Distinction between Unternehmer (4676) and Arbeitnehmer (4666) depends on who travels."
+    },
+    {
+      "mcc": "3501-3999",
+      "mcc_name": "Car Rental Agencies",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4570",
+        "confidence": "high"
+      },
+      "skr04_primary": "6570",
+      "alternatives": [
+        {
+          "konto": "4673",
+          "condition": "If rented during business trip"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Range covers all major car rental companies"
+    },
+    {
+      "mcc": "4011",
+      "mcc_name": "Railroads",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4673",
+        "confidence": "high"
+      },
+      "skr04_primary": "6673",
+      "alternatives": [
+        {
+          "konto": "4663",
+          "condition": "Employee travel"
+        },
+        {
+          "konto": "4730",
+          "condition": "If freight transport"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4111",
+      "mcc_name": "Local/Suburban Commuter Passenger Transportation",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4673",
+        "confidence": "high"
+      },
+      "skr04_primary": "6673",
+      "alternatives": [
+        {
+          "konto": "4663",
+          "condition": "Employee travel"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4112",
+      "mcc_name": "Passenger Railways",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4673",
+        "confidence": "high"
+      },
+      "skr04_primary": "6673",
+      "alternatives": [
+        {
+          "konto": "4663",
+          "condition": "Employee travel"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4121",
+      "mcc_name": "Taxicabs/Limousines",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4673",
+        "confidence": "high"
+      },
+      "skr04_primary": "6673",
+      "alternatives": [
+        {
+          "konto": "4663",
+          "condition": "Employee travel"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4131",
+      "mcc_name": "Bus Lines",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4673",
+        "confidence": "high"
+      },
+      "skr04_primary": "6673",
+      "alternatives": [
+        {
+          "konto": "4663",
+          "condition": "Employee travel"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4214",
+      "mcc_name": "Motor Freight Carriers, Trucking",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4730",
+        "confidence": "high"
+      },
+      "skr04_primary": "6730",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4215",
+      "mcc_name": "Courier Services",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4910",
+        "confidence": "high"
+      },
+      "skr04_primary": "6800",
+      "alternatives": [
+        {
+          "konto": "4730",
+          "condition": "If shipping goods to customers"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4225",
+      "mcc_name": "Public Warehousing and Storage",
+      "category": "Services",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4411",
+      "mcc_name": "Steamship/Cruise Lines",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4673",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6673",
+      "alternatives": [
+        {
+          "konto": "4640",
+          "condition": "If client entertainment"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4468",
+      "mcc_name": "Marinas",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4511",
+      "mcc_name": "Airlines, Air Carriers",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4673",
+        "confidence": "high"
+      },
+      "skr04_primary": "6673",
+      "alternatives": [
+        {
+          "konto": "4663",
+          "condition": "Employee travel"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4722",
+      "mcc_name": "Travel Agencies/Tour Operators",
+      "category": "Travel",
+      "skr03": {
+        "primary": "4673",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6673",
+      "alternatives": [
+        {
+          "konto": "4676",
+          "condition": "If hotel included"
+        },
+        {
+          "konto": "4663",
+          "condition": "Employee travel"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4784",
+      "mcc_name": "Tolls/Bridge Fees",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4530",
+        "confidence": "high"
+      },
+      "skr04_primary": "6530",
+      "alternatives": [
+        {
+          "konto": "4673",
+          "condition": "If during business trip"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4789",
+      "mcc_name": "Transportation Services, Not Elsewhere Classified",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4673",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6673",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4812",
+      "mcc_name": "Telecommunication Equipment",
+      "category": "Telecom",
+      "skr03": {
+        "primary": "4920",
+        "confidence": "high"
+      },
+      "skr04_primary": "6805",
+      "alternatives": [
+        {
+          "konto": "0410",
+          "condition": "If hardware purchase > 800€ net"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4814",
+      "mcc_name": "Telecommunication Services",
+      "category": "Telecom",
+      "skr03": {
+        "primary": "4920",
+        "confidence": "high"
+      },
+      "skr04_primary": "6805",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4816",
+      "mcc_name": "Computer Network/Information Services",
+      "category": "Technology",
+      "skr03": {
+        "primary": "4925",
+        "confidence": "high"
+      },
+      "skr04_primary": "6815",
+      "alternatives": [
+        {
+          "konto": "4969",
+          "condition": "If SaaS subscription"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4821",
+      "mcc_name": "Telegraph Services",
+      "category": "Telecom",
+      "skr03": {
+        "primary": "4920",
+        "confidence": "high"
+      },
+      "skr04_primary": "6805",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4829",
+      "mcc_name": "Wire Transfer Money Orders",
+      "category": "Financial",
+      "skr03": {
+        "primary": "4970",
+        "confidence": "high"
+      },
+      "skr04_primary": "6855",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "4899",
+      "mcc_name": "Cable, Satellite, Pay Television/Radio",
+      "category": "Telecom",
+      "skr03": {
+        "primary": "4920",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6805",
+      "alternatives": [
+        {
+          "konto": "4900",
+          "condition": "If not directly business related"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "4900",
+      "mcc_name": "Utilities — Electric, Gas, Water, Sanitary",
+      "category": "Utilities",
+      "skr03": {
+        "primary": "4240",
+        "confidence": "high"
+      },
+      "skr04_primary": "6330",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5013",
+      "mcc_name": "Motor Vehicle Supplies and New Parts",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4530",
+        "confidence": "high"
+      },
+      "skr04_primary": "6530",
+      "alternatives": [
+        {
+          "konto": "4540",
+          "condition": "If repair parts"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5021",
+      "mcc_name": "Office and Commercial Furniture",
+      "category": "Office",
+      "skr03": {
+        "primary": "0420",
+        "confidence": "medium"
+      },
+      "skr04_primary": "0640",
+      "alternatives": [
+        {
+          "konto": "4930",
+          "condition": "If < 250€ net"
+        },
+        {
+          "konto": "0480",
+          "condition": "If 250-800€ net (GWG)"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5039",
+      "mcc_name": "Construction Materials",
+      "category": "Construction",
+      "skr03": {
+        "primary": "3400",
+        "confidence": "medium"
+      },
+      "skr04_primary": "5400",
+      "alternatives": [
+        {
+          "konto": "4260",
+          "condition": "If maintenance of own premises"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5044",
+      "mcc_name": "Photographic, Photocopy, Office Equipment",
+      "category": "Office",
+      "skr03": {
+        "primary": "4930",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6820",
+      "alternatives": [
+        {
+          "konto": "0410",
+          "condition": "If equipment > 800€ net"
+        },
+        {
+          "konto": "0480",
+          "condition": "If 250-800€ net (GWG)"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5045",
+      "mcc_name": "Computers, Computer Peripherals, Software",
+      "category": "Technology",
+      "skr03": {
+        "primary": "0420",
+        "confidence": "medium"
+      },
+      "skr04_primary": "0640",
+      "alternatives": [
+        {
+          "konto": "4969",
+          "condition": "If software only"
+        },
+        {
+          "konto": "0480",
+          "condition": "If hardware 250-800€ (GWG)"
+        },
+        {
+          "konto": "4930",
+          "condition": "If accessories < 250€"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5046",
+      "mcc_name": "Commercial Equipment, Not Elsewhere Classified",
+      "category": "Equipment",
+      "skr03": {
+        "primary": "0400",
+        "confidence": "medium"
+      },
+      "skr04_primary": "0620",
+      "alternatives": [
+        {
+          "konto": "0480",
+          "condition": "If 250-800€ (GWG)"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5047",
+      "mcc_name": "Medical, Dental, Ophthalmic Equipment",
+      "category": "Medical Equipment",
+      "skr03": {
+        "primary": "0400",
+        "confidence": "medium"
+      },
+      "skr04_primary": "0620",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5065",
+      "mcc_name": "Electrical Parts and Equipment",
+      "category": "Equipment",
+      "skr03": {
+        "primary": "3400",
+        "confidence": "medium"
+      },
+      "skr04_primary": "5400",
+      "alternatives": [
+        {
+          "konto": "4800",
+          "condition": "If for repairs"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5072",
+      "mcc_name": "Hardware, Equipment and Supplies",
+      "category": "Supplies",
+      "skr03": {
+        "primary": "4980",
+        "confidence": "high"
+      },
+      "skr04_primary": "6845",
+      "alternatives": [
+        {
+          "konto": "3400",
+          "condition": "If raw materials for production"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5094",
+      "mcc_name": "Precious Stones, Metals, Watches, Jewelry",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4630",
+        "confidence": "low"
+      },
+      "skr04_primary": "6620",
+      "alternatives": [
+        {
+          "konto": "4635",
+          "condition": "If gift > 50€"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal purchase (Privatentnahme)"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5111",
+      "mcc_name": "Stationery, Office Supplies, Printing, Writing Paper",
+      "category": "Office",
+      "skr03": {
+        "primary": "4930",
+        "confidence": "high"
+      },
+      "skr04_primary": "6820",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5112",
+      "mcc_name": "Stationery Stores",
+      "category": "Office",
+      "skr03": {
+        "primary": "4930",
+        "confidence": "high"
+      },
+      "skr04_primary": "6820",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5131",
+      "mcc_name": "Piece Goods, Notions, Dry Goods",
+      "category": "Wholesale",
+      "skr03": {
+        "primary": "3400",
+        "confidence": "medium"
+      },
+      "skr04_primary": "5400",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5137",
+      "mcc_name": "Uniforms, Commercial Clothing",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4140",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6130",
+      "alternatives": [
+        {
+          "konto": "4900",
+          "condition": "If general work clothing, not Berufsbekleidung"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Berufsbekleidung (work uniforms). Common for trades, gastro, medical."
+    },
+    {
+      "mcc": "5139",
+      "mcc_name": "Commercial Footwear",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4140",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6130",
+      "alternatives": [
+        {
+          "konto": "4900",
+          "condition": "If general work shoes, not Sicherheitsschuhe"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Arbeitsschuhe/Sicherheitsschuhe. Part of Berufsbekleidung."
+    },
+    {
+      "mcc": "5192",
+      "mcc_name": "Books, Periodicals, Newspapers",
+      "category": "Publishing",
+      "skr03": {
+        "primary": "4940",
+        "confidence": "high"
+      },
+      "skr04_primary": "6825",
+      "alternatives": [
+        {
+          "konto": "4945",
+          "condition": "If training/educational material"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Books typically 7% USt in Germany"
+    },
+    {
+      "mcc": "5193",
+      "mcc_name": "Florists Supplies, Nursery Stock, Flowers",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4654",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6644",
+      "alternatives": [
+        {
+          "konto": "4630",
+          "condition": "If gift to client < 50€"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5200",
+      "mcc_name": "Home Supply Warehouse Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [
+        {
+          "konto": "4980",
+          "condition": "If tools/small equipment"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal (Privatentnahme)"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5211",
+      "mcc_name": "Lumber, Building Materials Stores",
+      "category": "Construction",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [
+        {
+          "konto": "3400",
+          "condition": "If materials for production"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5251",
+      "mcc_name": "Hardware Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4980",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6845",
+      "alternatives": [
+        {
+          "konto": "4260",
+          "condition": "If for premises maintenance"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5261",
+      "mcc_name": "Nurseries, Lawn and Garden Supply",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5300",
+      "mcc_name": "Wholesale Clubs",
+      "category": "Wholesale",
+      "skr03": {
+        "primary": "3400",
+        "confidence": "low"
+      },
+      "skr04_primary": "5400",
+      "alternatives": [
+        {
+          "konto": "4930",
+          "condition": "If office supplies"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5309",
+      "mcc_name": "Duty Free Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4630",
+        "confidence": "low"
+      },
+      "skr04_primary": "6620",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5310",
+      "mcc_name": "Discount Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4930",
+        "confidence": "low"
+      },
+      "skr04_primary": "6820",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5311",
+      "mcc_name": "Department Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Very ambiguous — depends entirely on what was purchased"
+    },
+    {
+      "mcc": "5331",
+      "mcc_name": "Variety Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4930",
+        "confidence": "low"
+      },
+      "skr04_primary": "6820",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5399",
+      "mcc_name": "General Merchandise",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5411",
+      "mcc_name": "Grocery Stores, Supermarkets",
+      "category": "Food",
+      "skr03": {
+        "primary": "4650",
+        "confidence": "low"
+      },
+      "skr04_primary": "6640",
+      "alternatives": [
+        {
+          "konto": "4654",
+          "condition": "If non-deductible entertainment"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal (Privatentnahme)"
+        },
+        {
+          "konto": "3400",
+          "condition": "If ingredients for food business"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Highly ambiguous. Purpose determines account."
+    },
+    {
+      "mcc": "5422",
+      "mcc_name": "Freezer and Locker Meat Provisioners",
+      "category": "Food",
+      "skr03": {
+        "primary": "4650",
+        "confidence": "low"
+      },
+      "skr04_primary": "6640",
+      "alternatives": [
+        {
+          "konto": "3400",
+          "condition": "If for food business"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5441",
+      "mcc_name": "Candy, Nut, Confectionery Stores",
+      "category": "Food",
+      "skr03": {
+        "primary": "4630",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6620",
+      "alternatives": [
+        {
+          "konto": "4654",
+          "condition": "If internal team treats"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5451",
+      "mcc_name": "Dairy Products Stores",
+      "category": "Food",
+      "skr03": {
+        "primary": "4650",
+        "confidence": "low"
+      },
+      "skr04_primary": "6640",
+      "alternatives": [
+        {
+          "konto": "3400",
+          "condition": "If for food business"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5462",
+      "mcc_name": "Bakeries",
+      "category": "Food",
+      "skr03": {
+        "primary": "4650",
+        "confidence": "low"
+      },
+      "skr04_primary": "6640",
+      "alternatives": [
+        {
+          "konto": "4654",
+          "condition": "If for office/team"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5499",
+      "mcc_name": "Miscellaneous Food Stores",
+      "category": "Food",
+      "skr03": {
+        "primary": "4650",
+        "confidence": "low"
+      },
+      "skr04_primary": "6640",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5511",
+      "mcc_name": "Car and Truck Dealers (New and Used)",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "0320",
+        "confidence": "medium"
+      },
+      "skr04_primary": "0520",
+      "alternatives": [
+        {
+          "konto": "4530",
+          "condition": "If parts/accessories only"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Major purchase — likely Anlagevermögen"
+    },
+    {
+      "mcc": "5521",
+      "mcc_name": "Used Car Dealers",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "0320",
+        "confidence": "medium"
+      },
+      "skr04_primary": "0520",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5531",
+      "mcc_name": "Auto and Home Supply Stores",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4530",
+        "confidence": "high"
+      },
+      "skr04_primary": "6530",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5532",
+      "mcc_name": "Automotive Tire Stores",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4530",
+        "confidence": "high"
+      },
+      "skr04_primary": "6530",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5533",
+      "mcc_name": "Automotive Parts, Accessories Stores",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4530",
+        "confidence": "high"
+      },
+      "skr04_primary": "6530",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5541",
+      "mcc_name": "Service Stations (Fuel)",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4530",
+        "confidence": "high"
+      },
+      "skr04_primary": "6530",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5542",
+      "mcc_name": "Automated Fuel Dispensers",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4530",
+        "confidence": "high"
+      },
+      "skr04_primary": "6530",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5551",
+      "mcc_name": "Boat Dealers",
+      "category": "Equipment",
+      "skr03": {
+        "primary": "0400",
+        "confidence": "low"
+      },
+      "skr04_primary": "0620",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5571",
+      "mcc_name": "Motorcycle Shops and Dealers",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "0320",
+        "confidence": "low"
+      },
+      "skr04_primary": "0520",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5599",
+      "mcc_name": "Miscellaneous Automotive Dealers",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4530",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6530",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5611",
+      "mcc_name": "Men's Clothing Stores",
+      "category": "Clothing",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal (Privatentnahme)"
+        },
+        {
+          "konto": "4140",
+          "condition": "If work uniforms"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Clothing is generally not deductible unless clearly work-only (uniform, safety gear)"
+    },
+    {
+      "mcc": "5621",
+      "mcc_name": "Women's Clothing Stores",
+      "category": "Clothing",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Same as 5611"
+    },
+    {
+      "mcc": "5641",
+      "mcc_name": "Children's and Infants' Wear Stores",
+      "category": "Clothing",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false,
+      "notes": "Almost always personal (Privatentnahme)"
+    },
+    {
+      "mcc": "5651",
+      "mcc_name": "Family Clothing Stores",
+      "category": "Clothing",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "medium"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4140",
+          "condition": "If work uniforms"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "5655",
+      "mcc_name": "Sports and Riding Apparel Stores",
+      "category": "Clothing",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "5661",
+      "mcc_name": "Shoe Stores",
+      "category": "Clothing",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4140",
+          "condition": "If safety shoes for work"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "5699",
+      "mcc_name": "Miscellaneous Apparel and Accessory Shops",
+      "category": "Clothing",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "medium"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "5712",
+      "mcc_name": "Furniture, Home Furnishings",
+      "category": "Furnishings",
+      "skr03": {
+        "primary": "0420",
+        "confidence": "medium"
+      },
+      "skr04_primary": "0640",
+      "alternatives": [
+        {
+          "konto": "0480",
+          "condition": "If 250-800€ (GWG)"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5722",
+      "mcc_name": "Household Appliance Stores",
+      "category": "Furnishings",
+      "skr03": {
+        "primary": "0410",
+        "confidence": "low"
+      },
+      "skr04_primary": "0630",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5732",
+      "mcc_name": "Electronics Stores",
+      "category": "Technology",
+      "skr03": {
+        "primary": "0420",
+        "confidence": "medium"
+      },
+      "skr04_primary": "0640",
+      "alternatives": [
+        {
+          "konto": "0480",
+          "condition": "If 250-800€ (GWG)"
+        },
+        {
+          "konto": "4930",
+          "condition": "If small accessories < 250€"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5733",
+      "mcc_name": "Music Stores, Instruments, Pianos",
+      "category": "Retail",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "0400",
+          "condition": "If for music business"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "5734",
+      "mcc_name": "Computer Software Stores",
+      "category": "Technology",
+      "skr03": {
+        "primary": "4969",
+        "confidence": "high"
+      },
+      "skr04_primary": "6838",
+      "alternatives": [
+        {
+          "konto": "0135",
+          "condition": "If perpetual license > 800€"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5735",
+      "mcc_name": "Record Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "5811",
+      "mcc_name": "Caterers",
+      "category": "Food Service",
+      "skr03": {
+        "primary": "4650",
+        "confidence": "high"
+      },
+      "skr04_primary": "6640",
+      "alternatives": [
+        {
+          "konto": "4654",
+          "condition": "If non-deductible portion"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Bewirtungsbeleg with attendees required"
+    },
+    {
+      "mcc": "5812",
+      "mcc_name": "Eating Places, Restaurants",
+      "category": "Food Service",
+      "skr03": {
+        "primary": "4650",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6640",
+      "alternatives": [
+        {
+          "konto": "4674",
+          "condition": "If meal during business trip (Verpflegungsmehraufwand)"
+        },
+        {
+          "konto": "4654",
+          "condition": "If non-deductible"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Bewirtungsbeleg required for 4650. Trip meal uses Pauschale."
+    },
+    {
+      "mcc": "5813",
+      "mcc_name": "Bars, Cocktail Lounges, Nightclubs",
+      "category": "Food Service",
+      "skr03": {
+        "primary": "4650",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6640",
+      "alternatives": [
+        {
+          "konto": "4654",
+          "condition": "If non-deductible"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5814",
+      "mcc_name": "Fast Food Restaurants",
+      "category": "Food Service",
+      "skr03": {
+        "primary": "4650",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6640",
+      "alternatives": [
+        {
+          "konto": "4674",
+          "condition": "If during business trip"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5815",
+      "mcc_name": "Digital Goods: Media, Books, Movies, Music",
+      "category": "Technology",
+      "skr03": {
+        "primary": "4940",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6820",
+      "alternatives": [
+        {
+          "konto": "4969",
+          "condition": "If software/streaming subscription, not book/media"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "7% USt for e-books (BU 2), 19% for streaming. Distinguish Bücher (4940) from Software (4969)."
+    },
+    {
+      "mcc": "5816",
+      "mcc_name": "Digital Goods: Games",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false,
+      "notes": "Almost always personal use. If used for business (game studio research), use 4969."
+    },
+    {
+      "mcc": "5817",
+      "mcc_name": "Digital Goods: Applications (SaaS)",
+      "category": "Technology",
+      "skr03": {
+        "primary": "4969",
+        "confidence": "high"
+      },
+      "skr04_primary": "6840",
+      "alternatives": [
+        {
+          "konto": "4925",
+          "condition": "If internet/cloud infrastructure (AWS, GCP)"
+        },
+        {
+          "konto": "4806",
+          "condition": "If directly attributable to specific Fremdleistung"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Covers SaaS subscriptions: GitHub, Figma, Notion, Slack, Jira, Zoom, etc. Most common MCC for tech SME expenses."
+    },
+    {
+      "mcc": "5818",
+      "mcc_name": "Digital Goods: Large Digital Goods Merchant",
+      "category": "Technology",
+      "skr03": {
+        "primary": "4969",
+        "confidence": "low"
+      },
+      "skr04_primary": "6840",
+      "alternatives": [
+        {
+          "konto": "4940",
+          "condition": "If books/publications"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal app purchase"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Apple App Store, Google Play. Low confidence because purchases are mixed business/personal."
+    },
+    {
+      "mcc": "5912",
+      "mcc_name": "Drug Stores, Pharmacies",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4946",
+          "condition": "If first aid supplies for office"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false,
+      "notes": "Almost always personal"
+    },
+    {
+      "mcc": "5921",
+      "mcc_name": "Package Stores — Beer, Wine, Liquor",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4630",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6620",
+      "alternatives": [
+        {
+          "konto": "4650",
+          "condition": "If for client entertainment"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5931",
+      "mcc_name": "Used Merchandise and Secondhand Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5941",
+      "mcc_name": "Sporting Goods Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4140",
+          "condition": "If company sports equipment for employees"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "5942",
+      "mcc_name": "Book Stores",
+      "category": "Publishing",
+      "skr03": {
+        "primary": "4940",
+        "confidence": "high"
+      },
+      "skr04_primary": "6825",
+      "alternatives": [
+        {
+          "konto": "4945",
+          "condition": "If educational/training"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Books typically 7% USt"
+    },
+    {
+      "mcc": "5943",
+      "mcc_name": "Stationery, Office, School Supply Stores",
+      "category": "Office",
+      "skr03": {
+        "primary": "4930",
+        "confidence": "high"
+      },
+      "skr04_primary": "6820",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5944",
+      "mcc_name": "Jewelry, Watch, Clock, Silverware Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4630",
+        "confidence": "low"
+      },
+      "skr04_primary": "6620",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5945",
+      "mcc_name": "Hobby, Toy, Game Shops",
+      "category": "Retail",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "5946",
+      "mcc_name": "Camera and Photographic Supply Stores",
+      "category": "Technology",
+      "skr03": {
+        "primary": "0410",
+        "confidence": "medium"
+      },
+      "skr04_primary": "0630",
+      "alternatives": [
+        {
+          "konto": "0480",
+          "condition": "If 250-800€ (GWG)"
+        },
+        {
+          "konto": "4930",
+          "condition": "If small accessories"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5947",
+      "mcc_name": "Gift, Card, Novelty, Souvenir Shops",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4630",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6620",
+      "alternatives": [
+        {
+          "konto": "4635",
+          "condition": "If gift > 50€"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5964",
+      "mcc_name": "Direct Marketing — Catalog Merchant",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5965",
+      "mcc_name": "Direct Marketing — Combination Catalog",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5967",
+      "mcc_name": "Direct Marketing — Inbound Teleservices",
+      "category": "Services",
+      "skr03": {
+        "primary": "4600",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6600",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5968",
+      "mcc_name": "Direct Marketing — Subscription",
+      "category": "Services",
+      "skr03": {
+        "primary": "4940",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6825",
+      "alternatives": [
+        {
+          "konto": "4969",
+          "condition": "If digital subscription/SaaS"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5969",
+      "mcc_name": "Direct Marketing — Other",
+      "category": "Services",
+      "skr03": {
+        "primary": "4600",
+        "confidence": "low"
+      },
+      "skr04_primary": "6600",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5970",
+      "mcc_name": "Artist's Supply and Craft Shops",
+      "category": "Retail",
+      "skr03": {
+        "primary": "3400",
+        "confidence": "low"
+      },
+      "skr04_primary": "5400",
+      "alternatives": [
+        {
+          "konto": "4930",
+          "condition": "If office/presentation materials"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5977",
+      "mcc_name": "Cosmetic Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "5983",
+      "mcc_name": "Fuel Dealers",
+      "category": "Utilities",
+      "skr03": {
+        "primary": "4230",
+        "confidence": "high"
+      },
+      "skr04_primary": "6325",
+      "alternatives": [
+        {
+          "konto": "4530",
+          "condition": "If vehicle fuel"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "5999",
+      "mcc_name": "Miscellaneous and Specialty Retail Stores",
+      "category": "Retail",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "6010",
+      "mcc_name": "Financial Institutions — Manual Cash Disbursements",
+      "category": "Financial",
+      "skr03": {
+        "primary": "4970",
+        "confidence": "high"
+      },
+      "skr04_primary": "6855",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false,
+      "notes": "Kontoauszug serves as Beleg."
+    },
+    {
+      "mcc": "6011",
+      "mcc_name": "Financial Institutions — Automated Cash Disbursements (ATM)",
+      "category": "Financial",
+      "skr03": {
+        "primary": "4970",
+        "confidence": "high"
+      },
+      "skr04_primary": "6855",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false,
+      "notes": "ATM fees are Nebenkosten des Geldverkehrs Kontoauszug serves as Beleg."
+    },
+    {
+      "mcc": "6012",
+      "mcc_name": "Financial Institutions — Merchandise and Services",
+      "category": "Financial",
+      "skr03": {
+        "primary": "4970",
+        "confidence": "high"
+      },
+      "skr04_primary": "6855",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "6051",
+      "mcc_name": "Non-Financial Institutions — Foreign Currency, Money Orders",
+      "category": "Financial",
+      "skr03": {
+        "primary": "4970",
+        "confidence": "high"
+      },
+      "skr04_primary": "6855",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "6211",
+      "mcc_name": "Security Brokers/Dealers",
+      "category": "Financial",
+      "skr03": {
+        "primary": "4970",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6855",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "6300",
+      "mcc_name": "Insurance Sales, Underwriting, Premiums",
+      "category": "Insurance",
+      "skr03": {
+        "primary": "4360",
+        "confidence": "high"
+      },
+      "skr04_primary": "6400",
+      "alternatives": [
+        {
+          "konto": "4520",
+          "condition": "If Kfz-Versicherung"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": false,
+      "notes": "Insurance premiums are VAT-exempt in Germany"
+    },
+    {
+      "mcc": "6399",
+      "mcc_name": "Insurance — Not Elsewhere Classified",
+      "category": "Insurance",
+      "skr03": {
+        "primary": "4360",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6400",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "6513",
+      "mcc_name": "Real Estate Agents and Managers — Rentals",
+      "category": "Real Estate",
+      "skr03": {
+        "primary": "4210",
+        "confidence": "high"
+      },
+      "skr04_primary": "6310",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7011",
+      "mcc_name": "Lodging — Hotels, Motels, Resorts",
+      "category": "Travel",
+      "skr03": {
+        "primary": "4676",
+        "confidence": "high"
+      },
+      "skr04_primary": "6680",
+      "alternatives": [
+        {
+          "konto": "4666",
+          "condition": "If employee travel"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Hotel room: 7% USt. Additional services (breakfast, minibar): 19% USt"
+    },
+    {
+      "mcc": "7012",
+      "mcc_name": "Timeshares",
+      "category": "Travel",
+      "skr03": {
+        "primary": "4676",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6680",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7032",
+      "mcc_name": "Sporting, Recreational Camps",
+      "category": "Recreation",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4140",
+          "condition": "If company team event"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7210",
+      "mcc_name": "Laundry, Cleaning, Garment Services",
+      "category": "Services",
+      "skr03": {
+        "primary": "4250",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6335",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7211",
+      "mcc_name": "Laundry Services — Family and Commercial",
+      "category": "Services",
+      "skr03": {
+        "primary": "4250",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6335",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7216",
+      "mcc_name": "Dry Cleaners",
+      "category": "Services",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7230",
+      "mcc_name": "Barber and Beauty Shops",
+      "category": "Services",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7251",
+      "mcc_name": "Shoe Repair, Hat Cleaning",
+      "category": "Services",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7261",
+      "mcc_name": "Funeral Services, Crematories",
+      "category": "Services",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7273",
+      "mcc_name": "Dating and Escort Services",
+      "category": "Services",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7276",
+      "mcc_name": "Tax Preparation Services",
+      "category": "Professional Services",
+      "skr03": {
+        "primary": "4955",
+        "confidence": "high"
+      },
+      "skr04_primary": "6830",
+      "alternatives": [
+        {
+          "konto": "4950",
+          "condition": "If general legal/tax advice"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7277",
+      "mcc_name": "Counseling Services",
+      "category": "Professional Services",
+      "skr03": {
+        "primary": "4950",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6825",
+      "alternatives": [
+        {
+          "konto": "4945",
+          "condition": "If coaching/training"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7278",
+      "mcc_name": "Buying/Shopping Services",
+      "category": "Services",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "low"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7296",
+      "mcc_name": "Clothing Rental",
+      "category": "Services",
+      "skr03": {
+        "primary": "4960",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6835",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7297",
+      "mcc_name": "Massage Parlors",
+      "category": "Services",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7298",
+      "mcc_name": "Health and Beauty Spas",
+      "category": "Services",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4140",
+          "condition": "If company wellness for employees"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7299",
+      "mcc_name": "Miscellaneous Recreation Services",
+      "category": "Services",
+      "skr03": {
+        "primary": "4210",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6310",
+      "alternatives": [
+        {
+          "konto": "4900",
+          "condition": "If one-time service, not recurring space rental"
+        },
+        {
+          "konto": "1800",
+          "condition": "If personal recreation"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Includes coworking spaces (WeWork, Spaces). For recurring coworking, use Miete (4210). For events/recreation, check business purpose."
+    },
+    {
+      "mcc": "7311",
+      "mcc_name": "Advertising Services",
+      "category": "Business Services",
+      "skr03": {
+        "primary": "4600",
+        "confidence": "high"
+      },
+      "skr04_primary": "6600",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7321",
+      "mcc_name": "Consumer Credit Reporting Agencies",
+      "category": "Business Services",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7333",
+      "mcc_name": "Commercial Photography, Art, Graphics",
+      "category": "Business Services",
+      "skr03": {
+        "primary": "4600",
+        "confidence": "high"
+      },
+      "skr04_primary": "6600",
+      "alternatives": [
+        {
+          "konto": "4946",
+          "condition": "If for client project (Fremdleistung)"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7338",
+      "mcc_name": "Quick Copy, Reproduction, Blueprinting",
+      "category": "Business Services",
+      "skr03": {
+        "primary": "4930",
+        "confidence": "high"
+      },
+      "skr04_primary": "6820",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7339",
+      "mcc_name": "Stenographic and Secretarial Support Services",
+      "category": "Business Services",
+      "skr03": {
+        "primary": "4946",
+        "confidence": "high"
+      },
+      "skr04_primary": "6835",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7342",
+      "mcc_name": "Exterminating and Disinfecting Services",
+      "category": "Services",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "high"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7349",
+      "mcc_name": "Cleaning, Maintenance, Janitorial Services",
+      "category": "Services",
+      "skr03": {
+        "primary": "4250",
+        "confidence": "high"
+      },
+      "skr04_primary": "6335",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7361",
+      "mcc_name": "Employment Agencies, Temporary Help",
+      "category": "Business Services",
+      "skr03": {
+        "primary": "4946",
+        "confidence": "high"
+      },
+      "skr04_primary": "6835",
+      "alternatives": [
+        {
+          "konto": "4190",
+          "condition": "If treated as Aushilfslöhne"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7372",
+      "mcc_name": "Computer Programming, Data Processing",
+      "category": "Technology",
+      "skr03": {
+        "primary": "4946",
+        "confidence": "high"
+      },
+      "skr04_primary": "6835",
+      "alternatives": [
+        {
+          "konto": "4969",
+          "condition": "If SaaS/software license"
+        },
+        {
+          "konto": "3100",
+          "condition": "If subcontracted development for client"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7375",
+      "mcc_name": "Information Retrieval Services",
+      "category": "Technology",
+      "skr03": {
+        "primary": "4969",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6838",
+      "alternatives": [
+        {
+          "konto": "4946",
+          "condition": "If one-time service, not subscription"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7379",
+      "mcc_name": "Computer Maintenance and Repair",
+      "category": "Technology",
+      "skr03": {
+        "primary": "4805",
+        "confidence": "high"
+      },
+      "skr04_primary": "6475",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7392",
+      "mcc_name": "Management, Consulting, Public Relations",
+      "category": "Professional Services",
+      "skr03": {
+        "primary": "4950",
+        "confidence": "high"
+      },
+      "skr04_primary": "6825",
+      "alternatives": [
+        {
+          "konto": "3100",
+          "condition": "If subcontracted for client project"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7393",
+      "mcc_name": "Protective and Security Services",
+      "category": "Services",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7394",
+      "mcc_name": "Equipment, Tool, Furniture Rental and Leasing",
+      "category": "Services",
+      "skr03": {
+        "primary": "4960",
+        "confidence": "high"
+      },
+      "skr04_primary": "6835",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7395",
+      "mcc_name": "Photofinishing Laboratories, Photo Developing",
+      "category": "Services",
+      "skr03": {
+        "primary": "4600",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6600",
+      "alternatives": [
+        {
+          "konto": "4930",
+          "condition": "If ID photos or similar"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7399",
+      "mcc_name": "Business Services — Not Elsewhere Classified",
+      "category": "Business Services",
+      "skr03": {
+        "primary": "4946",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6835",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7512",
+      "mcc_name": "Automobile Rental Agency",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4570",
+        "confidence": "high"
+      },
+      "skr04_primary": "6570",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7513",
+      "mcc_name": "Truck and Utility Trailer Rentals",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4570",
+        "confidence": "high"
+      },
+      "skr04_primary": "6570",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7519",
+      "mcc_name": "Motor Home and Recreational Vehicle Rentals",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4570",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6570",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal vacation"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7523",
+      "mcc_name": "Parking Lots, Garages",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4530",
+        "confidence": "high"
+      },
+      "skr04_primary": "6530",
+      "alternatives": [
+        {
+          "konto": "4673",
+          "condition": "If during business trip"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7531",
+      "mcc_name": "Automotive Body Repair Shops",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4540",
+        "confidence": "high"
+      },
+      "skr04_primary": "6545",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7534",
+      "mcc_name": "Tire Re-treading and Repair Shops",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4530",
+        "confidence": "high"
+      },
+      "skr04_primary": "6530",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7535",
+      "mcc_name": "Automotive Paint Shops",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4540",
+        "confidence": "high"
+      },
+      "skr04_primary": "6545",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7538",
+      "mcc_name": "Automotive Service Shops",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4540",
+        "confidence": "high"
+      },
+      "skr04_primary": "6545",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7542",
+      "mcc_name": "Car Washes",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4530",
+        "confidence": "high"
+      },
+      "skr04_primary": "6530",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7549",
+      "mcc_name": "Towing Services",
+      "category": "Automotive",
+      "skr03": {
+        "primary": "4540",
+        "confidence": "high"
+      },
+      "skr04_primary": "6545",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7622",
+      "mcc_name": "Electronics Repair Shops",
+      "category": "Services",
+      "skr03": {
+        "primary": "4800",
+        "confidence": "high"
+      },
+      "skr04_primary": "6460",
+      "alternatives": [
+        {
+          "konto": "4805",
+          "condition": "If IT equipment repair"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7623",
+      "mcc_name": "A/C, Refrigeration Repair",
+      "category": "Services",
+      "skr03": {
+        "primary": "4260",
+        "confidence": "high"
+      },
+      "skr04_primary": "6340",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7629",
+      "mcc_name": "Electrical/Small Appliance Repair",
+      "category": "Services",
+      "skr03": {
+        "primary": "4800",
+        "confidence": "high"
+      },
+      "skr04_primary": "6460",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7631",
+      "mcc_name": "Watch, Clock, Jewelry Repair",
+      "category": "Services",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7641",
+      "mcc_name": "Furniture Repair, Refinishing",
+      "category": "Services",
+      "skr03": {
+        "primary": "4800",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6460",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal furniture"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7699",
+      "mcc_name": "Miscellaneous Repair Shops",
+      "category": "Services",
+      "skr03": {
+        "primary": "4800",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6460",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7829",
+      "mcc_name": "Motion Picture/Video Tape Production and Distribution",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "4600",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6600",
+      "alternatives": [
+        {
+          "konto": "4946",
+          "condition": "If production service for client"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7832",
+      "mcc_name": "Motion Picture Theaters",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4640",
+          "condition": "If client entertainment"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7841",
+      "mcc_name": "Video Tape Rental Stores",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7911",
+      "mcc_name": "Dance Halls, Schools, Studios",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4140",
+          "condition": "If company event"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7922",
+      "mcc_name": "Theatrical Producers, Ticket Agencies",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "4640",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6630",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7929",
+      "mcc_name": "Bands, Orchestras, Entertainment",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "4640",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6630",
+      "alternatives": [
+        {
+          "konto": "4946",
+          "condition": "If hired for company event"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "7932",
+      "mcc_name": "Billiard/Pool Establishments",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7941",
+      "mcc_name": "Athletic Fields, Commercial Sports",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4140",
+          "condition": "If company team event"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7991",
+      "mcc_name": "Tourist Attractions and Exhibits",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4640",
+          "condition": "If client entertainment"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7992",
+      "mcc_name": "Golf Courses — Public",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4640",
+          "condition": "If client entertainment"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7993",
+      "mcc_name": "Video Amusement Game Supplies",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7994",
+      "mcc_name": "Video Game Arcades",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7995",
+      "mcc_name": "Gambling",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false,
+      "notes": "Never deductible as business expense"
+    },
+    {
+      "mcc": "7996",
+      "mcc_name": "Amusement Parks, Carnivals",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4140",
+          "condition": "If company event"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7997",
+      "mcc_name": "Membership Clubs, Country Clubs",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "4380",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6420",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": false,
+      "notes": "Club memberships often non-deductible unless clearly business-related"
+    },
+    {
+      "mcc": "7998",
+      "mcc_name": "Aquariums, Seaquariums, Dolphinariums",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "7999",
+      "mcc_name": "Recreation Services — Not Elsewhere Classified",
+      "category": "Entertainment",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4140",
+          "condition": "If company event"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8011",
+      "mcc_name": "Doctors",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4946",
+          "condition": "If occupational health for employees (Arbeitsmedizin)"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8021",
+      "mcc_name": "Dentists, Orthodontists",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8031",
+      "mcc_name": "Osteopaths",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8041",
+      "mcc_name": "Chiropractors",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8042",
+      "mcc_name": "Optometrists, Ophthalmologists",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8043",
+      "mcc_name": "Opticians, Optical Goods, Eyeglasses",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8049",
+      "mcc_name": "Podiatrists/Chiropodists",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8050",
+      "mcc_name": "Nursing/Personal Care Facilities",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8062",
+      "mcc_name": "Hospitals",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8071",
+      "mcc_name": "Medical and Dental Labs",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8099",
+      "mcc_name": "Medical Services, Health Practitioners",
+      "category": "Health",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [
+        {
+          "konto": "4946",
+          "condition": "If Arbeitsmedizin"
+        }
+      ],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8111",
+      "mcc_name": "Legal Services, Attorneys",
+      "category": "Professional Services",
+      "skr03": {
+        "primary": "4950",
+        "confidence": "high"
+      },
+      "skr04_primary": "6825",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "8211",
+      "mcc_name": "Elementary and Secondary Schools",
+      "category": "Education",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8220",
+      "mcc_name": "Colleges, Universities",
+      "category": "Education",
+      "skr03": {
+        "primary": "4945",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6830",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal education"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Deductible only if directly business-related (Fortbildung, not Ausbildung)"
+    },
+    {
+      "mcc": "8241",
+      "mcc_name": "Correspondence Schools",
+      "category": "Education",
+      "skr03": {
+        "primary": "4945",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6830",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "8244",
+      "mcc_name": "Business and Secretarial Schools",
+      "category": "Education",
+      "skr03": {
+        "primary": "4945",
+        "confidence": "high"
+      },
+      "skr04_primary": "6830",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "8249",
+      "mcc_name": "Vocational/Trade Schools",
+      "category": "Education",
+      "skr03": {
+        "primary": "4945",
+        "confidence": "high"
+      },
+      "skr04_primary": "6830",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "8299",
+      "mcc_name": "Educational Services — Not Elsewhere Classified",
+      "category": "Education",
+      "skr03": {
+        "primary": "4945",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6830",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "8351",
+      "mcc_name": "Child Day Care Services",
+      "category": "Services",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8398",
+      "mcc_name": "Charitable and Social Service Organizations",
+      "category": "Non-Profit",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false,
+      "notes": "Donations may be deductible separately (Spenden)"
+    },
+    {
+      "mcc": "8641",
+      "mcc_name": "Civic, Social, Fraternal Associations",
+      "category": "Membership",
+      "skr03": {
+        "primary": "4380",
+        "confidence": "high"
+      },
+      "skr04_primary": "6420",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8651",
+      "mcc_name": "Political Organizations",
+      "category": "Membership",
+      "skr03": {
+        "primary": "4380",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6420",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8661",
+      "mcc_name": "Religious Organizations",
+      "category": "Non-Profit",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": false,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8675",
+      "mcc_name": "Automobile Associations",
+      "category": "Membership",
+      "skr03": {
+        "primary": "4380",
+        "confidence": "high"
+      },
+      "skr04_primary": "6420",
+      "alternatives": [
+        {
+          "konto": "4520",
+          "condition": "If roadside assistance portion"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8699",
+      "mcc_name": "Membership Organizations — Not Elsewhere Classified",
+      "category": "Membership",
+      "skr03": {
+        "primary": "4380",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6420",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "8734",
+      "mcc_name": "Testing Laboratories",
+      "category": "Professional Services",
+      "skr03": {
+        "primary": "4946",
+        "confidence": "high"
+      },
+      "skr04_primary": "6835",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "8742",
+      "mcc_name": "Management Consulting Services",
+      "category": "Professional Services",
+      "skr03": {
+        "primary": "4950",
+        "confidence": "high"
+      },
+      "skr04_primary": "6825",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "8911",
+      "mcc_name": "Architectural, Engineering, Surveying Services",
+      "category": "Professional Services",
+      "skr03": {
+        "primary": "4946",
+        "confidence": "high"
+      },
+      "skr04_primary": "6835",
+      "alternatives": [
+        {
+          "konto": "4950",
+          "condition": "If advisory/consulting only"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "8931",
+      "mcc_name": "Accounting, Auditing, Bookkeeping Services",
+      "category": "Professional Services",
+      "skr03": {
+        "primary": "4955",
+        "confidence": "high"
+      },
+      "skr04_primary": "6830",
+      "alternatives": [
+        {
+          "konto": "4957",
+          "condition": "If audit (Prüfungskosten)"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "8999",
+      "mcc_name": "Professional Services — Not Elsewhere Classified",
+      "category": "Professional Services",
+      "skr03": {
+        "primary": "4946",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6835",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": true
+    },
+    {
+      "mcc": "9211",
+      "mcc_name": "Court Costs, Including Alimony and Child Support",
+      "category": "Government",
+      "skr03": {
+        "primary": "4950",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6825",
+      "alternatives": [
+        {
+          "konto": "1800",
+          "condition": "If personal matter"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "9222",
+      "mcc_name": "Fines",
+      "category": "Government",
+      "skr03": {
+        "primary": "4900",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6300",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false,
+      "notes": "Fines (Bußgelder) are generally not deductible as business expense ACHTUNG: Nicht abzugsfähig bei der Gewinnermittlung (§4 Abs.5 Nr.8 EStG). Muss bei der Steuererklärung hinzugerechnet werden."
+    },
+    {
+      "mcc": "9223",
+      "mcc_name": "Bail and Bond Payments",
+      "category": "Government",
+      "skr03": {
+        "primary": "1800",
+        "confidence": "high"
+      },
+      "skr04_primary": "2100",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "9311",
+      "mcc_name": "Tax Payments — Government Agencies",
+      "category": "Government",
+      "skr03": {
+        "primary": "1780",
+        "confidence": "medium"
+      },
+      "skr04_primary": "3820",
+      "alternatives": [
+        {
+          "konto": "4320",
+          "condition": "If Gewerbesteuer"
+        },
+        {
+          "konto": "2650",
+          "condition": "If Körperschaftsteuer"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": false,
+      "notes": "Account depends on type of tax paid"
+    },
+    {
+      "mcc": "9399",
+      "mcc_name": "Government Services — Not Elsewhere Classified",
+      "category": "Government",
+      "skr03": {
+        "primary": "4390",
+        "confidence": "medium"
+      },
+      "skr04_primary": "6430",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false
+    },
+    {
+      "mcc": "9402",
+      "mcc_name": "Postal Services — Government Only",
+      "category": "Government",
+      "skr03": {
+        "primary": "4910",
+        "confidence": "high"
+      },
+      "skr04_primary": "6800",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false,
+      "notes": "Deutsche Post postal services are VAT-exempt (§4 Nr.11b UStG)"
+    },
+    {
+      "mcc": "9405",
+      "mcc_name": "Intra-Government Purchases",
+      "category": "Government",
+      "skr03": {
+        "primary": "4390",
+        "confidence": "low"
+      },
+      "skr04_primary": "6430",
+      "alternatives": [],
+      "needs_beleg": true,
+      "ust_abzug": false
+    }
+  ]
+}

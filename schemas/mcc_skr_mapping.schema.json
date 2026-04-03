@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/german-accounting/mcc_skr_mapping.schema.json",
+  "title": "MCC to SKR Mapping",
+  "description": "ISO 18245 MCC codes mapped to SKR03/SKR04 account suggestions with confidence levels",
+  "type": "object",
+  "required": ["meta", "mappings"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["version", "last_updated"],
+      "properties": {
+        "version": { "type": "string" },
+        "last_updated": { "type": "string" },
+        "description": { "type": "string" },
+        "total_mappings": { "type": "integer" }
+      }
+    },
+    "mappings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/MCCMapping" }
+    }
+  },
+  "$defs": {
+    "MCCMapping": {
+      "type": "object",
+      "required": [
+        "mcc",
+        "mcc_name",
+        "category",
+        "skr03",
+        "skr04_primary",
+        "alternatives",
+        "needs_beleg",
+        "ust_abzug"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "mcc": {
+          "type": "string",
+          "pattern": "^(\\d{4}|\\d{4}-\\d{4})$",
+          "description": "4-digit MCC code, or a range in the form START-END (e.g. 3000-3350)"
+        },
+        "mcc_name": { "type": "string", "minLength": 1 },
+        "category": { "type": "string", "minLength": 1 },
+        "skr03": {
+          "type": "object",
+          "required": ["primary", "confidence"],
+          "additionalProperties": false,
+          "properties": {
+            "primary": {
+              "type": "string",
+              "pattern": "^\\d{4}$"
+            },
+            "confidence": {
+              "type": "string",
+              "enum": ["high", "medium", "low"]
+            }
+          }
+        },
+        "skr04_primary": {
+          "type": "string",
+          "pattern": "^\\d{4}$"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Alternative" }
+        },
+        "needs_beleg": { "type": "boolean" },
+        "ust_abzug": { "type": "boolean" },
+        "notes": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "Alternative": {
+      "type": "object",
+      "required": ["konto", "condition"],
+      "additionalProperties": false,
+      "properties": {
+        "konto": {
+          "type": "string",
+          "pattern": "^\\d{4}$"
+        },
+        "condition": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

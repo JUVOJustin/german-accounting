@@ -1,0 +1,49 @@
+# Claude
+CLAUDE.md
+.claude/
+.context/
+
+# Node
+node_modules/
+dist/
+
+# Internal planning docs
+german-accounting-spec.md
+TODOS.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing / Coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Distribution
+*.whl
+*.tar.gz
