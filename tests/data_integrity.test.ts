@@ -6,6 +6,7 @@
 import { describe, it, expect } from "vitest";
 import { SKR03, SKR04 } from "../src/index.js";
 import mccData from "../src/data/mcc_skr_mapping.json";
+import skr03Data from "../src/data/skr03.json";
 import skr04Data from "../src/data/skr04.json";
 
 const mappings = mccData.mappings;
@@ -46,6 +47,14 @@ describe("MCC mapping — referential integrity", () => {
       }
     }
     expect(invalid).toHaveLength(0);
+  });
+
+  it("all SKR04 primary accounts exist in skr04.json", () => {
+    const missing = mappings
+      .filter((mapping) => !SKR04.exists(mapping.skr04_primary))
+      .map((mapping) => `MCC ${mapping.mcc}: ${mapping.skr04_primary}`);
+
+    expect(missing).toHaveLength(0);
   });
 
   it("no duplicate MCC codes", () => {
@@ -118,6 +127,20 @@ describe("MCC mapping — referential integrity", () => {
 });
 
 describe("SKR03 — structural integrity", () => {
+  it("groups every account within its declared account class", () => {
+    for (const konto of skr03Data.konten) {
+      const klasse = skr03Data.klassen.find(
+        (entry) =>
+          entry.klasse === konto.klasse &&
+          Number(konto.konto) >= entry.range[0] &&
+          Number(konto.konto) <= entry.range[1]
+      );
+
+      expect(konto.gruppe.trim()).not.toBe("");
+      expect(klasse).toBeDefined();
+    }
+  });
+
   it("all accounts have required fields", () => {
     const invalid: string[] = [];
     const required = ["konto", "name", "klasse", "typ", "gruppe", "ust_relevant", "steuerschluessel"] as const;
@@ -183,6 +206,20 @@ describe("SKR03 — structural integrity", () => {
 });
 
 describe("SKR04 — structural integrity", () => {
+  it("groups every account within its declared account class", () => {
+    for (const konto of skr04Data.konten) {
+      const klasse = skr04Data.klassen.find(
+        (entry) =>
+          entry.klasse === konto.klasse &&
+          Number(konto.konto) >= entry.range[0] &&
+          Number(konto.konto) <= entry.range[1]
+      );
+
+      expect(konto.gruppe.trim()).not.toBe("");
+      expect(klasse).toBeDefined();
+    }
+  });
+
   it("keeps source-verified SKR03 cross-references symmetric", () => {
     const linked = SKR04.search("").filter((konto) => konto.skr03 != null);
 

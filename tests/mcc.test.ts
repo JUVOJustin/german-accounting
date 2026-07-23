@@ -123,8 +123,10 @@ describe("suggestAccount() — digital goods MCCs (5815-5818)", () => {
     const suggestion = suggestAccount("5817");
     expect(suggestion).toBeDefined();
     expect(suggestion?.mcc_name).toContain("Applications");
-    // Should map to 4969 (Software-Nutzungsrechte) or similar
-    expect(suggestion?.primary.konto).toBeTruthy();
+    expect(suggestion?.primary.konto).toBe("4964");
+
+    const skr04Suggestion = suggestAccount("5817", "SKR04");
+    expect(skr04Suggestion?.primary.konto).toBe("6837");
   });
 
   it("maps MCC 5815 (digital media)", () => {

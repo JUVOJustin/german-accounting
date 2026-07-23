@@ -102,7 +102,7 @@
       "name": "Gewerbliche Schutzrechte",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0120"
@@ -132,7 +132,7 @@
       "name": "Geschäfts- oder Firmenwert",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0150"
@@ -152,7 +152,7 @@
       "name": "Grundstücksgleiche Rechte ohne",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0210"
@@ -202,7 +202,7 @@
       "name": "Außenanlagen für Geschäfts-,",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0280"
@@ -362,7 +362,7 @@
       "name": "Ladeneinrichtung",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0640"
@@ -392,7 +392,7 @@
       "name": "Gerüst- und Schalungsmaterial",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0660"
@@ -442,7 +442,7 @@
       "name": "Ausleihungen an verbundene",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0810"
@@ -452,7 +452,7 @@
       "name": "Typisch stille Beteiligungen",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0830"
@@ -462,7 +462,7 @@
       "name": "Atypisch stille Beteiligungen",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0840"
@@ -672,7 +672,7 @@
       "name": "Satzungsmäßige Rücklagen17)",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "2950"
@@ -682,7 +682,7 @@
       "name": "Andere Gewinnrücklagen17)",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "2960"
@@ -702,7 +702,7 @@
       "name": "Festkapital",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "2000"
@@ -772,7 +772,7 @@
       "name": "Sonstige Rückstellungen",
       "klasse": 0,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Anlage- und Kapitalkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "3070"
@@ -872,7 +872,7 @@
       "name": "Verrechnungskonto Ist-Versteue-",
       "klasse": 1,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Finanz- und Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "1490"
@@ -932,7 +932,7 @@
       "name": "Forderungen gegen Vorstandsmit-",
       "klasse": 1,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Finanz- und Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "1310"
@@ -942,7 +942,7 @@
       "name": "Forderungen gegen Aufsichtsrats-",
       "klasse": 1,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Finanz- und Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "1320"
@@ -992,7 +992,7 @@
       "name": "Steuererstattungsansprüche",
       "klasse": 1,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Finanz- und Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "1440"
@@ -1022,7 +1022,7 @@
       "name": "Körperschaftsteuerrückforderung",
       "klasse": 1,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Finanz- und Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "1450"
@@ -1112,7 +1112,7 @@
       "name": "Forderungen gegen verbundene",
       "klasse": 1,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Finanz- und Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "1260"
@@ -1202,7 +1202,7 @@
       "name": "Verbindlichkeiten im Rahmen der",
       "klasse": 1,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Finanz- und Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "3740"
@@ -1472,7 +1472,7 @@
       "name": "Zinsähnliche Aufwendungen",
       "klasse": 2,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "7330"
@@ -1492,7 +1492,7 @@
       "name": "Körperschaftsteuer",
       "klasse": 2,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "7600"
@@ -1522,7 +1522,7 @@
       "name": "Periodenfremde Erträge",
       "klasse": 2,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "4960"
@@ -1562,7 +1562,7 @@
       "name": "Versicherungsentschädigungen",
       "klasse": 2,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "4970"
@@ -1572,7 +1572,7 @@
       "name": "Investitionszulagen (steuerfrei)",
       "klasse": 2,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "4980"
@@ -1729,7 +1729,7 @@
       "name": "Leergut",
       "klasse": 3,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Wareneingangs- und Bestandskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "5820"
@@ -1779,7 +1779,7 @@
       "name": "Geschäftsführergehälter der",
       "klasse": 4,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "6024"
@@ -1849,7 +1849,7 @@
       "name": "Versorgungskassen",
       "klasse": 4,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "6150"
@@ -2093,7 +2093,7 @@
       "name": "Mautgebühren",
       "klasse": 4,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "6580"
@@ -2127,7 +2127,7 @@
       "name": "Fremdfahrzeugkosten",
       "klasse": 4,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "6595"
@@ -2374,7 +2374,7 @@
       "name": "Reparaturen und Instandhaltung",
       "klasse": 4,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "6460"
@@ -2927,7 +2927,7 @@
       "name": "Erlöse Leergut",
       "klasse": 8,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Erlöskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "4520"
@@ -2962,7 +2962,7 @@
       "name": "Sonstige betriebliche Erträge",
       "klasse": 8,
       "typ": "ertrag",
-      "gruppe": "DATEV SKR03 2026",
+      "gruppe": "Erlöskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "4830"

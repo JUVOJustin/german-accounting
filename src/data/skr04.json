@@ -1922,7 +1922,7 @@
       "name": "Wartungskosten für Hard- und Software",
       "klasse": 6,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR04 2026",
+      "gruppe": "Betriebliche Aufwendungen (sonstige)",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "4806"
@@ -2012,7 +2012,7 @@
       "name": "Fremdfahrzeugkosten",
       "klasse": 6,
       "typ": "aufwand",
-      "gruppe": "DATEV SKR04 2026",
+      "gruppe": "Betriebliche Aufwendungen (sonstige)",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "4595"
