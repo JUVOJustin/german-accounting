@@ -180,7 +180,7 @@ describe("SKR03 — structural integrity", () => {
       SKR03.klasse(9)
     )) {
       for (const field of required) {
-        if ((konto as any)[field] === undefined) {
+        if (konto[field] === undefined) {
           invalid.push(`SKR03 ${konto.konto}: missing required field "${field}"`);
         }
       }
@@ -226,6 +226,18 @@ describe("SKR03 — structural integrity", () => {
     }
     expect(invalid).toHaveLength(0);
   });
+
+  it("has unique account numbers and complete source labels", () => {
+    const accountNumbers = skr03Data.konten.map((konto) => konto.konto);
+    expect(new Set(accountNumbers).size).toBe(accountNumbers.length);
+
+    for (const konto of skr03Data.konten) {
+      expect(konto.name.length).toBeGreaterThan(1);
+      expect(konto.name).not.toMatch(/[,-]$/);
+      expect(konto.name).not.toMatch(/\p{L}\d+\)/u);
+      expect(konto.name).not.toMatch(/Wasse r|Bürobedar f|Arbeitnehme r|Geschäftsoder/);
+    }
+  });
 });
 
 describe("SKR04 — structural integrity", () => {
@@ -243,13 +255,21 @@ describe("SKR04 — structural integrity", () => {
     }
   });
 
-  it("keeps source-verified SKR03 cross-references symmetric", () => {
-    const linked = SKR04.search("").filter((konto) => konto.skr03 != null);
+  it("keeps exact-label cross-references symmetric and semantically aligned", () => {
+    const linkedSkr03 = SKR03.search("").filter((konto) => konto.skr04 != null);
+    const linkedSkr04 = SKR04.search("").filter((konto) => konto.skr03 != null);
 
-    expect(linked.length).toBeGreaterThanOrEqual(100);
-    for (const skr04 of linked) {
-      const skr03 = SKR03.get(skr04.skr03!);
-      expect(skr03?.skr04).toBe(skr04.konto);
+    expect(linkedSkr03.length).toBeGreaterThanOrEqual(150);
+    expect(linkedSkr04).toHaveLength(linkedSkr03.length);
+
+    for (const skr03 of linkedSkr03) {
+      const skr04 = SKR04.get(skr03.skr04!);
+      expect(skr04?.skr03).toBe(skr03.konto);
+      expect(skr04?.name).toBe(skr03.name);
+      expect(skr04?.typ).toBe(skr03.typ);
+    }
+    for (const skr04 of linkedSkr04) {
+      expect(SKR03.get(skr04.skr03!)?.skr04).toBe(skr04.konto);
     }
   });
 
@@ -277,5 +297,17 @@ describe("SKR04 — structural integrity", () => {
 
   it("has at least 200 accounts", () => {
     expect(skr04Data.konten.length).toBeGreaterThanOrEqual(200);
+  });
+
+  it("has unique account numbers and complete source labels", () => {
+    const accountNumbers = skr04Data.konten.map((konto) => konto.konto);
+    expect(new Set(accountNumbers).size).toBe(accountNumbers.length);
+
+    for (const konto of skr04Data.konten) {
+      expect(konto.name.length).toBeGreaterThan(1);
+      expect(konto.name).not.toMatch(/[,-]$/);
+      expect(konto.name).not.toMatch(/\p{L}\d+\)/u);
+      expect(konto.name).not.toMatch(/Wasse r|Bürobedar f|Arbeitnehme r|Geschäftsoder/);
+    }
   });
 });

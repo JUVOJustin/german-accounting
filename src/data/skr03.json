@@ -101,8 +101,8 @@
       "konto": "0020",
       "name": "Gewerbliche Schutzrechte",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "aktiv",
+      "gruppe": "Immaterielle Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0120"
@@ -115,7 +115,7 @@
       "gruppe": "Immaterielle Vermögensgegenstände und Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0135"
     },
     {
       "konto": "0030",
@@ -131,15 +131,15 @@
       "konto": "0035",
       "name": "Geschäfts- oder Firmenwert",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "aktiv",
+      "gruppe": "Immaterielle Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0150"
     },
     {
       "konto": "0050",
-      "name": "Grundstücke, grundstücksgleiche",
+      "name": "Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
       "klasse": 0,
       "typ": "aktiv",
       "gruppe": "Immaterielle Vermögensgegenstände und Sachanlagen",
@@ -149,17 +149,17 @@
     },
     {
       "konto": "0060",
-      "name": "Grundstücksgleiche Rechte ohne",
+      "name": "Grundstücksgleiche Rechte ohne Bauten",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "aktiv",
+      "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0210"
     },
     {
       "konto": "0070",
-      "name": "Grundstücksgleiche Rechte",
+      "name": "Grundstücksgleiche Rechte (Erbbaurecht, Dauerwohnrecht, unbebaute Grundstücke)",
       "klasse": 0,
       "typ": "aktiv",
       "gruppe": "Immaterielle Vermögensgegenstände",
@@ -169,7 +169,7 @@
     },
     {
       "konto": "0085",
-      "name": "Grundstückswerte eigener bebauter",
+      "name": "Grundstückswerte eigener bebauter Grundstücke",
       "klasse": 0,
       "typ": "aktiv",
       "gruppe": "Immaterielle Vermögensgegenstände",
@@ -199,10 +199,10 @@
     },
     {
       "konto": "0111",
-      "name": "Außenanlagen für Geschäfts-,",
+      "name": "Außenanlagen für Geschäfts-, Fabrik- und andere Bauten",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "aktiv",
+      "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0280"
@@ -215,7 +215,7 @@
       "gruppe": "Immaterielle Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0260"
     },
     {
       "konto": "0120",
@@ -295,7 +295,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0500"
     },
     {
       "konto": "0310",
@@ -361,8 +361,8 @@
       "konto": "0430",
       "name": "Ladeneinrichtung",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "aktiv",
+      "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0640"
@@ -391,8 +391,8 @@
       "konto": "0460",
       "name": "Gerüst- und Schalungsmaterial",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "aktiv",
+      "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0660"
@@ -435,14 +435,14 @@
       "gruppe": "Finanzanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0800"
     },
     {
       "konto": "0505",
-      "name": "Ausleihungen an verbundene",
+      "name": "Ausleihungen an verbundene Unternehmen",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "aktiv",
+      "gruppe": "Finanzanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0810"
@@ -451,8 +451,8 @@
       "konto": "0513",
       "name": "Typisch stille Beteiligungen",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "aktiv",
+      "gruppe": "Finanzanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0830"
@@ -461,8 +461,8 @@
       "konto": "0516",
       "name": "Atypisch stille Beteiligungen",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "aktiv",
+      "gruppe": "Finanzanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0840"
@@ -495,7 +495,7 @@
       "gruppe": "Finanzanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1360"
     },
     {
       "konto": "0580",
@@ -565,7 +565,7 @@
       "gruppe": "Rückstellungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "3400"
     },
     {
       "konto": "0710",
@@ -639,7 +639,7 @@
     },
     {
       "konto": "0820",
-      "name": "Verlustvortrag",
+      "name": "Ausstehende Einlagen auf das gezeichnete Kapital, nicht eingefordert (Passivausweis, vom gezeichneten Kapital offen abgesetzt; eingeforderte ausstehende Einlagen s. Konten 0830-0838)",
       "klasse": 0,
       "typ": "passiv",
       "gruppe": "Eigenkapital",
@@ -649,7 +649,7 @@
     },
     {
       "konto": "0830",
-      "name": "Entnahmen",
+      "name": "Ausstehende Einlagen auf das gezeichnete Kapital, eingefordert (Forderungen, nicht eingeforderte ausstehende Einlagen s. Konten 0820-0829)",
       "klasse": 0,
       "typ": "aktiv",
       "gruppe": "Eigenkapital",
@@ -669,20 +669,20 @@
     },
     {
       "konto": "0851",
-      "name": "Satzungsmäßige Rücklagen17)",
+      "name": "Satzungsmäßige Rücklagen",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "passiv",
+      "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "2950"
     },
     {
       "konto": "0855",
-      "name": "Andere Gewinnrücklagen17)",
+      "name": "Andere Gewinnrücklagen",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "passiv",
+      "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "2960"
@@ -701,8 +701,8 @@
       "konto": "0870",
       "name": "Festkapital",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "passiv",
+      "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "2000"
@@ -759,7 +759,7 @@
     },
     {
       "konto": "0950",
-      "name": "Rückstellungen für Pensionen und ähnliche Verpflichtungen Rückstellungen für Pensionen und ähnliche",
+      "name": "Rückstellungen für Pensionen und ähnliche Verpflichtungen",
       "klasse": 0,
       "typ": "passiv",
       "gruppe": "Privatkonten",
@@ -771,8 +771,8 @@
       "konto": "0970",
       "name": "Sonstige Rückstellungen",
       "klasse": 0,
-      "typ": "ertrag",
-      "gruppe": "Anlage- und Kapitalkonten",
+      "typ": "passiv",
+      "gruppe": "Rückstellungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "3070"
@@ -838,18 +838,8 @@
       "skr04": "1810"
     },
     {
-      "konto": "1300",
-      "name": "Wechsel",
-      "klasse": 1,
-      "typ": "aktiv",
-      "gruppe": "Forderungen",
-      "ust_relevant": false,
-      "steuerschluessel": [],
-      "skr04": null
-    },
-    {
       "konto": "1350",
-      "name": "GmbH-Anteile zum kurzfristigen",
+      "name": "GmbH-Anteile zum kurzfristigen Verbleib",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Finanzkonten",
@@ -869,10 +859,10 @@
     },
     {
       "konto": "1390",
-      "name": "Verrechnungskonto Ist-Versteue-",
+      "name": "Verrechnungskonto Ist-Versteuerung",
       "klasse": 1,
-      "typ": "ertrag",
-      "gruppe": "Finanz- und Privatkonten",
+      "typ": "aktiv",
+      "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "1490"
@@ -885,7 +875,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1200"
     },
     {
       "konto": "1410",
@@ -895,11 +885,11 @@
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1210"
     },
     {
       "konto": "1450",
-      "name": "Forderungen nach § 11 Abs. 1",
+      "name": "Forderungen nach § 11 Abs. 1 Satz 2 EStG für § 4 Abs. 3 EStG",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Forderungen",
@@ -929,23 +919,23 @@
     },
     {
       "konto": "1503",
-      "name": "Forderungen gegen Vorstandsmit-",
+      "name": "Forderungen gegen Vorstandsmitglieder und Geschäftsführer - Restlaufzeit bis 1 Jahr",
       "klasse": 1,
       "typ": "ertrag",
-      "gruppe": "Finanz- und Privatkonten",
+      "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": "1310"
+      "skr04": null
     },
     {
       "konto": "1505",
-      "name": "Forderungen gegen Aufsichtsrats-",
+      "name": "Forderungen gegen Aufsichtsrats- und Beiratsmitglieder - Restlaufzeit bis 1 Jahr",
       "klasse": 1,
       "typ": "ertrag",
-      "gruppe": "Finanz- und Privatkonten",
+      "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": "1320"
+      "skr04": null
     },
     {
       "konto": "1510",
@@ -959,7 +949,7 @@
     },
     {
       "konto": "1518",
-      "name": "Geleistete Anzahlungen, 19 % Vorsteuer Sonstige Vermögensgegenstände oder Sonstige Verbindlichkeiten",
+      "name": "Geleistete Anzahlungen, 19 % Vorsteuer",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Vorsteuer",
@@ -979,7 +969,7 @@
     },
     {
       "konto": "1540",
-      "name": "Forderungen aus Gewerbesteuerüberzahlungen Sonstige Vermögensgegenstände",
+      "name": "Forderungen aus Gewerbesteuerüberzahlungen",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Finanzkonten",
@@ -989,17 +979,17 @@
     },
     {
       "konto": "1542",
-      "name": "Steuererstattungsansprüche",
+      "name": "Steuererstattungsansprüche gegenüber anderen Ländern",
       "klasse": 1,
-      "typ": "ertrag",
-      "gruppe": "Finanz- und Privatkonten",
+      "typ": "aktiv",
+      "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "1440"
     },
     {
       "konto": "1545",
-      "name": "Forderungen aus UmsatzsteuerVorauszahlungen Sonstige Vermögensgegenstände oder Sonstige Verbindlichkeiten",
+      "name": "Forderungen aus Umsatzsteuer-Vorauszahlungen",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Sonstige Vermögensgegenstände",
@@ -1009,7 +999,7 @@
     },
     {
       "konto": "1548",
-      "name": "Vorsteuer in Folgeperiode/im",
+      "name": "Vorsteuer in Folgeperiode/im Folgejahr abziehbar",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Vorsteuer",
@@ -1021,8 +1011,8 @@
       "konto": "1549",
       "name": "Körperschaftsteuerrückforderung",
       "klasse": 1,
-      "typ": "ertrag",
-      "gruppe": "Finanz- und Privatkonten",
+      "typ": "aktiv",
+      "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "1450"
@@ -1075,7 +1065,7 @@
       "gruppe": "Vorsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1407"
     },
     {
       "konto": "1580",
@@ -1109,10 +1099,10 @@
     },
     {
       "konto": "1594",
-      "name": "Forderungen gegen verbundene",
+      "name": "Forderungen gegen verbundene Unternehmen",
       "klasse": 1,
-      "typ": "ertrag",
-      "gruppe": "Finanz- und Privatkonten",
+      "typ": "aktiv",
+      "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "1260"
@@ -1135,7 +1125,7 @@
       "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "3310"
     },
     {
       "konto": "1700",
@@ -1185,7 +1175,7 @@
       "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "3720"
     },
     {
       "konto": "1741",
@@ -1195,14 +1185,14 @@
       "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "3730"
     },
     {
       "konto": "1742",
-      "name": "Verbindlichkeiten im Rahmen der",
+      "name": "Verbindlichkeiten im Rahmen der sozialen Sicherheit",
       "klasse": 1,
-      "typ": "ertrag",
-      "gruppe": "Finanz- und Privatkonten",
+      "typ": "passiv",
+      "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "3740"
@@ -1239,7 +1229,7 @@
     },
     {
       "konto": "1757",
-      "name": "Verbindlichkeiten gegenüber",
+      "name": "Verbindlichkeiten gegenüber Gesellschaft/Gesamthand",
       "klasse": 1,
       "typ": "passiv",
       "gruppe": "Verbindlichkeiten",
@@ -1278,16 +1268,6 @@
       "skr04": "3801"
     },
     {
-      "konto": "1775",
-      "name": "Umsatzsteuer 19%",
-      "klasse": 1,
-      "typ": "passiv",
-      "gruppe": "Umsatzsteuer",
-      "ust_relevant": true,
-      "steuerschluessel": [],
-      "skr04": null
-    },
-    {
       "konto": "1776",
       "name": "Umsatzsteuer 19 %",
       "klasse": 1,
@@ -1305,7 +1285,7 @@
       "gruppe": "Umsatzsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "3820"
     },
     {
       "konto": "1789",
@@ -1319,13 +1299,13 @@
     },
     {
       "konto": "1790",
-      "name": "Umsatzsteuerverbindlichkeiten",
+      "name": "Umsatzsteuerverbindlichkeiten Vorjahr",
       "klasse": 1,
       "typ": "passiv",
       "gruppe": "Umsatzsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "3841"
     },
     {
       "konto": "1800",
@@ -1335,7 +1315,7 @@
       "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "2100"
     },
     {
       "konto": "1810",
@@ -1345,7 +1325,7 @@
       "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "2150"
     },
     {
       "konto": "1890",
@@ -1359,7 +1339,7 @@
     },
     {
       "konto": "1900",
-      "name": "Auszahlungen allgemein",
+      "name": "Auszahlungen allgemein (Teilhafter), Fremdkapital",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Privatkonten",
@@ -1369,7 +1349,7 @@
     },
     {
       "konto": "1910",
-      "name": "Privatsteuern (Teilhafter),",
+      "name": "Privatsteuern (Teilhafter), Fremdkapital",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Privatkonten",
@@ -1399,7 +1379,7 @@
     },
     {
       "konto": "1940",
-      "name": "Zuwendungen, Spenden",
+      "name": "Zuwendungen, Spenden (Teilhafter), Fremdkapital",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Privatkonten",
@@ -1409,30 +1389,10 @@
     },
     {
       "konto": "1950",
-      "name": "Außergewöhnliche Belastungen",
+      "name": "Außergewöhnliche Belastungen (Teilhafter), Fremdkapital",
       "klasse": 1,
       "typ": "passiv",
       "gruppe": "Privatkonten",
-      "ust_relevant": false,
-      "steuerschluessel": [],
-      "skr04": null
-    },
-    {
-      "konto": "2000",
-      "name": "Aufwendungen für Roh-, Hilfs- und Betriebsstoffe",
-      "klasse": 2,
-      "typ": "aufwand",
-      "gruppe": "Abgrenzungskonten",
-      "ust_relevant": false,
-      "steuerschluessel": [],
-      "skr04": null
-    },
-    {
-      "konto": "2010",
-      "name": "Bestandsveränderungen Roh-, Hilfs- und Betriebsstoffe",
-      "klasse": 2,
-      "typ": "aufwand",
-      "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -1445,7 +1405,7 @@
       "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "7300"
     },
     {
       "konto": "2110",
@@ -1455,7 +1415,7 @@
       "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "7310"
     },
     {
       "konto": "2120",
@@ -1465,14 +1425,14 @@
       "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "7320"
     },
     {
       "konto": "2140",
       "name": "Zinsähnliche Aufwendungen",
       "klasse": 2,
       "typ": "aufwand",
-      "gruppe": "Abgrenzungskonten",
+      "gruppe": "Zinsen und ähnliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "7330"
@@ -1492,7 +1452,7 @@
       "name": "Körperschaftsteuer",
       "klasse": 2,
       "typ": "aufwand",
-      "gruppe": "Abgrenzungskonten",
+      "gruppe": "Steuern vom Einkommen und Ertrag",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "7600"
@@ -1521,8 +1481,8 @@
       "konto": "2520",
       "name": "Periodenfremde Erträge",
       "klasse": 2,
-      "typ": "aufwand",
-      "gruppe": "Abgrenzungskonten",
+      "typ": "ertrag",
+      "gruppe": "Sonstige betriebliche Erträge",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "4960"
@@ -1539,17 +1499,17 @@
     },
     {
       "konto": "2650",
-      "name": "Sonstige Zinsen und ähnliche",
+      "name": "Sonstige Zinsen und ähnliche Erträge",
       "klasse": 2,
-      "typ": "aufwand",
+      "typ": "ertrag",
       "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "7100"
     },
     {
       "konto": "2700",
-      "name": "Andere betriebs- und/oder periodenfremde (neutrale) sonstige",
+      "name": "Andere betriebs- und/oder periodenfremde (neutrale) sonstige Erträge",
       "klasse": 2,
       "typ": "ertrag",
       "gruppe": "Abgrenzungskonten",
@@ -1559,10 +1519,10 @@
     },
     {
       "konto": "2742",
-      "name": "Versicherungsentschädigungen",
+      "name": "Versicherungsentschädigungen und Schadenersatzleistungen",
       "klasse": 2,
-      "typ": "aufwand",
-      "gruppe": "Abgrenzungskonten",
+      "typ": "ertrag",
+      "gruppe": "Sonstige betriebliche Erträge",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "4970"
@@ -1571,8 +1531,8 @@
       "konto": "2744",
       "name": "Investitionszulagen (steuerfrei)",
       "klasse": 2,
-      "typ": "aufwand",
-      "gruppe": "Abgrenzungskonten",
+      "typ": "ertrag",
+      "gruppe": "Sonstige betriebliche Erträge",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "4980"
@@ -1613,7 +1573,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "5920"
     },
     {
       "konto": "3123",
@@ -1625,7 +1585,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "5923"
     },
     {
       "konto": "3200",
@@ -1650,7 +1610,7 @@
       "steuerschluessel": [
         8
       ],
-      "skr04": null
+      "skr04": "5300"
     },
     {
       "konto": "3400",
@@ -1662,19 +1622,19 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "5400"
     },
     {
       "konto": "3425",
-      "name": "Innergemeinschaftlicher Erwerb 7% Vorsteuer und 7% Umsatzsteuer",
+      "name": "Innergemeinschaftlicher Erwerb 19 % Vorsteuer und 19 % Umsatzsteuer",
       "klasse": 3,
       "typ": "aufwand",
       "gruppe": "Wareneingang",
       "ust_relevant": true,
       "steuerschluessel": [
-        8
+        9
       ],
-      "skr04": null
+      "skr04": "5425"
     },
     {
       "konto": "3435",
@@ -1686,17 +1646,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
-    },
-    {
-      "konto": "3500",
-      "name": "Wareneingang steuerfrei",
-      "klasse": 3,
-      "typ": "aufwand",
-      "gruppe": "Wareneingang",
-      "ust_relevant": false,
-      "steuerschluessel": [],
-      "skr04": null
+      "skr04": "5435"
     },
     {
       "konto": "3700",
@@ -1729,20 +1679,20 @@
       "name": "Leergut",
       "klasse": 3,
       "typ": "aufwand",
-      "gruppe": "Wareneingangs- und Bestandskonten",
+      "gruppe": "Wareneingang",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "5820"
     },
     {
       "konto": "3960",
-      "name": "Bestandsveränderungen fertige Erzeugnisse",
+      "name": "Bestandsveränderungen Roh-, Hilfs- und Betriebsstoffe sowie bezogene Waren",
       "klasse": 3,
       "typ": "aufwand",
       "gruppe": "Bestandsveränderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "5880"
     },
     {
       "konto": "4100",
@@ -1776,10 +1726,10 @@
     },
     {
       "konto": "4124",
-      "name": "Geschäftsführergehälter der",
+      "name": "Geschäftsführergehälter der GmbH-Gesellschafter",
       "klasse": 4,
       "typ": "aufwand",
-      "gruppe": "Betriebliche Aufwendungen",
+      "gruppe": "Personalaufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "6024"
@@ -1802,17 +1752,17 @@
       "gruppe": "Personalaufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6110"
     },
     {
       "konto": "4138",
-      "name": "Beiträge zur Berufsgenossenschaft Sonstige",
+      "name": "Beiträge zur Berufsgenossenschaft",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Personalaufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6120"
     },
     {
       "konto": "4140",
@@ -1822,7 +1772,7 @@
       "gruppe": "Personalaufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6130"
     },
     {
       "konto": "4145",
@@ -1832,7 +1782,7 @@
       "gruppe": "Personalaufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6060"
     },
     {
       "konto": "4150",
@@ -1849,7 +1799,7 @@
       "name": "Versorgungskassen",
       "klasse": 4,
       "typ": "aufwand",
-      "gruppe": "Betriebliche Aufwendungen",
+      "gruppe": "Personalaufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "6150"
@@ -1876,7 +1826,7 @@
     },
     {
       "konto": "4199",
-      "name": "Pauschale Steuer für Aushilfen Sonstige betriebliche Aufwendungen und Abschreibungen Sonstige",
+      "name": "Pauschale Steuer für Aushilfen",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Personalaufwendungen",
@@ -1906,7 +1856,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6310"
     },
     {
       "konto": "4220",
@@ -1934,7 +1884,7 @@
     },
     {
       "konto": "4240",
-      "name": "Gas, Strom, Wasse r",
+      "name": "Gas, Strom, Wasser",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Raumkosten",
@@ -1966,7 +1916,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6335"
     },
     {
       "konto": "4280",
@@ -1982,7 +1932,7 @@
     },
     {
       "konto": "4320",
-      "name": "Gewerbesteuer Sonstige Steuern",
+      "name": "Gewerbesteuer",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Steuern und Versicherungen",
@@ -2022,7 +1972,7 @@
     },
     {
       "konto": "4500",
-      "name": "Fahrzeugkosten 18) Sonstige Steuern",
+      "name": "Fahrzeugkosten",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Fahrzeugkosten",
@@ -2034,7 +1984,7 @@
     },
     {
       "konto": "4510",
-      "name": "Kfz-Steuer Sonstige",
+      "name": "Kfz-Steuer",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Fahrzeugkosten",
@@ -2062,7 +2012,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6530"
     },
     {
       "konto": "4540",
@@ -2093,7 +2043,7 @@
       "name": "Mautgebühren",
       "klasse": 4,
       "typ": "aufwand",
-      "gruppe": "Betriebliche Aufwendungen",
+      "gruppe": "Fahrzeugkosten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "6580"
@@ -2126,8 +2076,8 @@
       "konto": "4595",
       "name": "Fremdfahrzeugkosten",
       "klasse": 4,
-      "typ": "ertrag",
-      "gruppe": "Betriebliche Aufwendungen",
+      "typ": "aufwand",
+      "gruppe": "Fahrzeugkosten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "6595"
@@ -2146,7 +2096,7 @@
     },
     {
       "konto": "4630",
-      "name": "Geschenke abzugsfähig ohne",
+      "name": "Geschenke abzugsfähig ohne § 37b EStG",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Werbung und Repräsentation",
@@ -2159,7 +2109,7 @@
     },
     {
       "konto": "4635",
-      "name": "Geschenke nicht abzugsfähig ohne",
+      "name": "Geschenke nicht abzugsfähig ohne § 37b EStG",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Werbung und Repräsentation",
@@ -2167,7 +2117,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null,
+      "skr04": "6620",
       "notes": "Über 50€ pro Empfänger/Jahr"
     },
     {
@@ -2205,7 +2155,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6644"
     },
     {
       "konto": "4660",
@@ -2215,7 +2165,7 @@
       "gruppe": "Reisekosten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6650"
     },
     {
       "konto": "4663",
@@ -2237,7 +2187,7 @@
       "gruppe": "Reisekosten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6664"
     },
     {
       "konto": "4666",
@@ -2250,7 +2200,7 @@
         9,
         8
       ],
-      "skr04": null
+      "skr04": "6660"
     },
     {
       "konto": "4670",
@@ -2264,7 +2214,7 @@
     },
     {
       "konto": "4673",
-      "name": "Reisekosten Unternehmer",
+      "name": "Reisekosten Unternehmer Fahrtkosten",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Reisekosten",
@@ -2272,7 +2222,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6673"
     },
     {
       "konto": "4674",
@@ -2282,7 +2232,7 @@
       "gruppe": "Reisekosten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6674"
     },
     {
       "konto": "4676",
@@ -2371,13 +2321,13 @@
     },
     {
       "konto": "4801",
-      "name": "Reparaturen und Instandhaltung",
+      "name": "Reparaturen und Instandhaltung von Bauten",
       "klasse": 4,
       "typ": "aufwand",
-      "gruppe": "Betriebliche Aufwendungen",
+      "gruppe": "Verschiedene betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": "6460"
+      "skr04": null
     },
     {
       "konto": "4805",
@@ -2415,7 +2365,7 @@
     },
     {
       "konto": "4824",
-      "name": "Abschreibungen auf den Geschäftsoder Firmenwert",
+      "name": "Abschreibungen auf den Geschäfts- oder Firmenwert",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Abschreibungen",
@@ -2425,17 +2375,17 @@
     },
     {
       "konto": "4830",
-      "name": "Abschreibungen auf Sachanlagen",
+      "name": "Abschreibungen auf Sachanlagen (ohne AfA auf Fahrzeuge und Gebäude)",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Abschreibungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6220"
     },
     {
       "konto": "4855",
-      "name": "Sofortabschreibung geringwertiger",
+      "name": "Sofortabschreibung geringwertiger Wirtschaftsgüter",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Abschreibungen",
@@ -2453,19 +2403,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
-    },
-    {
-      "konto": "4905",
-      "name": "Sonstige Aufwendungen betrieblich und regelmäßig",
-      "klasse": 4,
-      "typ": "aufwand",
-      "gruppe": "Sonstige betriebliche Aufwendungen",
-      "ust_relevant": true,
-      "steuerschluessel": [
-        9
-      ],
-      "skr04": null
+      "skr04": "6300"
     },
     {
       "konto": "4910",
@@ -2503,7 +2441,7 @@
     },
     {
       "konto": "4930",
-      "name": "Bürobedar f",
+      "name": "Bürobedarf",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Sonstige betriebliche Aufwendungen",
@@ -2515,7 +2453,7 @@
     },
     {
       "konto": "4940",
-      "name": "Zeitschriften, Bücher, digitale",
+      "name": "Zeitschriften, Bücher, digitale Medien (Fachliteratur)",
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Sonstige betriebliche Aufwendungen",
@@ -2595,7 +2533,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6835"
     },
     {
       "konto": "4964",
@@ -2667,7 +2605,7 @@
     },
     {
       "konto": "7080",
-      "name": "Unfertige Leistungen (Bestand) In Ausführung",
+      "name": "Unfertige Leistungen (Bestand)",
       "klasse": 7,
       "typ": "aktiv",
       "gruppe": "Aktivierte Eigenleistungen",
@@ -2677,13 +2615,13 @@
     },
     {
       "konto": "7100",
-      "name": "Fertige Erzeugnisse und Waren",
+      "name": "Fertige Erzeugnisse und Waren (Bestand)",
       "klasse": 7,
       "typ": "aktiv",
       "gruppe": "Bestände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1100"
     },
     {
       "konto": "7110",
@@ -2693,17 +2631,17 @@
       "gruppe": "Bestände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1110"
     },
     {
       "konto": "8100",
-      "name": "Steuerfreie Umsätze §4 Nr. 1a UStG (Ausfuhrlieferungen)",
+      "name": "Steuerfreie Umsätze § 4 Nr. 8 ff. UStG",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "4100"
     },
     {
       "konto": "8110",
@@ -2717,13 +2655,13 @@
     },
     {
       "konto": "8120",
-      "name": "Steuerfreie Umsätze nach § 4",
+      "name": "Steuerfreie Umsätze nach § 4 Nr. 1a UStG",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "4120"
     },
     {
       "konto": "8125",
@@ -2733,7 +2671,7 @@
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "4125"
     },
     {
       "konto": "8130",
@@ -2763,7 +2701,7 @@
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": "4150"
+      "skr04": null
     },
     {
       "konto": "8190",
@@ -2800,11 +2738,11 @@
       "steuerschluessel": [
         2
       ],
-      "skr04": null
+      "skr04": "4300"
     },
     {
       "konto": "8310",
-      "name": "Erlöse aus Leistungen 7% USt",
+      "name": "Erlöse aus im Inland steuerpflichtigen EU-Lieferungen 7 % USt",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Erlöse",
@@ -2812,23 +2750,21 @@
       "steuerschluessel": [
         2
       ],
-      "skr04": null
+      "skr04": "4310"
     },
     {
       "konto": "8320",
-      "name": "Erlöse Abfallverwertung",
+      "name": "Erlöse aus im anderen EU-Land steuerpflichtigen Lieferungen, im Inland nicht steuerbar",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Erlöse",
-      "ust_relevant": true,
-      "steuerschluessel": [
-        1
-      ],
-      "skr04": null
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "4320"
     },
     {
       "konto": "8335",
-      "name": "Erlöse aus Lieferungen von Mobilfunkgeräten, Tablet-Computern,",
+      "name": "Erlöse aus Lieferungen von Mobilfunkgeräten, Tablet-Computern, Spielekonsolen und integrierten Schaltkreisen, für die der Leistungsempfänger die Umsatzsteuer nach § 13b UStG schuldet",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Erlöse",
@@ -2836,7 +2772,7 @@
       "steuerschluessel": [
         1
       ],
-      "skr04": null
+      "skr04": "4335"
     },
     {
       "konto": "8337",
@@ -2852,15 +2788,13 @@
     },
     {
       "konto": "8340",
-      "name": "Erlöse Provisionsumsätze",
+      "name": "Erlöse 16 % USt",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Erlöse",
       "ust_relevant": true,
-      "steuerschluessel": [
-        1
-      ],
-      "skr04": null
+      "steuerschluessel": [],
+      "skr04": "4340"
     },
     {
       "konto": "8400",
@@ -2872,7 +2806,7 @@
       "steuerschluessel": [
         1
       ],
-      "skr04": null
+      "skr04": "4400"
     },
     {
       "konto": "8500",
@@ -2884,7 +2818,7 @@
       "steuerschluessel": [
         1
       ],
-      "skr04": null
+      "skr04": "4500"
     },
     {
       "konto": "8510",
@@ -2927,7 +2861,7 @@
       "name": "Erlöse Leergut",
       "klasse": 8,
       "typ": "ertrag",
-      "gruppe": "Erlöskonten",
+      "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "4520"
@@ -2945,24 +2879,11 @@
       "skr04": null
     },
     {
-      "konto": "8600",
-      "name": "Erlösschmälerungen",
-      "klasse": 8,
-      "typ": "ertrag",
-      "gruppe": "Erlöse",
-      "ust_relevant": true,
-      "steuerschluessel": [
-        1,
-        2
-      ],
-      "skr04": null
-    },
-    {
       "konto": "8603",
       "name": "Sonstige betriebliche Erträge",
       "klasse": 8,
       "typ": "ertrag",
-      "gruppe": "Erlöskonten",
+      "gruppe": "Sonstige betriebliche Erträge",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "4830"
@@ -2993,61 +2914,51 @@
     },
     {
       "konto": "8710",
-      "name": "Gewährte Skonti",
+      "name": "Erlösschmälerungen 7 % USt",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Erlöse",
       "ust_relevant": true,
       "steuerschluessel": [
-        1,
         2
       ],
-      "skr04": null
+      "skr04": "4710"
     },
     {
       "konto": "8720",
-      "name": "Gewährte Boni",
+      "name": "Erlösschmälerungen 19 % USt",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Erlöse",
       "ust_relevant": true,
       "steuerschluessel": [
-        1,
-        2
+        1
       ],
-      "skr04": null
-    },
-    {
-      "konto": "8735",
-      "name": "Erlösschmälerungen 7% USt",
-      "klasse": 8,
-      "typ": "ertrag",
-      "gruppe": "Erlöse",
-      "ust_relevant": true,
-      "steuerschluessel": [
-        2
-      ],
-      "skr04": null
+      "skr04": "4720"
     },
     {
       "konto": "8750",
-      "name": "Kapitalerträge",
+      "name": "Gewährte Boni 7 % USt",
       "klasse": 8,
       "typ": "ertrag",
-      "gruppe": "Sonstige betriebliche Erträge",
-      "ust_relevant": false,
-      "steuerschluessel": [],
-      "skr04": null
+      "gruppe": "Erlöse",
+      "ust_relevant": true,
+      "steuerschluessel": [
+        2
+      ],
+      "skr04": "4750"
     },
     {
       "konto": "8760",
-      "name": "Erträge aus Beteiligungen",
+      "name": "Gewährte Boni 19 % USt",
       "klasse": 8,
       "typ": "ertrag",
-      "gruppe": "Sonstige betriebliche Erträge",
-      "ust_relevant": false,
-      "steuerschluessel": [],
-      "skr04": null
+      "gruppe": "Erlöse",
+      "ust_relevant": true,
+      "steuerschluessel": [
+        1
+      ],
+      "skr04": "4760"
     },
     {
       "konto": "8800",
@@ -3063,29 +2974,32 @@
     },
     {
       "konto": "8820",
-      "name": "Erträge aus der Auflösung von Rückstellungen",
+      "name": "Erlöse aus Verkäufen Sachanlagevermögen 19 % USt (bei Buchgewinn)",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",
-      "ust_relevant": false,
-      "steuerschluessel": [],
-      "skr04": null
+      "ust_relevant": true,
+      "steuerschluessel": [
+        1
+      ],
+      "skr04": "4845"
     },
     {
       "konto": "8900",
-      "name": "Private Kfz-Nutzung",
+      "name": "Unentgeltliche Wertabgaben",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",
       "ust_relevant": true,
       "steuerschluessel": [
-        1
+        1,
+        2
       ],
-      "skr04": null
+      "skr04": "4600"
     },
     {
       "konto": "8910",
-      "name": "Private Telefonnutzung",
+      "name": "Entnahme durch den Unternehmer für Zwecke außerhalb des Unternehmens (Waren) 19 % USt",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",
@@ -3093,11 +3007,11 @@
       "steuerschluessel": [
         1
       ],
-      "skr04": null
+      "skr04": "4620"
     },
     {
       "konto": "8920",
-      "name": "Verwendung von Gegenständen f",
+      "name": "Verwendung von Gegenständen für Zwecke außerhalb des Unternehmens 19 % USt (Fahrzeug-Nutzung)",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",
@@ -3109,17 +3023,19 @@
     },
     {
       "konto": "8940",
-      "name": "Erträge aus Kursdifferenzen",
+      "name": "Unentgeltliche Zuwendung von Waren 19 % USt",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",
-      "ust_relevant": false,
-      "steuerschluessel": [],
+      "ust_relevant": true,
+      "steuerschluessel": [
+        1
+      ],
       "skr04": null
     },
     {
       "konto": "8950",
-      "name": "Nicht steuerbare Umsätze",
+      "name": "Nicht steuerbare Umsätze (Innenumsätze)",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",
@@ -3149,7 +3065,7 @@
     },
     {
       "konto": "8975",
-      "name": "Bestandsveränderungen in Ausführung befindliche",
+      "name": "Bestandsveränderungen in Ausführung befindliche Bauaufträge",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",
@@ -3159,7 +3075,7 @@
     },
     {
       "konto": "8980",
-      "name": "B",
+      "name": "Bestandsveränderungen - fertige Erzeugnisse",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",

@@ -31,6 +31,28 @@ describe("SKR03 — get()", () => {
     );
     expect(SKR03.get("4964")?.skr04).toBe("6837");
     expect(SKR04.get("6837")?.skr03).toBe("4964");
+
+    expect(SKR03.get("3425")?.name).toBe(
+      "Innergemeinschaftlicher Erwerb 19 % Vorsteuer und 19 % Umsatzsteuer"
+    );
+    expect(SKR04.get("5425")?.name).toBe(
+      "Innergemeinschaftlicher Erwerb 19 % Vorsteuer und 19 % Umsatzsteuer"
+    );
+    expect(SKR03.get("8100")?.name).toBe(
+      "Steuerfreie Umsätze § 4 Nr. 8 ff. UStG"
+    );
+    expect(SKR04.get("4100")?.name).toBe(
+      "Steuerfreie Umsätze § 4 Nr. 8 ff. UStG"
+    );
+  });
+
+  it("does not expose reserved DATEV account numbers as named accounts", () => {
+    for (const konto of ["1300", "1775", "2000", "2010", "3500", "4905", "8600", "8735"]) {
+      expect(SKR03.exists(konto)).toBe(false);
+    }
+    for (const konto of ["4735", "4900", "5500"]) {
+      expect(SKR04.exists(konto)).toBe(false);
+    }
   });
 });
 
