@@ -4,7 +4,7 @@
  * a non-existent account number.
  */
 import { describe, it, expect } from "vitest";
-import { SKR03 } from "../src/index.js";
+import { SKR03, SKR04 } from "../src/index.js";
 import mccData from "../src/data/mcc_skr_mapping.json";
 import skr04Data from "../src/data/skr04.json";
 
@@ -183,6 +183,16 @@ describe("SKR03 — structural integrity", () => {
 });
 
 describe("SKR04 — structural integrity", () => {
+  it("keeps source-verified SKR03 cross-references symmetric", () => {
+    const linked = SKR04.search("").filter((konto) => konto.skr03 != null);
+
+    expect(linked.length).toBeGreaterThanOrEqual(100);
+    for (const skr04 of linked) {
+      const skr03 = SKR03.get(skr04.skr03!);
+      expect(skr03?.skr04).toBe(skr04.konto);
+    }
+  });
+
   it("all account numbers are 4-digit strings", () => {
     const invalid: string[] = [];
     for (const konto of skr04Data.konten) {

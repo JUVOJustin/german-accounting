@@ -85,7 +85,7 @@
       "gruppe": "Immaterielle Vermögensgegenstände und Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0100"
     },
     {
       "konto": "0015",
@@ -95,7 +95,17 @@
       "gruppe": "Immaterielle Vermögensgegenstände und Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0110"
+    },
+    {
+      "konto": "0020",
+      "name": "Gewerbliche Schutzrechte",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "0120"
     },
     {
       "konto": "0027",
@@ -118,6 +128,16 @@
       "skr04": null
     },
     {
+      "konto": "0035",
+      "name": "Geschäfts- oder Firmenwert",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "0150"
+    },
+    {
       "konto": "0050",
       "name": "Grundstücke, grundstücksgleiche",
       "klasse": 0,
@@ -128,6 +148,16 @@
       "skr04": null
     },
     {
+      "konto": "0060",
+      "name": "Grundstücksgleiche Rechte ohne",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "0210"
+    },
+    {
       "konto": "0070",
       "name": "Grundstücksgleiche Rechte",
       "klasse": 0,
@@ -135,7 +165,7 @@
       "gruppe": "Immaterielle Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0220"
     },
     {
       "konto": "0085",
@@ -166,6 +196,16 @@
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
+    },
+    {
+      "konto": "0111",
+      "name": "Außenanlagen für Geschäfts-,",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "0280"
     },
     {
       "konto": "0115",
@@ -215,7 +255,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0400"
     },
     {
       "konto": "0210",
@@ -265,7 +305,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0510"
     },
     {
       "konto": "0320",
@@ -275,7 +315,7 @@
       "gruppe": "Sachanlagen - Fahrzeuge",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0520"
     },
     {
       "konto": "0350",
@@ -285,7 +325,7 @@
       "gruppe": "Sachanlagen - Fahrzeuge",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0540"
     },
     {
       "konto": "0400",
@@ -295,7 +335,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0630"
     },
     {
       "konto": "0410",
@@ -315,7 +355,17 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0650"
+    },
+    {
+      "konto": "0430",
+      "name": "Ladeneinrichtung",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "0640"
     },
     {
       "konto": "0440",
@@ -325,7 +375,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0620"
     },
     {
       "konto": "0450",
@@ -338,6 +388,16 @@
       "skr04": null
     },
     {
+      "konto": "0460",
+      "name": "Gerüst- und Schalungsmaterial",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "0660"
+    },
+    {
       "konto": "0480",
       "name": "Geringwertige Wirtschaftsgüter",
       "klasse": 0,
@@ -345,7 +405,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0670"
     },
     {
       "konto": "0485",
@@ -355,7 +415,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0675"
     },
     {
       "konto": "0490",
@@ -365,7 +425,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0690"
     },
     {
       "konto": "0500",
@@ -376,6 +436,36 @@
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
+    },
+    {
+      "konto": "0505",
+      "name": "Ausleihungen an verbundene",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "0810"
+    },
+    {
+      "konto": "0513",
+      "name": "Typisch stille Beteiligungen",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "0830"
+    },
+    {
+      "konto": "0516",
+      "name": "Atypisch stille Beteiligungen",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "0840"
     },
     {
       "konto": "0520",
@@ -535,7 +625,7 @@
       "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "2900"
     },
     {
       "konto": "0810",
@@ -575,7 +665,27 @@
       "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "2920"
+    },
+    {
+      "konto": "0851",
+      "name": "Satzungsmäßige Rücklagen17)",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "2950"
+    },
+    {
+      "konto": "0855",
+      "name": "Andere Gewinnrücklagen17)",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "2960"
     },
     {
       "konto": "0860",
@@ -585,7 +695,17 @@
       "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "2970"
+    },
+    {
+      "konto": "0870",
+      "name": "Festkapital",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "2000"
     },
     {
       "konto": "0880",
@@ -648,6 +768,16 @@
       "skr04": null
     },
     {
+      "konto": "0970",
+      "name": "Sonstige Rückstellungen",
+      "klasse": 0,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "3070"
+    },
+    {
       "konto": "1000",
       "name": "Kasse",
       "klasse": 1,
@@ -655,7 +785,7 @@
       "gruppe": "Finanzkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1600"
     },
     {
       "konto": "1010",
@@ -665,7 +795,7 @@
       "gruppe": "Finanzkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1610"
     },
     {
       "konto": "1020",
@@ -675,7 +805,7 @@
       "gruppe": "Finanzkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1620"
     },
     {
       "konto": "1100",
@@ -685,7 +815,7 @@
       "gruppe": "Finanzkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1700"
     },
     {
       "konto": "1200",
@@ -695,7 +825,7 @@
       "gruppe": "Finanzkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1800"
     },
     {
       "konto": "1210",
@@ -705,7 +835,7 @@
       "gruppe": "Finanzkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1810"
     },
     {
       "konto": "1300",
@@ -735,7 +865,17 @@
       "gruppe": "Finanzkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1460"
+    },
+    {
+      "konto": "1390",
+      "name": "Verrechnungskonto Ist-Versteue-",
+      "klasse": 1,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "1490"
     },
     {
       "konto": "1400",
@@ -775,7 +915,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1240"
     },
     {
       "konto": "1500",
@@ -785,7 +925,27 @@
       "gruppe": "Sonstige Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1300"
+    },
+    {
+      "konto": "1503",
+      "name": "Forderungen gegen Vorstandsmit-",
+      "klasse": 1,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "1310"
+    },
+    {
+      "konto": "1505",
+      "name": "Forderungen gegen Aufsichtsrats-",
+      "klasse": 1,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "1320"
     },
     {
       "konto": "1510",
@@ -828,6 +988,16 @@
       "skr04": null
     },
     {
+      "konto": "1542",
+      "name": "Steuererstattungsansprüche",
+      "klasse": 1,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "1440"
+    },
+    {
       "konto": "1545",
       "name": "Forderungen aus UmsatzsteuerVorauszahlungen Sonstige Vermögensgegenstände oder Sonstige Verbindlichkeiten",
       "klasse": 1,
@@ -845,7 +1015,17 @@
       "gruppe": "Vorsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1434"
+    },
+    {
+      "konto": "1549",
+      "name": "Körperschaftsteuerrückforderung",
+      "klasse": 1,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "1450"
     },
     {
       "konto": "1560",
@@ -865,7 +1045,7 @@
       "gruppe": "Vorsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1400"
     },
     {
       "konto": "1571",
@@ -875,7 +1055,7 @@
       "gruppe": "Vorsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1401"
     },
     {
       "konto": "1576",
@@ -885,7 +1065,7 @@
       "gruppe": "Vorsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "1406"
     },
     {
       "konto": "1577",
@@ -928,6 +1108,16 @@
       "skr04": null
     },
     {
+      "konto": "1594",
+      "name": "Forderungen gegen verbundene",
+      "klasse": 1,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "1260"
+    },
+    {
       "konto": "1600",
       "name": "Verbindlichkeiten aus Lieferungen und Leistungen",
       "klasse": 1,
@@ -935,7 +1125,7 @@
       "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "3300"
     },
     {
       "konto": "1610",
@@ -955,7 +1145,7 @@
       "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "3500"
     },
     {
       "konto": "1710",
@@ -1006,6 +1196,16 @@
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
+    },
+    {
+      "konto": "1742",
+      "name": "Verbindlichkeiten im Rahmen der",
+      "klasse": 1,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "3740"
     },
     {
       "konto": "1750",
@@ -1065,7 +1265,7 @@
       "gruppe": "Umsatzsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "3800"
     },
     {
       "konto": "1771",
@@ -1075,7 +1275,7 @@
       "gruppe": "Umsatzsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "3801"
     },
     {
       "konto": "1775",
@@ -1095,7 +1295,7 @@
       "gruppe": "Umsatzsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "3806"
     },
     {
       "konto": "1780",
@@ -1155,7 +1355,7 @@
       "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "2180"
     },
     {
       "konto": "1900",
@@ -1268,6 +1468,16 @@
       "skr04": null
     },
     {
+      "konto": "2140",
+      "name": "Zinsähnliche Aufwendungen",
+      "klasse": 2,
+      "typ": "aufwand",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "7330"
+    },
+    {
       "konto": "2150",
       "name": "Aufwendungen aus der Währungsumrechnung",
       "klasse": 2,
@@ -1276,6 +1486,16 @@
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
+    },
+    {
+      "konto": "2200",
+      "name": "Körperschaftsteuer",
+      "klasse": 2,
+      "typ": "aufwand",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "7600"
     },
     {
       "konto": "2300",
@@ -1296,6 +1516,16 @@
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
+    },
+    {
+      "konto": "2520",
+      "name": "Periodenfremde Erträge",
+      "klasse": 2,
+      "typ": "aufwand",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "4960"
     },
     {
       "konto": "2600",
@@ -1328,6 +1558,26 @@
       "skr04": null
     },
     {
+      "konto": "2742",
+      "name": "Versicherungsentschädigungen",
+      "klasse": 2,
+      "typ": "aufwand",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "4970"
+    },
+    {
+      "konto": "2744",
+      "name": "Investitionszulagen (steuerfrei)",
+      "klasse": 2,
+      "typ": "aufwand",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "4980"
+    },
+    {
       "konto": "3000",
       "name": "Einkauf Roh-, Hilfs- und Betriebsstoffe",
       "klasse": 3,
@@ -1351,7 +1601,7 @@
         9,
         8
       ],
-      "skr04": null
+      "skr04": "5900"
     },
     {
       "konto": "3120",
@@ -1388,7 +1638,7 @@
         9,
         8
       ],
-      "skr04": null
+      "skr04": "5200"
     },
     {
       "konto": "3300",
@@ -1459,7 +1709,7 @@
         9,
         8
       ],
-      "skr04": null
+      "skr04": "5700"
     },
     {
       "konto": "3800",
@@ -1472,7 +1722,17 @@
         9,
         8
       ],
-      "skr04": null
+      "skr04": "5800"
+    },
+    {
+      "konto": "3830",
+      "name": "Leergut",
+      "klasse": 3,
+      "typ": "aufwand",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "5820"
     },
     {
       "konto": "3960",
@@ -1492,7 +1752,7 @@
       "gruppe": "Personalaufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6000"
     },
     {
       "konto": "4110",
@@ -1502,7 +1762,7 @@
       "gruppe": "Personalaufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6010"
     },
     {
       "konto": "4120",
@@ -1512,7 +1772,17 @@
       "gruppe": "Personalaufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6020"
+    },
+    {
+      "konto": "4124",
+      "name": "Geschäftsführergehälter der",
+      "klasse": 4,
+      "typ": "aufwand",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "6024"
     },
     {
       "konto": "4125",
@@ -1522,7 +1792,7 @@
       "gruppe": "Personalaufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6050"
     },
     {
       "konto": "4130",
@@ -1572,7 +1842,17 @@
       "gruppe": "Personalaufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6070"
+    },
+    {
+      "konto": "4160",
+      "name": "Versorgungskassen",
+      "klasse": 4,
+      "typ": "aufwand",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "6150"
     },
     {
       "konto": "4170",
@@ -1614,7 +1894,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6305"
     },
     {
       "konto": "4210",
@@ -1638,7 +1918,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6315"
     },
     {
       "konto": "4230",
@@ -1662,7 +1942,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6325"
     },
     {
       "konto": "4250",
@@ -1674,7 +1954,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6330"
     },
     {
       "konto": "4260",
@@ -1698,7 +1978,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6345"
     },
     {
       "konto": "4320",
@@ -1708,7 +1988,7 @@
       "gruppe": "Steuern und Versicherungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "7610"
     },
     {
       "konto": "4360",
@@ -1718,7 +1998,7 @@
       "gruppe": "Steuern und Versicherungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6400"
     },
     {
       "konto": "4380",
@@ -1728,7 +2008,7 @@
       "gruppe": "Steuern und Versicherungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6420"
     },
     {
       "konto": "4390",
@@ -1738,7 +2018,7 @@
       "gruppe": "Steuern und Versicherungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6430"
     },
     {
       "konto": "4500",
@@ -1750,7 +2030,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6500"
     },
     {
       "konto": "4510",
@@ -1770,7 +2050,7 @@
       "gruppe": "Fahrzeugkosten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6520"
     },
     {
       "konto": "4530",
@@ -1794,7 +2074,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6540"
     },
     {
       "konto": "4550",
@@ -1806,7 +2086,17 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6550"
+    },
+    {
+      "konto": "4560",
+      "name": "Mautgebühren",
+      "klasse": 4,
+      "typ": "aufwand",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "6580"
     },
     {
       "konto": "4570",
@@ -1830,7 +2120,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6570"
     },
     {
       "konto": "4595",
@@ -1852,7 +2142,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6600"
     },
     {
       "konto": "4630",
@@ -1864,7 +2154,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null,
+      "skr04": "6610",
       "notes": "Abziehbar bis 50€ pro Empfänger/Jahr (seit 2024)"
     },
     {
@@ -1890,7 +2180,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6630"
     },
     {
       "konto": "4650",
@@ -1970,7 +2260,7 @@
       "gruppe": "Reisekosten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6670"
     },
     {
       "konto": "4673",
@@ -2005,7 +2295,7 @@
         9,
         8
       ],
-      "skr04": null
+      "skr04": "6680"
     },
     {
       "konto": "4700",
@@ -2017,7 +2307,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6700"
     },
     {
       "konto": "4710",
@@ -2041,7 +2331,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6740"
     },
     {
       "konto": "4750",
@@ -2065,7 +2355,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6780"
     },
     {
       "konto": "4800",
@@ -2078,6 +2368,16 @@
         9
       ],
       "skr04": null
+    },
+    {
+      "konto": "4801",
+      "name": "Reparaturen und Instandhaltung",
+      "klasse": 4,
+      "typ": "aufwand",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "6460"
     },
     {
       "konto": "4805",
@@ -2111,7 +2411,7 @@
       "gruppe": "Abschreibungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6200"
     },
     {
       "konto": "4824",
@@ -2175,7 +2475,7 @@
       "gruppe": "Sonstige betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6800"
     },
     {
       "konto": "4920",
@@ -2187,7 +2487,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6805"
     },
     {
       "konto": "4925",
@@ -2199,7 +2499,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6810"
     },
     {
       "konto": "4930",
@@ -2211,7 +2511,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6815"
     },
     {
       "konto": "4940",
@@ -2223,7 +2523,7 @@
       "steuerschluessel": [
         8
       ],
-      "skr04": null
+      "skr04": "6820"
     },
     {
       "konto": "4945",
@@ -2259,7 +2559,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6825"
     },
     {
       "konto": "4955",
@@ -2271,7 +2571,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6830"
     },
     {
       "konto": "4957",
@@ -2283,7 +2583,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6827"
     },
     {
       "konto": "4960",
@@ -2329,7 +2629,7 @@
       "gruppe": "Sonstige betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6855"
     },
     {
       "konto": "4980",
@@ -2353,7 +2653,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6845"
     },
     {
       "konto": "7000",
@@ -2443,7 +2743,7 @@
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "4130"
     },
     {
       "konto": "8135",
@@ -2463,7 +2763,7 @@
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "4150"
     },
     {
       "konto": "8190",
@@ -2488,7 +2788,7 @@
         1,
         2
       ],
-      "skr04": null
+      "skr04": "4200"
     },
     {
       "konto": "8300",
@@ -2548,7 +2848,7 @@
       "steuerschluessel": [
         1
       ],
-      "skr04": null
+      "skr04": "4337"
     },
     {
       "konto": "8340",
@@ -2620,7 +2920,17 @@
       "steuerschluessel": [
         1
       ],
-      "skr04": null
+      "skr04": "4510"
+    },
+    {
+      "konto": "8540",
+      "name": "Erlöse Leergut",
+      "klasse": 8,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "4520"
     },
     {
       "konto": "8591",
@@ -2646,6 +2956,16 @@
         2
       ],
       "skr04": null
+    },
+    {
+      "konto": "8603",
+      "name": "Sonstige betriebliche Erträge",
+      "klasse": 8,
+      "typ": "ertrag",
+      "gruppe": "DATEV SKR03 2026",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr04": "4830"
     },
     {
       "konto": "8610",
@@ -2855,7 +3175,7 @@
       "gruppe": "Vortrags- und statistische Konten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "9000"
     },
     {
       "konto": "9008",
@@ -2865,7 +3185,7 @@
       "gruppe": "Vortrags- und statistische Konten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "9008"
     },
     {
       "konto": "9009",
@@ -2875,7 +3195,7 @@
       "gruppe": "Vortrags- und statistische Konten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "9009"
     }
   ]
 }

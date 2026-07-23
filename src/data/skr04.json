@@ -101,7 +101,7 @@
       "gruppe": "Immaterielle Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0010"
     },
     {
       "konto": "0110",
@@ -111,7 +111,7 @@
       "gruppe": "Immaterielle Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0015"
     },
     {
       "konto": "0120",
@@ -121,7 +121,7 @@
       "gruppe": "Immaterielle Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0020"
     },
     {
       "konto": "0135",
@@ -141,7 +141,7 @@
       "gruppe": "Immaterielle Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0035"
     },
     {
       "konto": "0210",
@@ -151,7 +151,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0060"
     },
     {
       "konto": "0220",
@@ -161,7 +161,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0070"
     },
     {
       "konto": "0240",
@@ -191,7 +191,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0111"
     },
     {
       "konto": "0290",
@@ -211,7 +211,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0200"
     },
     {
       "konto": "0500",
@@ -231,7 +231,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0310"
     },
     {
       "konto": "0520",
@@ -241,7 +241,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0320"
     },
     {
       "konto": "0540",
@@ -251,7 +251,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0350"
     },
     {
       "konto": "0620",
@@ -261,7 +261,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0440"
     },
     {
       "konto": "0630",
@@ -271,7 +271,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0400"
     },
     {
       "konto": "0640",
@@ -281,7 +281,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0430"
     },
     {
       "konto": "0650",
@@ -291,7 +291,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0420"
     },
     {
       "konto": "0660",
@@ -301,7 +301,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0460"
     },
     {
       "konto": "0670",
@@ -311,7 +311,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0480"
     },
     {
       "konto": "0675",
@@ -321,7 +321,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0485"
     },
     {
       "konto": "0690",
@@ -331,7 +331,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0490"
     },
     {
       "konto": "0700",
@@ -391,7 +391,7 @@
       "gruppe": "Finanzanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0505"
     },
     {
       "konto": "0830",
@@ -401,7 +401,7 @@
       "gruppe": "Finanzanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0513"
     },
     {
       "konto": "0840",
@@ -411,7 +411,7 @@
       "gruppe": "Finanzanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0516"
     },
     {
       "konto": "1100",
@@ -471,7 +471,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1460"
     },
     {
       "konto": "1250",
@@ -491,7 +491,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1594"
     },
     {
       "konto": "1270",
@@ -511,7 +511,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1500"
     },
     {
       "konto": "1310",
@@ -521,7 +521,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1503"
     },
     {
       "konto": "1320",
@@ -531,7 +531,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1505"
     },
     {
       "konto": "1360",
@@ -551,7 +551,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1570"
     },
     {
       "konto": "1401",
@@ -561,7 +561,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1571"
     },
     {
       "konto": "1406",
@@ -571,7 +571,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1576"
     },
     {
       "konto": "1407",
@@ -601,7 +601,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1548"
     },
     {
       "konto": "1440",
@@ -611,7 +611,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1542"
     },
     {
       "konto": "1450",
@@ -621,7 +621,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1549"
     },
     {
       "konto": "1460",
@@ -631,7 +631,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1360"
     },
     {
       "konto": "1490",
@@ -641,7 +641,7 @@
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1390"
     },
     {
       "konto": "1600",
@@ -651,7 +651,7 @@
       "gruppe": "Liquide Mittel",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1000"
     },
     {
       "konto": "1610",
@@ -661,7 +661,7 @@
       "gruppe": "Liquide Mittel",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1010"
     },
     {
       "konto": "1620",
@@ -671,7 +671,7 @@
       "gruppe": "Liquide Mittel",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1020"
     },
     {
       "konto": "1700",
@@ -681,7 +681,7 @@
       "gruppe": "Liquide Mittel",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1100"
     },
     {
       "konto": "1800",
@@ -691,7 +691,7 @@
       "gruppe": "Sonstige Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1200"
     },
     {
       "konto": "1810",
@@ -701,7 +701,7 @@
       "gruppe": "Sonstige Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1210"
     },
     {
       "konto": "2000",
@@ -711,7 +711,7 @@
       "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0870"
     },
     {
       "konto": "2100",
@@ -741,7 +741,7 @@
       "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1890"
     },
     {
       "konto": "2200",
@@ -771,7 +771,7 @@
       "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0800"
     },
     {
       "konto": "2920",
@@ -781,7 +781,7 @@
       "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0840"
     },
     {
       "konto": "2950",
@@ -791,7 +791,7 @@
       "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0851"
     },
     {
       "konto": "2960",
@@ -801,7 +801,7 @@
       "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0855"
     },
     {
       "konto": "2970",
@@ -811,7 +811,7 @@
       "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0860"
     },
     {
       "konto": "2978",
@@ -831,7 +831,7 @@
       "gruppe": "Rückstellungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0970"
     },
     {
       "konto": "3090",
@@ -871,7 +871,7 @@
       "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1600"
     },
     {
       "konto": "3310",
@@ -901,7 +901,7 @@
       "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1700"
     },
     {
       "konto": "3520",
@@ -941,7 +941,7 @@
       "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1742"
     },
     {
       "konto": "3800",
@@ -951,7 +951,7 @@
       "gruppe": "Umsatzsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1770"
     },
     {
       "konto": "3801",
@@ -961,7 +961,7 @@
       "gruppe": "Umsatzsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1771"
     },
     {
       "konto": "3806",
@@ -971,7 +971,7 @@
       "gruppe": "Umsatzsteuer",
       "ust_relevant": true,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "1776"
     },
     {
       "konto": "3807",
@@ -1051,7 +1051,7 @@
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "8130"
     },
     {
       "konto": "4140",
@@ -1071,7 +1071,7 @@
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "8150"
     },
     {
       "konto": "4200",
@@ -1084,7 +1084,7 @@
         1,
         2
       ],
-      "skr03": null
+      "skr03": "8200"
     },
     {
       "konto": "4300",
@@ -1144,7 +1144,7 @@
       "steuerschluessel": [
         1
       ],
-      "skr03": null
+      "skr03": "8337"
     },
     {
       "konto": "4340",
@@ -1192,7 +1192,7 @@
       "steuerschluessel": [
         1
       ],
-      "skr03": null
+      "skr03": "8520"
     },
     {
       "konto": "4520",
@@ -1204,7 +1204,7 @@
       "steuerschluessel": [
         1
       ],
-      "skr03": null
+      "skr03": "8540"
     },
     {
       "konto": "4600",
@@ -1321,7 +1321,7 @@
       "steuerschluessel": [
         1
       ],
-      "skr03": null
+      "skr03": "8603"
     },
     {
       "konto": "4840",
@@ -1389,7 +1389,7 @@
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "2520"
     },
     {
       "konto": "4970",
@@ -1399,7 +1399,7 @@
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "2742"
     },
     {
       "konto": "4975",
@@ -1419,7 +1419,7 @@
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "2744"
     },
     {
       "konto": "5000",
@@ -1442,7 +1442,7 @@
         9,
         8
       ],
-      "skr03": null
+      "skr03": "3200"
     },
     {
       "konto": "5300",
@@ -1513,7 +1513,7 @@
         9,
         8
       ],
-      "skr03": null
+      "skr03": "3700"
     },
     {
       "konto": "5800",
@@ -1526,7 +1526,7 @@
         9,
         8
       ],
-      "skr03": null
+      "skr03": "3800"
     },
     {
       "konto": "5820",
@@ -1536,7 +1536,7 @@
       "gruppe": "Materialaufwand und Wareneinsatz",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "3830"
     },
     {
       "konto": "5880",
@@ -1559,7 +1559,7 @@
         9,
         8
       ],
-      "skr03": null
+      "skr03": "3100"
     },
     {
       "konto": "5920",
@@ -1603,7 +1603,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4100"
     },
     {
       "konto": "6010",
@@ -1613,7 +1613,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4110"
     },
     {
       "konto": "6020",
@@ -1623,7 +1623,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4120"
     },
     {
       "konto": "6024",
@@ -1633,7 +1633,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4124"
     },
     {
       "konto": "6050",
@@ -1643,7 +1643,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4125"
     },
     {
       "konto": "6060",
@@ -1663,7 +1663,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4150"
     },
     {
       "konto": "6110",
@@ -1713,7 +1713,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4160"
     },
     {
       "konto": "6200",
@@ -1723,7 +1723,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4822"
     },
     {
       "konto": "6220",
@@ -1777,7 +1777,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4200"
     },
     {
       "konto": "6310",
@@ -1801,7 +1801,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4220"
     },
     {
       "konto": "6325",
@@ -1813,7 +1813,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4240"
     },
     {
       "konto": "6330",
@@ -1825,7 +1825,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4250"
     },
     {
       "konto": "6335",
@@ -1861,7 +1861,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4280"
     },
     {
       "konto": "6400",
@@ -1871,7 +1871,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4360"
     },
     {
       "konto": "6420",
@@ -1881,7 +1881,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4380"
     },
     {
       "konto": "6430",
@@ -1891,7 +1891,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4390"
     },
     {
       "konto": "6460",
@@ -1903,7 +1903,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4801"
     },
     {
       "konto": "6475",
@@ -1937,7 +1937,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4500"
     },
     {
       "konto": "6520",
@@ -1947,7 +1947,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4520"
     },
     {
       "konto": "6530",
@@ -1969,7 +1969,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4540"
     },
     {
       "konto": "6550",
@@ -1981,7 +1981,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4550"
     },
     {
       "konto": "6570",
@@ -1993,7 +1993,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4580"
     },
     {
       "konto": "6580",
@@ -2005,7 +2005,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4560"
     },
     {
       "konto": "6595",
@@ -2027,7 +2027,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4600"
     },
     {
       "konto": "6610",
@@ -2039,7 +2039,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4630"
     },
     {
       "konto": "6620",
@@ -2077,7 +2077,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4640"
     },
     {
       "konto": "6640",
@@ -2157,7 +2157,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4670"
     },
     {
       "konto": "6673",
@@ -2192,7 +2192,7 @@
         9,
         8
       ],
-      "skr03": null
+      "skr03": "4676"
     },
     {
       "konto": "6700",
@@ -2204,7 +2204,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4700"
     },
     {
       "konto": "6740",
@@ -2216,7 +2216,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4730"
     },
     {
       "konto": "6780",
@@ -2228,7 +2228,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4780"
     },
     {
       "konto": "6800",
@@ -2238,7 +2238,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4910"
     },
     {
       "konto": "6805",
@@ -2250,7 +2250,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4920"
     },
     {
       "konto": "6810",
@@ -2262,7 +2262,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4925"
     },
     {
       "konto": "6815",
@@ -2274,7 +2274,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4930"
     },
     {
       "konto": "6820",
@@ -2286,7 +2286,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4940"
     },
     {
       "konto": "6825",
@@ -2298,7 +2298,7 @@
       "steuerschluessel": [
         8
       ],
-      "skr03": null
+      "skr03": "4950"
     },
     {
       "konto": "6827",
@@ -2310,7 +2310,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4957"
     },
     {
       "konto": "6830",
@@ -2322,7 +2322,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4955"
     },
     {
       "konto": "6835",
@@ -2370,7 +2370,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": null
+      "skr03": "4985"
     },
     {
       "konto": "6855",
@@ -2380,7 +2380,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4970"
     },
     {
       "konto": "6930",
@@ -2440,7 +2440,7 @@
       "gruppe": "Weitere Erträge und Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "2140"
     },
     {
       "konto": "7600",
@@ -2450,7 +2450,7 @@
       "gruppe": "Weitere Erträge und Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "2200"
     },
     {
       "konto": "7610",
@@ -2460,7 +2460,7 @@
       "gruppe": "Weitere Erträge und Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "4320"
     },
     {
       "konto": "7680",
@@ -2480,7 +2480,7 @@
       "gruppe": "Vortrags- und statistische Konten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "9000"
     },
     {
       "konto": "9008",
@@ -2490,7 +2490,7 @@
       "gruppe": "Vortrags- und statistische Konten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "9008"
     },
     {
       "konto": "9009",
@@ -2500,7 +2500,7 @@
       "gruppe": "Vortrags- und statistische Konten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "9009"
     }
   ]
 }
