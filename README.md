@@ -160,6 +160,12 @@ JSON Schemas are in [`schemas/`](schemas/) and validated by CI on every push.
 }
 ```
 
+### MCC source and currency
+
+The MCC data is a curated set of accounting suggestions, not a complete reproduction of the MCC catalogue. Code definitions are checked against [ISO 18245:2023](https://www.iso.org/standard/79450.html) and the public [Mastercard Quick Reference Booklet — Merchant Edition (25 February 2025)](https://www.mastercard.us/content/dam/public/mastercardcom/na/global-site/documents/mastercard-quick-reference-booklet-merchant.pdf). The exact source URLs and the last verification date are also recorded in [`src/data/mcc_skr_mapping.json`](src/data/mcc_skr_mapping.json).
+
+Card networks can introduce or regionally assign MCCs after the recorded review date. Treat an unknown MCC as unmapped and verify it with the applicable network documentation before adding an accounting suggestion.
+
 ---
 
 ## Contributing

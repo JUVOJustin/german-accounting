@@ -45,16 +45,16 @@ describe("suggestAccount() — MCC range expansion", () => {
     expect(middle?.category).toBe(last?.category);
   });
 
-  it("resolves an MCC within the hotel range (3351-3500)", () => {
+  it("resolves an MCC within the car-rental range (3351-3500)", () => {
     const suggestion = suggestAccount("3400");
     expect(suggestion).toBeDefined();
-    expect(suggestion?.mcc_name).toContain("Hotel");
+    expect(suggestion?.mcc_name).toContain("Car Rental");
   });
 
-  it("resolves an MCC within the car rental range (3501-3999)", () => {
+  it("resolves an MCC within the lodging range (3501-3999)", () => {
     const suggestion = suggestAccount("3750");
     expect(suggestion).toBeDefined();
-    expect(suggestion?.mcc_name).toContain("Car Rental");
+    expect(suggestion?.mcc_name).toContain("Lodging");
   });
 
   it("boundary: first code in airline range", () => {
@@ -65,12 +65,13 @@ describe("suggestAccount() — MCC range expansion", () => {
     expect(suggestAccount("3350")).toBeDefined();
   });
 
-  it("boundary: 3351 is hotel range, not airline", () => {
+  it("boundary: 3351 is car-rental range, not airline", () => {
     const airline = suggestAccount("3350");
-    const hotel = suggestAccount("3351");
+    const carRental = suggestAccount("3351");
     expect(airline).toBeDefined();
-    expect(hotel).toBeDefined();
-    expect(airline?.category).not.toBe(hotel?.category);
+    expect(carRental).toBeDefined();
+    expect(airline?.mcc_name).toContain("Airlines");
+    expect(carRental?.mcc_name).toContain("Car Rental");
   });
 });
 

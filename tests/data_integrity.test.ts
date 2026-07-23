@@ -88,6 +88,29 @@ describe("MCC mapping — referential integrity", () => {
     expect(invalid).toHaveLength(0);
   });
 
+  it("records public MCC sources and the date they were checked", () => {
+    expect(mccData.meta.source_checked).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    expect(mccData.meta.sources).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          title: expect.stringContaining("ISO 18245"),
+          url: expect.stringMatching(/^https:\/\//),
+        }),
+        expect.objectContaining({
+          title: expect.stringContaining("Mastercard"),
+          url: expect.stringMatching(/^https:\/\//),
+        }),
+      ])
+    );
+  });
+
+  it("uses the network-assigned car-rental and lodging MCC ranges", () => {
+    const byMcc = new Map(mappings.map((mapping) => [mapping.mcc, mapping]));
+
+    expect(byMcc.get("3351-3500")?.mcc_name).toContain("Car Rental");
+    expect(byMcc.get("3501-3999")?.mcc_name).toContain("Lodging");
+  });
+
   it("confidence values are only high/medium/low", () => {
     const valid = new Set(["high", "medium", "low"]);
     const invalid: string[] = [];

@@ -1,7 +1,21 @@
 {
   "meta": {
-    "version": "2026.1",
-    "description": "Mapping from ISO 18245 MCC codes to SKR03/SKR04 accounts for German business accounting",
+    "version": "2026.2",
+    "description": "Curated mapping from ISO 18245 MCC codes to SKR03/SKR04 account suggestions for German business accounting; this is not a complete MCC catalogue.",
+    "sources": [
+      {
+        "title": "ISO 18245:2023 — Retail financial services — Merchant category codes",
+        "url": "https://www.iso.org/standard/79450.html",
+        "scope": "MCC standard reference"
+      },
+      {
+        "title": "Mastercard Quick Reference Booklet — Merchant Edition",
+        "url": "https://www.mastercard.us/content/dam/public/mastercardcom/na/global-site/documents/mastercard-quick-reference-booklet-merchant.pdf",
+        "published": "2025-02-25",
+        "scope": "Public MCC names and network-assigned ranges"
+      }
+    ],
+    "source_checked": "2026-07-24",
     "confidence_levels": {
       "high": "MCC determines account in >90% of cases for typical SME",
       "medium": "MCC suggests most likely account but alternatives are common (30-50%)",
@@ -11,7 +25,7 @@
     "license": "MIT",
     "status": "draft — contributions and corrections welcome",
     "notes": "This mapping assumes a typical German SME (Einzelunternehmen, GmbH, UG). Industry-specific mappings may differ. Always confirm with Steuerberater for edge cases.",
-    "last_updated": "2026-04-03"
+    "last_updated": "2026-07-24"
   },
   "mappings": [
     {
@@ -215,25 +229,6 @@
     },
     {
       "mcc": "3351-3500",
-      "mcc_name": "Hotels/Motels",
-      "category": "Travel",
-      "skr03": {
-        "primary": "4676",
-        "confidence": "high"
-      },
-      "skr04_primary": "6680",
-      "alternatives": [
-        {
-          "konto": "4666",
-          "condition": "Employee travel, not owner"
-        }
-      ],
-      "needs_beleg": true,
-      "ust_abzug": true,
-      "notes": "Hotel-specific MCC range. Distinction between Unternehmer (4676) and Arbeitnehmer (4666) depends on who travels."
-    },
-    {
-      "mcc": "3501-3999",
       "mcc_name": "Car Rental Agencies",
       "category": "Transportation",
       "skr03": {
@@ -249,7 +244,26 @@
       ],
       "needs_beleg": true,
       "ust_abzug": true,
-      "notes": "Range covers all major car rental companies"
+      "notes": "Network-assigned car-rental MCC range; this is not the general automobile-rental MCC 7512."
+    },
+    {
+      "mcc": "3501-3999",
+      "mcc_name": "Lodging: Hotels, Motels, Resorts",
+      "category": "Travel",
+      "skr03": {
+        "primary": "4676",
+        "confidence": "high"
+      },
+      "skr04_primary": "6680",
+      "alternatives": [
+        {
+          "konto": "4666",
+          "condition": "Employee travel, not owner"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Network-assigned lodging range. Distinction between Unternehmer (4676) and Arbeitnehmer (4666) depends on who travels."
     },
     {
       "mcc": "4011",
