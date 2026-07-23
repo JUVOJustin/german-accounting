@@ -237,10 +237,10 @@
       "mcc_name": "Car Rental Agencies",
       "category": "Transportation",
       "skr03": {
-        "primary": "4570",
+        "primary": "4595",
         "confidence": "high"
       },
-      "skr04_primary": "6570",
+      "skr04_primary": "6595",
       "alternatives": [
         {
           "konto": "4673",
@@ -353,7 +353,7 @@
         "primary": "4730",
         "confidence": "high"
       },
-      "skr04_primary": "6730",
+      "skr04_primary": "6740",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -533,7 +533,7 @@
       "skr04_primary": "6815",
       "alternatives": [
         {
-          "konto": "4969",
+          "konto": "4964",
           "condition": "If SaaS subscription"
         }
       ],
@@ -688,7 +688,7 @@
       "skr04_primary": "0640",
       "alternatives": [
         {
-          "konto": "4969",
+          "konto": "4964",
           "condition": "If software only"
         },
         {
@@ -1540,13 +1540,13 @@
       "mcc_name": "Computer Software Stores",
       "category": "Technology",
       "skr03": {
-        "primary": "4969",
+        "primary": "4964",
         "confidence": "high"
       },
-      "skr04_primary": "6838",
+      "skr04_primary": "6837",
       "alternatives": [
         {
-          "konto": "0135",
+          "konto": "0027",
           "condition": "If perpetual license > 800€"
         }
       ],
@@ -1667,7 +1667,7 @@
       "skr04_primary": "6820",
       "alternatives": [
         {
-          "konto": "4969",
+          "konto": "4964",
           "condition": "If software/streaming subscription, not book/media"
         }
       ],
@@ -1694,10 +1694,10 @@
       "mcc_name": "Digital Goods: Applications (SaaS)",
       "category": "Technology",
       "skr03": {
-        "primary": "4969",
+        "primary": "4964",
         "confidence": "high"
       },
-      "skr04_primary": "6840",
+      "skr04_primary": "6837",
       "alternatives": [
         {
           "konto": "4925",
@@ -1717,10 +1717,10 @@
       "mcc_name": "Digital Goods: Large Digital Goods Merchant",
       "category": "Technology",
       "skr03": {
-        "primary": "4969",
+        "primary": "4964",
         "confidence": "low"
       },
-      "skr04_primary": "6840",
+      "skr04_primary": "6837",
       "alternatives": [
         {
           "konto": "4940",
@@ -1968,7 +1968,7 @@
       "skr04_primary": "6825",
       "alternatives": [
         {
-          "konto": "4969",
+          "konto": "4964",
           "condition": "If digital subscription/SaaS"
         }
       ],
@@ -2554,7 +2554,7 @@
       "skr04_primary": "6835",
       "alternatives": [
         {
-          "konto": "4969",
+          "konto": "4964",
           "condition": "If SaaS/software license"
         },
         {
@@ -2570,10 +2570,10 @@
       "mcc_name": "Information Retrieval Services",
       "category": "Technology",
       "skr03": {
-        "primary": "4969",
+        "primary": "4964",
         "confidence": "medium"
       },
-      "skr04_primary": "6838",
+      "skr04_primary": "6837",
       "alternatives": [
         {
           "konto": "4946",
@@ -2588,10 +2588,10 @@
       "mcc_name": "Computer Maintenance and Repair",
       "category": "Technology",
       "skr03": {
-        "primary": "4805",
+        "primary": "4806",
         "confidence": "high"
       },
-      "skr04_primary": "6475",
+      "skr04_primary": "6495",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2676,10 +2676,10 @@
       "mcc_name": "Automobile Rental Agency",
       "category": "Transportation",
       "skr03": {
-        "primary": "4570",
+        "primary": "4595",
         "confidence": "high"
       },
-      "skr04_primary": "6570",
+      "skr04_primary": "6595",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2689,10 +2689,10 @@
       "mcc_name": "Truck and Utility Trailer Rentals",
       "category": "Transportation",
       "skr03": {
-        "primary": "4570",
+        "primary": "4595",
         "confidence": "high"
       },
-      "skr04_primary": "6570",
+      "skr04_primary": "6595",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2702,10 +2702,10 @@
       "mcc_name": "Motor Home and Recreational Vehicle Rentals",
       "category": "Transportation",
       "skr03": {
-        "primary": "4570",
+        "primary": "4595",
         "confidence": "medium"
       },
-      "skr04_primary": "6570",
+      "skr04_primary": "6595",
       "alternatives": [
         {
           "konto": "1800",
@@ -2741,7 +2741,7 @@
         "primary": "4540",
         "confidence": "high"
       },
-      "skr04_primary": "6545",
+      "skr04_primary": "6540",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2767,7 +2767,7 @@
         "primary": "4540",
         "confidence": "high"
       },
-      "skr04_primary": "6545",
+      "skr04_primary": "6540",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2780,7 +2780,7 @@
         "primary": "4540",
         "confidence": "high"
       },
-      "skr04_primary": "6545",
+      "skr04_primary": "6540",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2806,7 +2806,7 @@
         "primary": "4540",
         "confidence": "high"
       },
-      "skr04_primary": "6545",
+      "skr04_primary": "6540",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2822,7 +2822,7 @@
       "skr04_primary": "6460",
       "alternatives": [
         {
-          "konto": "4805",
+          "konto": "4806",
           "condition": "If IT equipment repair"
         }
       ],

@@ -17,9 +17,20 @@ describe("SKR03 — get()", () => {
   });
 
   it("returns zero-padded accounts correctly", () => {
-    const konto = SKR03.get("0001");
+    const konto = SKR03.get("0010");
     expect(konto).toBeDefined();
     expect(konto?.klasse).toBe(0);
+  });
+
+  it("uses the 2026 DATEV account designation", () => {
+    expect(SKR03.get("4969")?.name).toBe(
+      "Aufwendungen für Abraum- und Abfallbeseitigung"
+    );
+    expect(SKR04.get("6837")?.name).toBe(
+      "Aufwendungen für die zeitlich befristete Überlassung von Rechten (Lizenzen, Konzessionen)"
+    );
+    expect(SKR03.get("4964")?.skr04).toBe("6837");
+    expect(SKR04.get("6837")?.skr03).toBe("4964");
   });
 });
 
