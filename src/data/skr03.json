@@ -194,7 +194,8 @@
       "name": "Garagen",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Immaterielle Vermögensgegenstände",
+      "gruppe": "Sachanlagen",
+      "untergruppe": "Bauten auf eigenen Grundstücken und grundstücksgleichen Rechten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -225,7 +226,8 @@
       "name": "Geschäfts-, Fabrik- und andere Bauten im Bau auf eigenen Grundstücken",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Immaterielle Vermögensgegenstände",
+      "gruppe": "Sachanlagen",
+      "untergruppe": "Bauten auf eigenen Grundstücken und grundstücksgleichen Rechten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0710"
@@ -734,6 +736,7 @@
       "klasse": 0,
       "typ": "passiv",
       "gruppe": "Eigenkapital",
+      "untergruppe": "Kapitalanteil der persönlich haftenden Gesellschafter",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -752,8 +755,9 @@
       "konto": "0920",
       "name": "Gesellschafter-Darlehen",
       "klasse": 0,
-      "typ": "aktiv",
-      "gruppe": "Privatkonten",
+      "typ": "passiv",
+      "gruppe": "Eigenkapital",
+      "untergruppe": "Kapitalanteil der Kommanditisten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -763,7 +767,7 @@
       "name": "Übrige andere Sonderposten",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Privatkonten",
+      "gruppe": "Sonderposten mit Rücklageanteil",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -773,7 +777,7 @@
       "name": "Rückstellungen für Pensionen und ähnliche Verpflichtungen",
       "klasse": 0,
       "typ": "passiv",
-      "gruppe": "Privatkonten",
+      "gruppe": "Rückstellungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -983,7 +987,7 @@
       "name": "Forderungen aus Gewerbesteuerüberzahlungen",
       "klasse": 1,
       "typ": "aktiv",
-      "gruppe": "Finanzkonten",
+      "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -2609,8 +2613,8 @@
       "konto": "7000",
       "name": "Unfertige Erzeugnisse, unfertige Leistungen (Bestand)",
       "klasse": 7,
-      "typ": "aufwand",
-      "gruppe": "Bestandsveränderungen",
+      "typ": "aktiv",
+      "gruppe": "Bestände",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -2620,7 +2624,7 @@
       "name": "Unfertige Leistungen (Bestand)",
       "klasse": 7,
       "typ": "aktiv",
-      "gruppe": "Aktivierte Eigenleistungen",
+      "gruppe": "Bestände",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null

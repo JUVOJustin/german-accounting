@@ -348,7 +348,7 @@
       "name": "Geleistete Anzahlungen und Anlagen im Bau",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Finanzanlagen",
+      "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": null
@@ -358,7 +358,7 @@
       "name": "Geschäfts-, Fabrik- und andere Bauten im Bau auf eigenen Grundstücken",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Finanzanlagen",
+      "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "0120"
@@ -368,7 +368,7 @@
       "name": "Geschäfts-, Fabrik- und andere Bauten im Bau auf fremden Grundstücken",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Finanzanlagen",
+      "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": null
@@ -378,7 +378,7 @@
       "name": "Anzahlungen auf Geschäfts-, Fabrik- und andere Bauten auf fremden Grundstücken",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Finanzanlagen",
+      "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": null
@@ -518,7 +518,7 @@
       "name": "Sonstige Vermögensgegenstände",
       "klasse": 1,
       "typ": "aktiv",
-      "gruppe": "Forderungen",
+      "gruppe": "Sonstige Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "1500"
@@ -638,7 +638,7 @@
       "name": "Geldtransit",
       "klasse": 1,
       "typ": "aktiv",
-      "gruppe": "Forderungen",
+      "gruppe": "Liquide Mittel",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "1360"
@@ -698,7 +698,7 @@
       "name": "Bank",
       "klasse": 1,
       "typ": "aktiv",
-      "gruppe": "Sonstige Vermögensgegenstände",
+      "gruppe": "Liquide Mittel",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "1200"
@@ -708,7 +708,7 @@
       "name": "Bank 1",
       "klasse": 1,
       "typ": "aktiv",
-      "gruppe": "Sonstige Vermögensgegenstände",
+      "gruppe": "Liquide Mittel",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "1210"
@@ -728,7 +728,7 @@
       "name": "Privatentnahmen allgemein",
       "klasse": 2,
       "typ": "aktiv",
-      "gruppe": "Eigenkapital",
+      "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "1800"
@@ -738,7 +738,7 @@
       "name": "Privatsteuern",
       "klasse": 2,
       "typ": "aktiv",
-      "gruppe": "Eigenkapital",
+      "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "1810"
@@ -748,7 +748,7 @@
       "name": "Privateinlagen",
       "klasse": 2,
       "typ": "passiv",
-      "gruppe": "Eigenkapital",
+      "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "1890"
@@ -758,7 +758,7 @@
       "name": "Sonderausgaben beschränkt abzugsfähig",
       "klasse": 2,
       "typ": "aktiv",
-      "gruppe": "Eigenkapital",
+      "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": null
@@ -768,7 +768,7 @@
       "name": "Grundstücksaufwand",
       "klasse": 2,
       "typ": "aktiv",
-      "gruppe": "Eigenkapital",
+      "gruppe": "Privatkonten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": null
@@ -778,7 +778,7 @@
       "name": "Gezeichnetes Kapital",
       "klasse": 2,
       "typ": "passiv",
-      "gruppe": "Privatkonten",
+      "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "0800"
@@ -788,7 +788,7 @@
       "name": "Kapitalrücklage",
       "klasse": 2,
       "typ": "passiv",
-      "gruppe": "Privatkonten",
+      "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "0840"
@@ -798,7 +798,7 @@
       "name": "Satzungsmäßige Rücklagen",
       "klasse": 2,
       "typ": "passiv",
-      "gruppe": "Privatkonten",
+      "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "0851"
@@ -808,7 +808,7 @@
       "name": "Andere Gewinnrücklagen",
       "klasse": 2,
       "typ": "passiv",
-      "gruppe": "Privatkonten",
+      "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "0855"
@@ -818,7 +818,7 @@
       "name": "Gewinnvortrag vor Verwendung",
       "klasse": 2,
       "typ": "passiv",
-      "gruppe": "Privatkonten",
+      "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "0860"
@@ -828,7 +828,7 @@
       "name": "Verlustvortrag vor Verwendung",
       "klasse": 2,
       "typ": "passiv",
-      "gruppe": "Privatkonten",
+      "gruppe": "Eigenkapital",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": null
@@ -1996,7 +1996,7 @@
       "name": "Fremdfahrzeugkosten",
       "klasse": 6,
       "typ": "aufwand",
-      "gruppe": "Fahrzeugkosten",
+      "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "4595"

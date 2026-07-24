@@ -38,6 +38,32 @@ function typMismatches(konten: Array<{ konto: string; name: string; typ: string 
   return invalid;
 }
 
+/**
+ * Balance-sheet group implied by the designation (catches metadata inherited
+ * from relabeled accounts). The Sachanlagen rule only applies to asset
+ * accounts — expense accounts like "Garagenmiete" also mention buildings.
+ */
+const GRUPPE_BY_NAME: Array<[RegExp, RegExp, string | null]> = [
+  [/Bauten|Garagen/u, /Sachanlagen/, "aktiv"],
+  [/^Rückstellungen/u, /Rückstellungen/, null],
+  [/^(?:Kasse|Nebenkasse|Bank\b|Geldtransit)/u, /Finanzkonten|Liquide Mittel/, null],
+  [/^(?:Privatentnahmen|Privateinlagen|Privatsteuern)/u, /Privatkonten/, null],
+  [/^(?:Gezeichnetes Kapital|Kapitalrücklage|Satzungsmäßige Rücklagen|Andere Gewinnrücklagen|Gewinnvortrag|Verlustvortrag)/u, /Eigenkapital/, null],
+];
+
+function gruppeMismatches(konten: Array<{ konto: string; name: string; gruppe: string; typ: string }>, label: string): string[] {
+  const invalid: string[] = [];
+  for (const konto of konten) {
+    for (const [namePattern, gruppePattern, typFilter] of GRUPPE_BY_NAME) {
+      if (typFilter !== null && konto.typ !== typFilter) continue;
+      if (namePattern.test(konto.name) && !gruppePattern.test(konto.gruppe)) {
+        invalid.push(`${label} ${konto.konto} "${konto.name}": gruppe "${konto.gruppe}"`);
+      }
+    }
+  }
+  return invalid;
+}
+
 describe("MCC mapping — referential integrity", () => {
   it("all primary SKR03 accounts exist in skr03.json", () => {
     const missing: string[] = [];
@@ -283,6 +309,10 @@ describe("SKR03 — structural integrity", () => {
   it("keeps typ consistent with the account designation", () => {
     expect(typMismatches(skr03Data.konten, "SKR03")).toHaveLength(0);
   });
+
+  it("keeps gruppe consistent with the account designation", () => {
+    expect(gruppeMismatches(skr03Data.konten, "SKR03")).toHaveLength(0);
+  });
 });
 
 describe("SKR04 — structural integrity", () => {
@@ -361,5 +391,9 @@ describe("SKR04 — structural integrity", () => {
 
   it("keeps typ consistent with the account designation", () => {
     expect(typMismatches(skr04Data.konten, "SKR04")).toHaveLength(0);
+  });
+
+  it("keeps gruppe consistent with the account designation", () => {
+    expect(gruppeMismatches(skr04Data.konten, "SKR04")).toHaveLength(0);
   });
 });
