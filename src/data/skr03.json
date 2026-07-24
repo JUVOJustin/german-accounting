@@ -350,7 +350,7 @@
       "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0635"
     },
     {
       "konto": "0420",
@@ -1892,7 +1892,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6320"
     },
     {
       "konto": "4240",
@@ -2485,7 +2485,7 @@
       "steuerschluessel": [
         9
       ],
-      "skr04": null
+      "skr04": "6821"
     },
     {
       "konto": "4946",

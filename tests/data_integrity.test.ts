@@ -84,6 +84,19 @@ describe("MCC mapping — referential integrity", () => {
     expect(missing).toHaveLength(0);
   });
 
+  it("skr04_primary follows the SKR03 primary's cross-reference when one exists", () => {
+    const invalid: string[] = [];
+    for (const mapping of mappings) {
+      const linked = SKR03.get(mapping.skr03.primary)?.skr04;
+      if (linked != null && linked !== mapping.skr04_primary) {
+        invalid.push(
+          `MCC ${mapping.mcc}: skr04_primary "${mapping.skr04_primary}" but SKR03 ${mapping.skr03.primary} links to "${linked}"`
+        );
+      }
+    }
+    expect(invalid).toHaveLength(0);
+  });
+
   it("no duplicate MCC codes", () => {
     const seen = new Set<string>();
     const duplicates: string[] = [];
@@ -299,6 +312,8 @@ describe("SKR04 — structural integrity", () => {
       expect(skr04?.skr03).toBe(skr03.konto);
       expect(skr04?.name).toBe(skr03.name);
       expect(skr04?.typ).toBe(skr03.typ);
+      expect(skr04?.ust_relevant).toBe(skr03.ust_relevant);
+      expect(skr04?.steuerschluessel).toEqual(skr03.steuerschluessel);
     }
     for (const skr04 of linkedSkr04) {
       expect(SKR03.get(skr04.skr03!)?.skr04).toBe(skr04.konto);

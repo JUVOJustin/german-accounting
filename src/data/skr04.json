@@ -274,6 +274,16 @@
       "skr03": "0400"
     },
     {
+      "konto": "0635",
+      "name": "Geschäftsausstattung",
+      "klasse": 0,
+      "typ": "aktiv",
+      "gruppe": "Sachanlagen",
+      "ust_relevant": false,
+      "steuerschluessel": [],
+      "skr03": "0410"
+    },
+    {
       "konto": "0640",
       "name": "Ladeneinrichtung",
       "klasse": 0,
@@ -619,7 +629,7 @@
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Forderungen",
-      "ust_relevant": true,
+      "ust_relevant": false,
       "steuerschluessel": [],
       "skr03": "1549"
     },
@@ -1196,10 +1206,8 @@
       "klasse": 4,
       "typ": "ertrag",
       "gruppe": "Erlöse",
-      "ust_relevant": true,
-      "steuerschluessel": [
-        1
-      ],
+      "ust_relevant": false,
+      "steuerschluessel": [],
       "skr03": "8540"
     },
     {
@@ -1303,10 +1311,8 @@
       "klasse": 4,
       "typ": "ertrag",
       "gruppe": "Erlöse",
-      "ust_relevant": true,
-      "steuerschluessel": [
-        1
-      ],
+      "ust_relevant": false,
+      "steuerschluessel": [],
       "skr03": "8603"
     },
     {
@@ -1768,6 +1774,18 @@
       "skr03": "4220"
     },
     {
+      "konto": "6320",
+      "name": "Heizung",
+      "klasse": 6,
+      "typ": "aufwand",
+      "gruppe": "Betriebliche Aufwendungen",
+      "ust_relevant": true,
+      "steuerschluessel": [
+        9
+      ],
+      "skr03": "4230"
+    },
+    {
       "konto": "6325",
       "name": "Gas, Strom, Wasser",
       "klasse": 6,
@@ -1887,8 +1905,10 @@
       "klasse": 6,
       "typ": "aufwand",
       "gruppe": "Betriebliche Aufwendungen",
-      "ust_relevant": false,
-      "steuerschluessel": [],
+      "ust_relevant": true,
+      "steuerschluessel": [
+        9
+      ],
       "skr03": "4806"
     },
     {
@@ -1931,8 +1951,10 @@
       "klasse": 6,
       "typ": "aufwand",
       "gruppe": "Betriebliche Aufwendungen",
-      "ust_relevant": false,
-      "steuerschluessel": [],
+      "ust_relevant": true,
+      "steuerschluessel": [
+        9
+      ],
       "skr03": "4540"
     },
     {
@@ -1965,10 +1987,8 @@
       "klasse": 6,
       "typ": "aufwand",
       "gruppe": "Betriebliche Aufwendungen",
-      "ust_relevant": true,
-      "steuerschluessel": [
-        9
-      ],
+      "ust_relevant": false,
+      "steuerschluessel": [],
       "skr03": "4560"
     },
     {
@@ -2086,7 +2106,8 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": true,
       "steuerschluessel": [
-        9
+        9,
+        8
       ],
       "skr03": "4666"
     },
@@ -2248,9 +2269,21 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": true,
       "steuerschluessel": [
-        9
+        8
       ],
       "skr03": "4940"
+    },
+    {
+      "konto": "6821",
+      "name": "Fortbildungskosten",
+      "klasse": 6,
+      "typ": "aufwand",
+      "gruppe": "Betriebliche Aufwendungen",
+      "ust_relevant": true,
+      "steuerschluessel": [
+        9
+      ],
+      "skr03": "4945"
     },
     {
       "konto": "6825",
@@ -2260,7 +2293,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": true,
       "steuerschluessel": [
-        8
+        9
       ],
       "skr03": "4950"
     },
