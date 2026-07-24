@@ -92,7 +92,7 @@
           "condition": "If subcontractor for client project"
         },
         {
-          "konto": "0027",
+          "konto": "0120",
           "condition": "If capital expenditure on building"
         }
       ],
@@ -1687,7 +1687,7 @@
       ],
       "needs_beleg": true,
       "ust_abzug": true,
-      "notes": "7% USt for e-books (BU 2), 19% for streaming. Distinguish Bücher (4940) from Software (4969)."
+      "notes": "7% USt for e-books (BU 2), 19% for streaming. Distinguish Bücher (4940) from Software (4964)."
     },
     {
       "mcc": "5816",
@@ -1701,7 +1701,7 @@
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": false,
-      "notes": "Almost always personal use. If used for business (game studio research), use 4969."
+      "notes": "Almost always personal use. If used for business (game studio research), use 4964."
     },
     {
       "mcc": "5817",
@@ -2830,10 +2830,10 @@
       "mcc_name": "Electronics Repair Shops",
       "category": "Services",
       "skr03": {
-        "primary": "4800",
+        "primary": "4805",
         "confidence": "high"
       },
-      "skr04_primary": "6460",
+      "skr04_primary": "6470",
       "alternatives": [
         {
           "konto": "4806",
@@ -2861,10 +2861,10 @@
       "mcc_name": "Electrical/Small Appliance Repair",
       "category": "Services",
       "skr03": {
-        "primary": "4800",
+        "primary": "4805",
         "confidence": "high"
       },
-      "skr04_primary": "6460",
+      "skr04_primary": "6470",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2887,10 +2887,10 @@
       "mcc_name": "Furniture Repair, Refinishing",
       "category": "Services",
       "skr03": {
-        "primary": "4800",
+        "primary": "4805",
         "confidence": "medium"
       },
-      "skr04_primary": "6460",
+      "skr04_primary": "6470",
       "alternatives": [
         {
           "konto": "1800",
@@ -2905,10 +2905,10 @@
       "mcc_name": "Miscellaneous Repair Shops",
       "category": "Services",
       "skr03": {
-        "primary": "4800",
+        "primary": "4805",
         "confidence": "medium"
       },
-      "skr04_primary": "6460",
+      "skr04_primary": "6470",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true

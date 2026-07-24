@@ -1888,6 +1888,18 @@
       "skr03": null
     },
     {
+      "konto": "6470",
+      "name": "Reparaturen und Instandhaltung von anderen Anlagen und Betriebs- und Geschäftsausstattung",
+      "klasse": 6,
+      "typ": "aufwand",
+      "gruppe": "Betriebliche Aufwendungen",
+      "ust_relevant": true,
+      "steuerschluessel": [
+        9
+      ],
+      "skr03": null
+    },
+    {
       "konto": "6475",
       "name": "Zuführung zu Aufwandsrückstellungen",
       "klasse": 6,
@@ -1997,8 +2009,10 @@
       "klasse": 6,
       "typ": "aufwand",
       "gruppe": "Betriebliche Aufwendungen",
-      "ust_relevant": false,
-      "steuerschluessel": [],
+      "ust_relevant": true,
+      "steuerschluessel": [
+        9
+      ],
       "skr03": "4595"
     },
     {
@@ -2023,7 +2037,8 @@
       "steuerschluessel": [
         9
       ],
-      "skr03": "4630"
+      "skr03": "4630",
+      "notes": "Abziehbar bis 50€ pro Empfänger/Jahr (seit 2024)"
     },
     {
       "konto": "6620",
@@ -2036,7 +2051,7 @@
         9
       ],
       "skr03": "4635",
-      "notes": "Abziehbar bis 50€ pro Empfänger/Jahr (seit 2024)"
+      "notes": "Über 50€ pro Empfänger/Jahr"
     },
     {
       "konto": "6625",
@@ -2049,7 +2064,7 @@
         9
       ],
       "skr03": null,
-      "notes": "Über 50€ pro Empfänger/Jahr"
+      "notes": "Nicht von der 50€-Grenze erfasst, da ausschließlich betrieblich nutzbar"
     },
     {
       "konto": "6630",

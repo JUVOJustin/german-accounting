@@ -2094,8 +2094,10 @@
       "klasse": 4,
       "typ": "aufwand",
       "gruppe": "Fahrzeugkosten",
-      "ust_relevant": false,
-      "steuerschluessel": [],
+      "ust_relevant": true,
+      "steuerschluessel": [
+        9
+      ],
       "skr04": "6595"
     },
     {

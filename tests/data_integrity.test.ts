@@ -344,6 +344,7 @@ describe("SKR04 — structural integrity", () => {
       expect(skr04?.typ).toBe(skr03.typ);
       expect(skr04?.ust_relevant).toBe(skr03.ust_relevant);
       expect(skr04?.steuerschluessel).toEqual(skr03.steuerschluessel);
+      expect(skr04?.notes ?? null).toBe(skr03.notes ?? null);
     }
     for (const skr04 of linkedSkr04) {
       expect(SKR03.get(skr04.skr03!)?.skr04).toBe(skr04.konto);
