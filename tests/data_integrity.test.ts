@@ -11,6 +11,33 @@ import skr04Data from "../src/data/skr04.json";
 
 const mappings = mccData.mappings;
 
+/**
+ * A designation that ends in a German function word is almost certainly a
+ * PDF line-wrap truncation (e.g. "Verbindlichkeiten gegenüber" instead of
+ * "Verbindlichkeiten gegenüber Kreditinstituten, vor Restlaufzeitdifferenzierung").
+ */
+const TRUNCATED_LABEL =
+  /\s(?:gegenüber|und|oder|für|aus|auf|vor|der|des|dem|den|im|in|mit|ohne|bis|zur|zum|von|an|bei|nach|über|unter|sowie|als|durch|andere|anderen|eines|einer)$/iu;
+
+/** Balance-sheet side / P&L type implied by the start of the designation. */
+const TYP_BY_NAME: Array<[RegExp, string]> = [
+  [/^(?:Erlöse\b|Erträge\b|Umsatzerlöse\b)/u, "ertrag"],
+  [/^(?:Anleihen\b|Verbindlichkeiten\b|Rückstellungen?\b|Erhaltene\b)/u, "passiv"],
+  [/^(?:Forderungen\b|Ausleihungen\b|Kasse\b|Bank\b)/u, "aktiv"],
+];
+
+function typMismatches(konten: Array<{ konto: string; name: string; typ: string }>, label: string): string[] {
+  const invalid: string[] = [];
+  for (const konto of konten) {
+    for (const [pattern, expected] of TYP_BY_NAME) {
+      if (pattern.test(konto.name) && konto.typ !== expected) {
+        invalid.push(`${label} ${konto.konto} "${konto.name}": typ "${konto.typ}", expected "${expected}"`);
+      }
+    }
+  }
+  return invalid;
+}
+
 describe("MCC mapping — referential integrity", () => {
   it("all primary SKR03 accounts exist in skr03.json", () => {
     const missing: string[] = [];
@@ -234,9 +261,14 @@ describe("SKR03 — structural integrity", () => {
     for (const konto of skr03Data.konten) {
       expect(konto.name.length).toBeGreaterThan(1);
       expect(konto.name).not.toMatch(/[,-]$/);
+      expect(konto.name).not.toMatch(TRUNCATED_LABEL);
       expect(konto.name).not.toMatch(/\p{L}\d+\)/u);
       expect(konto.name).not.toMatch(/Wasse r|Bürobedar f|Arbeitnehme r|Geschäftsoder/);
     }
+  });
+
+  it("keeps typ consistent with the account designation", () => {
+    expect(typMismatches(skr03Data.konten, "SKR03")).toHaveLength(0);
   });
 });
 
@@ -306,8 +338,13 @@ describe("SKR04 — structural integrity", () => {
     for (const konto of skr04Data.konten) {
       expect(konto.name.length).toBeGreaterThan(1);
       expect(konto.name).not.toMatch(/[,-]$/);
+      expect(konto.name).not.toMatch(TRUNCATED_LABEL);
       expect(konto.name).not.toMatch(/\p{L}\d+\)/u);
       expect(konto.name).not.toMatch(/Wasse r|Bürobedar f|Arbeitnehme r|Geschäftsoder/);
     }
+  });
+
+  it("keeps typ consistent with the account designation", () => {
+    expect(typMismatches(skr04Data.konten, "SKR04")).toHaveLength(0);
   });
 });

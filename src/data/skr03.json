@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "SKR03",
-    "version": "2026.2",
+    "version": "2026.3",
     "description": "Curated DATEV SKR 03 accounts, reconciled against the 2026 account chart.",
     "gliederung": "Prozessgliederungsprinzip",
     "source": "DATEV-Kontenrahmen SKR 03, gültig für 2026 (Art.-Nr. 11174).",
@@ -162,7 +162,7 @@
       "name": "Grundstücksgleiche Rechte (Erbbaurecht, Dauerwohnrecht, unbebaute Grundstücke)",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Immaterielle Vermögensgegenstände",
+      "gruppe": "Sachanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0220"
@@ -172,7 +172,8 @@
       "name": "Grundstückswerte eigener bebauter Grundstücke",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Immaterielle Vermögensgegenstände",
+      "gruppe": "Sachanlagen",
+      "untergruppe": "Bauten auf eigenen Grundstücken und grundstücksgleichen Rechten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -182,7 +183,8 @@
       "name": "Fabrikbauten",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Immaterielle Vermögensgegenstände",
+      "gruppe": "Sachanlagen",
+      "untergruppe": "Bauten auf eigenen Grundstücken und grundstücksgleichen Rechten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -212,27 +214,29 @@
       "name": "Andere Bauten",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Immaterielle Vermögensgegenstände",
+      "gruppe": "Sachanlagen",
+      "untergruppe": "Bauten auf eigenen Grundstücken und grundstücksgleichen Rechten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "0260"
     },
     {
       "konto": "0120",
-      "name": "Geschäfts-, Fabrik- und andere",
+      "name": "Geschäfts-, Fabrik- und andere Bauten im Bau auf eigenen Grundstücken",
       "klasse": 0,
       "typ": "aktiv",
       "gruppe": "Immaterielle Vermögensgegenstände",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "0710"
     },
     {
       "konto": "0150",
       "name": "Wohnbauten im Bau auf eigenen Grundstücken",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Immaterielle Vermögensgegenstände",
+      "gruppe": "Sachanlagen",
+      "untergruppe": "Bauten auf eigenen Grundstücken und grundstücksgleichen Rechten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -242,7 +246,8 @@
       "name": "Fabrikbauten",
       "klasse": 0,
       "typ": "aktiv",
-      "gruppe": "Immaterielle Vermögensgegenstände",
+      "gruppe": "Sachanlagen",
+      "untergruppe": "Bauten auf fremden Grundstücken",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -511,8 +516,8 @@
       "konto": "0600",
       "name": "Anleihen, nicht konvertibel",
       "klasse": 0,
-      "typ": "aktiv",
-      "gruppe": "Sonstige Vermögensgegenstände",
+      "typ": "passiv",
+      "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -521,8 +526,9 @@
       "konto": "0610",
       "name": "- Restlaufzeit größer 5 Jahre",
       "klasse": 0,
-      "typ": "aktiv",
-      "gruppe": "Sonstige Vermögensgegenstände",
+      "typ": "passiv",
+      "gruppe": "Verbindlichkeiten",
+      "untergruppe": "Anleihen, nicht konvertibel",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -531,8 +537,9 @@
       "konto": "0631",
       "name": "- Restlaufzeit bis 1 Jahr",
       "klasse": 0,
-      "typ": "aktiv",
-      "gruppe": "Sonstige Vermögensgegenstände",
+      "typ": "passiv",
+      "gruppe": "Verbindlichkeiten",
+      "untergruppe": "Verbindlichkeiten gegenüber Kreditinstituten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -541,18 +548,19 @@
       "konto": "0650",
       "name": "- Restlaufzeit größer 5 Jahre",
       "klasse": 0,
-      "typ": "aktiv",
-      "gruppe": "Sonstige Vermögensgegenstände",
+      "typ": "passiv",
+      "gruppe": "Verbindlichkeiten",
+      "untergruppe": "Verbindlichkeiten gegenüber Kreditinstituten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
     },
     {
       "konto": "0690",
-      "name": "Verbindlichkeiten gegenüber",
+      "name": "Verbindlichkeiten gegenüber Kreditinstituten, vor Restlaufzeitdifferenzierung",
       "klasse": 0,
-      "typ": "aktiv",
-      "gruppe": "Finanzanlagen",
+      "typ": "passiv",
+      "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -562,7 +570,7 @@
       "name": "Verbindlichkeiten gegenüber verbundenen Unternehmen",
       "klasse": 0,
       "typ": "passiv",
-      "gruppe": "Rückstellungen",
+      "gruppe": "Verbindlichkeiten",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": "3400"
@@ -572,7 +580,8 @@
       "name": "- Restlaufzeit größer 5 Jahre",
       "klasse": 0,
       "typ": "passiv",
-      "gruppe": "Rückstellungen",
+      "gruppe": "Verbindlichkeiten",
+      "untergruppe": "Verbindlichkeiten gegenüber verbundenen Unternehmen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -582,7 +591,8 @@
       "name": "- Restlaufzeit 1 bis 5 Jahre",
       "klasse": 0,
       "typ": "passiv",
-      "gruppe": "Rückstellungen",
+      "gruppe": "Verbindlichkeiten",
+      "untergruppe": "Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -593,6 +603,7 @@
       "klasse": 0,
       "typ": "passiv",
       "gruppe": "Verbindlichkeiten",
+      "untergruppe": "Verbindlichkeiten gegenüber Gesellschaftern",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -609,7 +620,7 @@
     },
     {
       "konto": "0790",
-      "name": "Sonstige Verbindlichkeiten, vor",
+      "name": "Sonstige Verbindlichkeiten, vor Restlaufzeitdifferenzierung (nur Bilanzierer)",
       "klasse": 0,
       "typ": "passiv",
       "gruppe": "Verbindlichkeiten",
@@ -879,7 +890,7 @@
     },
     {
       "konto": "1410",
-      "name": "Forderungen aus Lieferungen und Leistungen (ohne Kontokorrent)",
+      "name": "Forderungen aus Lieferungen und Leistungen ohne Kontokorrent",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Forderungen",
@@ -921,7 +932,7 @@
       "konto": "1503",
       "name": "Forderungen gegen Vorstandsmitglieder und Geschäftsführer - Restlaufzeit bis 1 Jahr",
       "klasse": 1,
-      "typ": "ertrag",
+      "typ": "aktiv",
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
@@ -931,7 +942,7 @@
       "konto": "1505",
       "name": "Forderungen gegen Aufsichtsrats- und Beiratsmitglieder - Restlaufzeit bis 1 Jahr",
       "klasse": 1,
-      "typ": "ertrag",
+      "typ": "aktiv",
       "gruppe": "Forderungen",
       "ust_relevant": false,
       "steuerschluessel": [],
@@ -1069,7 +1080,7 @@
     },
     {
       "konto": "1580",
-      "name": "Gegenkonto Vorsteuer",
+      "name": "Gegenkonto Vorsteuer § 4 Abs. 3 EStG",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Vorsteuer",
@@ -1119,7 +1130,7 @@
     },
     {
       "konto": "1610",
-      "name": "Verbindlichkeiten aus Lieferungen und Leistungen (ohne Kontokorrent)",
+      "name": "Verbindlichkeiten aus Lieferungen und Leistungen ohne Kontokorrent",
       "klasse": 1,
       "typ": "passiv",
       "gruppe": "Verbindlichkeiten",
@@ -1153,6 +1164,7 @@
       "klasse": 1,
       "typ": "passiv",
       "gruppe": "Verbindlichkeiten",
+      "untergruppe": "Erhaltene Anzahlungen",
       "ust_relevant": false,
       "steuerschluessel": [],
       "skr04": null
@@ -1469,13 +1481,13 @@
     },
     {
       "konto": "2400",
-      "name": "Forderungsverluste",
+      "name": "Forderungsverluste (übliche Höhe)",
       "klasse": 2,
       "typ": "aufwand",
       "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "6930"
     },
     {
       "konto": "2520",
@@ -1491,7 +1503,7 @@
       "konto": "2600",
       "name": "Erträge aus Beteiligungen",
       "klasse": 2,
-      "typ": "aufwand",
+      "typ": "ertrag",
       "gruppe": "Abgrenzungskonten",
       "ust_relevant": false,
       "steuerschluessel": [],
@@ -2695,13 +2707,13 @@
     },
     {
       "konto": "8150",
-      "name": "Sonstige steuerfreie Umsätze",
+      "name": "Sonstige steuerfreie Umsätze (z. B. § 4 Nr. 2 bis 7 UStG)",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr04": null
+      "skr04": "4150"
     },
     {
       "konto": "8190",
@@ -3011,7 +3023,7 @@
     },
     {
       "konto": "8920",
-      "name": "Verwendung von Gegenständen für Zwecke außerhalb des Unternehmens 19 % USt (Fahrzeug-Nutzung)",
+      "name": "Verwendung von Gegenständen für Zwecke außerhalb des Unternehmens 19 % USt",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",
@@ -3045,7 +3057,7 @@
     },
     {
       "konto": "8960",
-      "name": "Bestandsveränderungen unfertige Erzeugnisse",
+      "name": "Bestandsveränderungen - unfertige Erzeugnisse",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",
@@ -3055,7 +3067,7 @@
     },
     {
       "konto": "8970",
-      "name": "Bestandsveränderungen unfertige Leistungen",
+      "name": "Bestandsveränderungen - unfertige Leistungen",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",
@@ -3065,7 +3077,7 @@
     },
     {
       "konto": "8975",
-      "name": "Bestandsveränderungen in Ausführung befindliche Bauaufträge",
+      "name": "Bestandsveränderungen - in Ausführung befindliche Bauaufträge",
       "klasse": 8,
       "typ": "ertrag",
       "gruppe": "Sonstige betriebliche Erträge",

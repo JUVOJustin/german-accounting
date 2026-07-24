@@ -1,6 +1,6 @@
 {
   "name": "german-accounting",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Machine-readable SKR03/SKR04 chart of accounts with MCC-to-account mapping for German SME accounting",
   "keywords": [
     "german-accounting",
@@ -46,9 +46,11 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
+    "verify:datev": "node scripts/verify-datev.mjs",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "mupdf": "^1.28.0",
     "tsup": "^8.0.0",
     "typescript": "^5.4.0",
     "vitest": "^1.6.0"

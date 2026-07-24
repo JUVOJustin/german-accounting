@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "SKR04",
-    "version": "2026.2",
+    "version": "2026.3",
     "description": "Curated DATEV SKR 04 accounts, reconciled against the 2026 account chart.",
     "gliederung": "Abschlussgliederungsprinzip",
     "source": "DATEV-Kontenrahmen SKR 04, gültig für 2026 (Art.-Nr. 11175).",
@@ -351,7 +351,7 @@
       "gruppe": "Finanzanlagen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "0120"
     },
     {
       "konto": "0740",
@@ -455,7 +455,7 @@
     },
     {
       "konto": "1210",
-      "name": "Forderungen aus Lieferungen und Leistungen (ohne Kontokorrent)",
+      "name": "Forderungen aus Lieferungen und Leistungen ohne Kontokorrent",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Forderungen",
@@ -525,7 +525,7 @@
     },
     {
       "konto": "1320",
-      "name": "Forderungen gegen Aufsichtsrats- und Beiratsmitglieder",
+      "name": "Forderungen gegen Aufsichtsrats- und Beirats-Mitglieder",
       "klasse": 1,
       "typ": "aktiv",
       "gruppe": "Forderungen",
@@ -875,7 +875,7 @@
     },
     {
       "konto": "3310",
-      "name": "Verbindlichkeiten aus Lieferungen und Leistungen (ohne Kontokorrent)",
+      "name": "Verbindlichkeiten aus Lieferungen und Leistungen ohne Kontokorrent",
       "klasse": 3,
       "typ": "passiv",
       "gruppe": "Verbindlichkeiten",
@@ -1071,7 +1071,7 @@
       "gruppe": "Erlöse",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "8150"
     },
     {
       "konto": "4200",
@@ -2354,7 +2354,7 @@
       "gruppe": "Betriebliche Aufwendungen",
       "ust_relevant": false,
       "steuerschluessel": [],
-      "skr03": null
+      "skr03": "2400"
     },
     {
       "konto": "7100",

@@ -7,6 +7,10 @@ CLAUDE.md
 node_modules/
 dist/
 
+# DATEV chart PDFs — copyrighted, must never be committed
+# ("Nachdruck - auch auszugsweise - nicht gestattet")
+datev/
+
 # Internal planning docs
 german-accounting-spec.md
 TODOS.md
