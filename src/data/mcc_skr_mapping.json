@@ -1,7 +1,21 @@
 {
   "meta": {
-    "version": "2026.1",
-    "description": "Mapping from ISO 18245 MCC codes to SKR03/SKR04 accounts for German business accounting",
+    "version": "2026.3",
+    "description": "Curated mapping from ISO 18245 MCC codes to SKR03/SKR04 account suggestions for German business accounting; this is not a complete MCC catalogue.",
+    "sources": [
+      {
+        "title": "ISO 18245:2023 — Retail financial services — Merchant category codes",
+        "url": "https://www.iso.org/standard/79450.html",
+        "scope": "MCC standard reference"
+      },
+      {
+        "title": "Mastercard Quick Reference Booklet — Merchant Edition",
+        "url": "https://www.mastercard.us/content/dam/public/mastercardcom/na/global-site/documents/mastercard-quick-reference-booklet-merchant.pdf",
+        "published": "2025-02-25",
+        "scope": "Public MCC names and network-assigned ranges"
+      }
+    ],
+    "source_checked": "2026-07-24",
     "confidence_levels": {
       "high": "MCC determines account in >90% of cases for typical SME",
       "medium": "MCC suggests most likely account but alternatives are common (30-50%)",
@@ -11,7 +25,7 @@
     "license": "MIT",
     "status": "draft — contributions and corrections welcome",
     "notes": "This mapping assumes a typical German SME (Einzelunternehmen, GmbH, UG). Industry-specific mappings may differ. Always confirm with Steuerberater for edge cases.",
-    "last_updated": "2026-04-03"
+    "last_updated": "2026-07-24"
   },
   "mappings": [
     {
@@ -25,7 +39,7 @@
       "skr04_primary": "6300",
       "alternatives": [
         {
-          "konto": "4946",
+          "konto": "3100",
           "condition": "If veterinary service is for business animal (e.g. guard dog)"
         }
       ],
@@ -53,10 +67,10 @@
         "primary": "4260",
         "confidence": "medium"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [
         {
-          "konto": "4946",
+          "konto": "3100",
           "condition": "If contracted as Fremdleistung for client project"
         }
       ],
@@ -71,14 +85,14 @@
         "primary": "4260",
         "confidence": "medium"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [
         {
           "konto": "3100",
           "condition": "If subcontractor for client project"
         },
         {
-          "konto": "0027",
+          "konto": "0120",
           "condition": "If capital expenditure on building"
         }
       ],
@@ -93,7 +107,7 @@
         "primary": "4260",
         "confidence": "high"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -106,7 +120,7 @@
         "primary": "4260",
         "confidence": "high"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -119,7 +133,7 @@
         "primary": "4260",
         "confidence": "high"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -132,7 +146,7 @@
         "primary": "4260",
         "confidence": "high"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -145,7 +159,7 @@
         "primary": "4260",
         "confidence": "high"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -189,7 +203,7 @@
         "primary": "4250",
         "confidence": "high"
       },
-      "skr04_primary": "6335",
+      "skr04_primary": "6330",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -215,7 +229,26 @@
     },
     {
       "mcc": "3351-3500",
-      "mcc_name": "Hotels/Motels",
+      "mcc_name": "Car Rental Agencies",
+      "category": "Transportation",
+      "skr03": {
+        "primary": "4595",
+        "confidence": "high"
+      },
+      "skr04_primary": "6595",
+      "alternatives": [
+        {
+          "konto": "4673",
+          "condition": "If rented during business trip"
+        }
+      ],
+      "needs_beleg": true,
+      "ust_abzug": true,
+      "notes": "Network-assigned car-rental MCC range; this is not the general automobile-rental MCC 7512."
+    },
+    {
+      "mcc": "3501-3999",
+      "mcc_name": "Lodging: Hotels, Motels, Resorts",
       "category": "Travel",
       "skr03": {
         "primary": "4676",
@@ -230,26 +263,7 @@
       ],
       "needs_beleg": true,
       "ust_abzug": true,
-      "notes": "Hotel-specific MCC range. Distinction between Unternehmer (4676) and Arbeitnehmer (4666) depends on who travels."
-    },
-    {
-      "mcc": "3501-3999",
-      "mcc_name": "Car Rental Agencies",
-      "category": "Transportation",
-      "skr03": {
-        "primary": "4570",
-        "confidence": "high"
-      },
-      "skr04_primary": "6570",
-      "alternatives": [
-        {
-          "konto": "4673",
-          "condition": "If rented during business trip"
-        }
-      ],
-      "needs_beleg": true,
-      "ust_abzug": true,
-      "notes": "Range covers all major car rental companies"
+      "notes": "Network-assigned lodging range. Distinction between Unternehmer (4676) and Arbeitnehmer (4666) depends on who travels."
     },
     {
       "mcc": "4011",
@@ -353,7 +367,7 @@
         "primary": "4730",
         "confidence": "high"
       },
-      "skr04_primary": "6730",
+      "skr04_primary": "6740",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -530,10 +544,10 @@
         "primary": "4925",
         "confidence": "high"
       },
-      "skr04_primary": "6815",
+      "skr04_primary": "6810",
       "alternatives": [
         {
-          "konto": "4969",
+          "konto": "4964",
           "condition": "If SaaS subscription"
         }
       ],
@@ -592,7 +606,7 @@
         "primary": "4240",
         "confidence": "high"
       },
-      "skr04_primary": "6330",
+      "skr04_primary": "6325",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -623,7 +637,7 @@
         "primary": "0420",
         "confidence": "medium"
       },
-      "skr04_primary": "0640",
+      "skr04_primary": "0650",
       "alternatives": [
         {
           "konto": "4930",
@@ -663,7 +677,7 @@
         "primary": "4930",
         "confidence": "medium"
       },
-      "skr04_primary": "6820",
+      "skr04_primary": "6815",
       "alternatives": [
         {
           "konto": "0410",
@@ -685,10 +699,10 @@
         "primary": "0420",
         "confidence": "medium"
       },
-      "skr04_primary": "0640",
+      "skr04_primary": "0650",
       "alternatives": [
         {
-          "konto": "4969",
+          "konto": "4964",
           "condition": "If software only"
         },
         {
@@ -711,7 +725,7 @@
         "primary": "0400",
         "confidence": "medium"
       },
-      "skr04_primary": "0620",
+      "skr04_primary": "0630",
       "alternatives": [
         {
           "konto": "0480",
@@ -729,7 +743,7 @@
         "primary": "0400",
         "confidence": "medium"
       },
-      "skr04_primary": "0620",
+      "skr04_primary": "0630",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -757,7 +771,7 @@
       "mcc_name": "Hardware, Equipment and Supplies",
       "category": "Supplies",
       "skr03": {
-        "primary": "4980",
+        "primary": "4985",
         "confidence": "high"
       },
       "skr04_primary": "6845",
@@ -778,7 +792,7 @@
         "primary": "4630",
         "confidence": "low"
       },
-      "skr04_primary": "6620",
+      "skr04_primary": "6610",
       "alternatives": [
         {
           "konto": "4635",
@@ -800,7 +814,7 @@
         "primary": "4930",
         "confidence": "high"
       },
-      "skr04_primary": "6820",
+      "skr04_primary": "6815",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -813,7 +827,7 @@
         "primary": "4930",
         "confidence": "high"
       },
-      "skr04_primary": "6820",
+      "skr04_primary": "6815",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -877,7 +891,7 @@
         "primary": "4940",
         "confidence": "high"
       },
-      "skr04_primary": "6825",
+      "skr04_primary": "6820",
       "alternatives": [
         {
           "konto": "4945",
@@ -914,10 +928,10 @@
         "primary": "4260",
         "confidence": "medium"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [
         {
-          "konto": "4980",
+          "konto": "4985",
           "condition": "If tools/small equipment"
         },
         {
@@ -936,7 +950,7 @@
         "primary": "4260",
         "confidence": "medium"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [
         {
           "konto": "3400",
@@ -951,7 +965,7 @@
       "mcc_name": "Hardware Stores",
       "category": "Retail",
       "skr03": {
-        "primary": "4980",
+        "primary": "4985",
         "confidence": "medium"
       },
       "skr04_primary": "6845",
@@ -972,7 +986,7 @@
         "primary": "4260",
         "confidence": "medium"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -1007,7 +1021,7 @@
         "primary": "4630",
         "confidence": "low"
       },
-      "skr04_primary": "6620",
+      "skr04_primary": "6610",
       "alternatives": [
         {
           "konto": "1800",
@@ -1025,7 +1039,7 @@
         "primary": "4930",
         "confidence": "low"
       },
-      "skr04_primary": "6820",
+      "skr04_primary": "6815",
       "alternatives": [
         {
           "konto": "1800",
@@ -1062,7 +1076,7 @@
         "primary": "4930",
         "confidence": "low"
       },
-      "skr04_primary": "6820",
+      "skr04_primary": "6815",
       "alternatives": [
         {
           "konto": "1800",
@@ -1138,7 +1152,7 @@
         "primary": "4630",
         "confidence": "medium"
       },
-      "skr04_primary": "6620",
+      "skr04_primary": "6610",
       "alternatives": [
         {
           "konto": "4654",
@@ -1302,7 +1316,7 @@
         "primary": "0400",
         "confidence": "low"
       },
-      "skr04_primary": "0620",
+      "skr04_primary": "0630",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -1459,7 +1473,7 @@
         "primary": "0420",
         "confidence": "medium"
       },
-      "skr04_primary": "0640",
+      "skr04_primary": "0650",
       "alternatives": [
         {
           "konto": "0480",
@@ -1481,7 +1495,7 @@
         "primary": "0410",
         "confidence": "low"
       },
-      "skr04_primary": "0630",
+      "skr04_primary": "0635",
       "alternatives": [
         {
           "konto": "1800",
@@ -1499,7 +1513,7 @@
         "primary": "0420",
         "confidence": "medium"
       },
-      "skr04_primary": "0640",
+      "skr04_primary": "0650",
       "alternatives": [
         {
           "konto": "0480",
@@ -1540,13 +1554,13 @@
       "mcc_name": "Computer Software Stores",
       "category": "Technology",
       "skr03": {
-        "primary": "4969",
+        "primary": "4964",
         "confidence": "high"
       },
-      "skr04_primary": "6838",
+      "skr04_primary": "6837",
       "alternatives": [
         {
-          "konto": "0135",
+          "konto": "0027",
           "condition": "If perpetual license > 800€"
         }
       ],
@@ -1667,13 +1681,13 @@
       "skr04_primary": "6820",
       "alternatives": [
         {
-          "konto": "4969",
+          "konto": "4964",
           "condition": "If software/streaming subscription, not book/media"
         }
       ],
       "needs_beleg": true,
       "ust_abzug": true,
-      "notes": "7% USt for e-books (BU 2), 19% for streaming. Distinguish Bücher (4940) from Software (4969)."
+      "notes": "7% USt for e-books (BU 2), 19% for streaming. Distinguish Bücher (4940) from Software (4964)."
     },
     {
       "mcc": "5816",
@@ -1687,17 +1701,17 @@
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": false,
-      "notes": "Almost always personal use. If used for business (game studio research), use 4969."
+      "notes": "Almost always personal use. If used for business (game studio research), use 4964."
     },
     {
       "mcc": "5817",
       "mcc_name": "Digital Goods: Applications (SaaS)",
       "category": "Technology",
       "skr03": {
-        "primary": "4969",
+        "primary": "4964",
         "confidence": "high"
       },
-      "skr04_primary": "6840",
+      "skr04_primary": "6837",
       "alternatives": [
         {
           "konto": "4925",
@@ -1717,10 +1731,10 @@
       "mcc_name": "Digital Goods: Large Digital Goods Merchant",
       "category": "Technology",
       "skr03": {
-        "primary": "4969",
+        "primary": "4964",
         "confidence": "low"
       },
-      "skr04_primary": "6840",
+      "skr04_primary": "6837",
       "alternatives": [
         {
           "konto": "4940",
@@ -1746,7 +1760,7 @@
       "skr04_primary": "2100",
       "alternatives": [
         {
-          "konto": "4946",
+          "konto": "4980",
           "condition": "If first aid supplies for office"
         }
       ],
@@ -1762,7 +1776,7 @@
         "primary": "4630",
         "confidence": "medium"
       },
-      "skr04_primary": "6620",
+      "skr04_primary": "6610",
       "alternatives": [
         {
           "konto": "4650",
@@ -1815,7 +1829,7 @@
         "primary": "4940",
         "confidence": "high"
       },
-      "skr04_primary": "6825",
+      "skr04_primary": "6820",
       "alternatives": [
         {
           "konto": "4945",
@@ -1838,7 +1852,7 @@
         "primary": "4930",
         "confidence": "high"
       },
-      "skr04_primary": "6820",
+      "skr04_primary": "6815",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -1851,7 +1865,7 @@
         "primary": "4630",
         "confidence": "low"
       },
-      "skr04_primary": "6620",
+      "skr04_primary": "6610",
       "alternatives": [
         {
           "konto": "1800",
@@ -1882,7 +1896,7 @@
         "primary": "0410",
         "confidence": "medium"
       },
-      "skr04_primary": "0630",
+      "skr04_primary": "0635",
       "alternatives": [
         {
           "konto": "0480",
@@ -1904,7 +1918,7 @@
         "primary": "4630",
         "confidence": "medium"
       },
-      "skr04_primary": "6620",
+      "skr04_primary": "6610",
       "alternatives": [
         {
           "konto": "4635",
@@ -1965,10 +1979,10 @@
         "primary": "4940",
         "confidence": "medium"
       },
-      "skr04_primary": "6825",
+      "skr04_primary": "6820",
       "alternatives": [
         {
-          "konto": "4969",
+          "konto": "4964",
           "condition": "If digital subscription/SaaS"
         }
       ],
@@ -2027,7 +2041,7 @@
         "primary": "4230",
         "confidence": "high"
       },
-      "skr04_primary": "6325",
+      "skr04_primary": "6320",
       "alternatives": [
         {
           "konto": "4530",
@@ -2220,7 +2234,7 @@
         "primary": "4250",
         "confidence": "medium"
       },
-      "skr04_primary": "6335",
+      "skr04_primary": "6330",
       "alternatives": [
         {
           "konto": "1800",
@@ -2238,7 +2252,7 @@
         "primary": "4250",
         "confidence": "medium"
       },
-      "skr04_primary": "6335",
+      "skr04_primary": "6330",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2466,7 +2480,7 @@
       "skr04_primary": "6600",
       "alternatives": [
         {
-          "konto": "4946",
+          "konto": "3100",
           "condition": "If for client project (Fremdleistung)"
         }
       ],
@@ -2481,7 +2495,7 @@
         "primary": "4930",
         "confidence": "high"
       },
-      "skr04_primary": "6820",
+      "skr04_primary": "6815",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2491,10 +2505,10 @@
       "mcc_name": "Stenographic and Secretarial Support Services",
       "category": "Business Services",
       "skr03": {
-        "primary": "4946",
+        "primary": "3100",
         "confidence": "high"
       },
-      "skr04_primary": "6835",
+      "skr04_primary": "5900",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2507,7 +2521,7 @@
         "primary": "4260",
         "confidence": "high"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2520,7 +2534,7 @@
         "primary": "4250",
         "confidence": "high"
       },
-      "skr04_primary": "6335",
+      "skr04_primary": "6330",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2530,10 +2544,10 @@
       "mcc_name": "Employment Agencies, Temporary Help",
       "category": "Business Services",
       "skr03": {
-        "primary": "4946",
+        "primary": "3100",
         "confidence": "high"
       },
-      "skr04_primary": "6835",
+      "skr04_primary": "5900",
       "alternatives": [
         {
           "konto": "4190",
@@ -2548,13 +2562,13 @@
       "mcc_name": "Computer Programming, Data Processing",
       "category": "Technology",
       "skr03": {
-        "primary": "4946",
+        "primary": "3100",
         "confidence": "high"
       },
-      "skr04_primary": "6835",
+      "skr04_primary": "5900",
       "alternatives": [
         {
-          "konto": "4969",
+          "konto": "4964",
           "condition": "If SaaS/software license"
         },
         {
@@ -2570,13 +2584,13 @@
       "mcc_name": "Information Retrieval Services",
       "category": "Technology",
       "skr03": {
-        "primary": "4969",
+        "primary": "4964",
         "confidence": "medium"
       },
-      "skr04_primary": "6838",
+      "skr04_primary": "6837",
       "alternatives": [
         {
-          "konto": "4946",
+          "konto": "3100",
           "condition": "If one-time service, not subscription"
         }
       ],
@@ -2588,10 +2602,10 @@
       "mcc_name": "Computer Maintenance and Repair",
       "category": "Technology",
       "skr03": {
-        "primary": "4805",
+        "primary": "4806",
         "confidence": "high"
       },
-      "skr04_primary": "6475",
+      "skr04_primary": "6495",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2663,10 +2677,10 @@
       "mcc_name": "Business Services — Not Elsewhere Classified",
       "category": "Business Services",
       "skr03": {
-        "primary": "4946",
+        "primary": "3100",
         "confidence": "medium"
       },
-      "skr04_primary": "6835",
+      "skr04_primary": "5900",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2676,10 +2690,10 @@
       "mcc_name": "Automobile Rental Agency",
       "category": "Transportation",
       "skr03": {
-        "primary": "4570",
+        "primary": "4595",
         "confidence": "high"
       },
-      "skr04_primary": "6570",
+      "skr04_primary": "6595",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2689,10 +2703,10 @@
       "mcc_name": "Truck and Utility Trailer Rentals",
       "category": "Transportation",
       "skr03": {
-        "primary": "4570",
+        "primary": "4595",
         "confidence": "high"
       },
-      "skr04_primary": "6570",
+      "skr04_primary": "6595",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2702,10 +2716,10 @@
       "mcc_name": "Motor Home and Recreational Vehicle Rentals",
       "category": "Transportation",
       "skr03": {
-        "primary": "4570",
+        "primary": "4595",
         "confidence": "medium"
       },
-      "skr04_primary": "6570",
+      "skr04_primary": "6595",
       "alternatives": [
         {
           "konto": "1800",
@@ -2741,7 +2755,7 @@
         "primary": "4540",
         "confidence": "high"
       },
-      "skr04_primary": "6545",
+      "skr04_primary": "6540",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2767,7 +2781,7 @@
         "primary": "4540",
         "confidence": "high"
       },
-      "skr04_primary": "6545",
+      "skr04_primary": "6540",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2780,7 +2794,7 @@
         "primary": "4540",
         "confidence": "high"
       },
-      "skr04_primary": "6545",
+      "skr04_primary": "6540",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2806,7 +2820,7 @@
         "primary": "4540",
         "confidence": "high"
       },
-      "skr04_primary": "6545",
+      "skr04_primary": "6540",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2816,13 +2830,13 @@
       "mcc_name": "Electronics Repair Shops",
       "category": "Services",
       "skr03": {
-        "primary": "4800",
+        "primary": "4805",
         "confidence": "high"
       },
-      "skr04_primary": "6460",
+      "skr04_primary": "6470",
       "alternatives": [
         {
-          "konto": "4805",
+          "konto": "4806",
           "condition": "If IT equipment repair"
         }
       ],
@@ -2837,7 +2851,7 @@
         "primary": "4260",
         "confidence": "high"
       },
-      "skr04_primary": "6340",
+      "skr04_primary": "6335",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2847,10 +2861,10 @@
       "mcc_name": "Electrical/Small Appliance Repair",
       "category": "Services",
       "skr03": {
-        "primary": "4800",
+        "primary": "4805",
         "confidence": "high"
       },
-      "skr04_primary": "6460",
+      "skr04_primary": "6470",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2873,10 +2887,10 @@
       "mcc_name": "Furniture Repair, Refinishing",
       "category": "Services",
       "skr03": {
-        "primary": "4800",
+        "primary": "4805",
         "confidence": "medium"
       },
-      "skr04_primary": "6460",
+      "skr04_primary": "6470",
       "alternatives": [
         {
           "konto": "1800",
@@ -2891,10 +2905,10 @@
       "mcc_name": "Miscellaneous Repair Shops",
       "category": "Services",
       "skr03": {
-        "primary": "4800",
+        "primary": "4805",
         "confidence": "medium"
       },
-      "skr04_primary": "6460",
+      "skr04_primary": "6470",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -2910,7 +2924,7 @@
       "skr04_primary": "6600",
       "alternatives": [
         {
-          "konto": "4946",
+          "konto": "3100",
           "condition": "If production service for client"
         }
       ],
@@ -2995,7 +3009,7 @@
       "skr04_primary": "6630",
       "alternatives": [
         {
-          "konto": "4946",
+          "konto": "3100",
           "condition": "If hired for company event"
         }
       ],
@@ -3188,7 +3202,7 @@
       "skr04_primary": "2100",
       "alternatives": [
         {
-          "konto": "4946",
+          "konto": "3100",
           "condition": "If occupational health for employees (Arbeitsmedizin)"
         }
       ],
@@ -3323,7 +3337,7 @@
       "skr04_primary": "2100",
       "alternatives": [
         {
-          "konto": "4946",
+          "konto": "3100",
           "condition": "If Arbeitsmedizin"
         }
       ],
@@ -3364,7 +3378,7 @@
         "primary": "4945",
         "confidence": "medium"
       },
-      "skr04_primary": "6830",
+      "skr04_primary": "6821",
       "alternatives": [
         {
           "konto": "1800",
@@ -3383,7 +3397,7 @@
         "primary": "4945",
         "confidence": "medium"
       },
-      "skr04_primary": "6830",
+      "skr04_primary": "6821",
       "alternatives": [
         {
           "konto": "1800",
@@ -3401,7 +3415,7 @@
         "primary": "4945",
         "confidence": "high"
       },
-      "skr04_primary": "6830",
+      "skr04_primary": "6821",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -3414,7 +3428,7 @@
         "primary": "4945",
         "confidence": "high"
       },
-      "skr04_primary": "6830",
+      "skr04_primary": "6821",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -3427,7 +3441,7 @@
         "primary": "4945",
         "confidence": "medium"
       },
-      "skr04_primary": "6830",
+      "skr04_primary": "6821",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -3534,10 +3548,10 @@
       "mcc_name": "Testing Laboratories",
       "category": "Professional Services",
       "skr03": {
-        "primary": "4946",
+        "primary": "3100",
         "confidence": "high"
       },
-      "skr04_primary": "6835",
+      "skr04_primary": "5900",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -3560,10 +3574,10 @@
       "mcc_name": "Architectural, Engineering, Surveying Services",
       "category": "Professional Services",
       "skr03": {
-        "primary": "4946",
+        "primary": "3100",
         "confidence": "high"
       },
-      "skr04_primary": "6835",
+      "skr04_primary": "5900",
       "alternatives": [
         {
           "konto": "4950",
@@ -3596,10 +3610,10 @@
       "mcc_name": "Professional Services — Not Elsewhere Classified",
       "category": "Professional Services",
       "skr03": {
-        "primary": "4946",
+        "primary": "3100",
         "confidence": "medium"
       },
-      "skr04_primary": "6835",
+      "skr04_primary": "5900",
       "alternatives": [],
       "needs_beleg": true,
       "ust_abzug": true
@@ -3664,7 +3678,7 @@
           "condition": "If Gewerbesteuer"
         },
         {
-          "konto": "2650",
+          "konto": "2200",
           "condition": "If Körperschaftsteuer"
         }
       ],

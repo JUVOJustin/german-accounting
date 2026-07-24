@@ -9,12 +9,27 @@
   "properties": {
     "meta": {
       "type": "object",
-      "required": ["version", "last_updated"],
+      "required": ["version", "last_updated", "sources", "source_checked"],
       "properties": {
         "version": { "type": "string" },
         "last_updated": { "type": "string" },
+        "source_checked": { "type": "string", "format": "date" },
         "description": { "type": "string" },
-        "total_mappings": { "type": "integer" }
+        "total_mappings": { "type": "integer" },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["title", "url", "scope"],
+            "properties": {
+              "title": { "type": "string", "minLength": 1 },
+              "url": { "type": "string", "format": "uri" },
+              "published": { "type": "string", "format": "date" },
+              "scope": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
       }
     },
     "mappings": {

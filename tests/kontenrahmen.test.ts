@@ -17,9 +17,42 @@ describe("SKR03 — get()", () => {
   });
 
   it("returns zero-padded accounts correctly", () => {
-    const konto = SKR03.get("0001");
+    const konto = SKR03.get("0010");
     expect(konto).toBeDefined();
     expect(konto?.klasse).toBe(0);
+  });
+
+  it("uses the 2026 DATEV account designation", () => {
+    expect(SKR03.get("4969")?.name).toBe(
+      "Aufwendungen für Abraum- und Abfallbeseitigung"
+    );
+    expect(SKR04.get("6837")?.name).toBe(
+      "Aufwendungen für die zeitlich befristete Überlassung von Rechten (Lizenzen, Konzessionen)"
+    );
+    expect(SKR03.get("4964")?.skr04).toBe("6837");
+    expect(SKR04.get("6837")?.skr03).toBe("4964");
+
+    expect(SKR03.get("3425")?.name).toBe(
+      "Innergemeinschaftlicher Erwerb 19 % Vorsteuer und 19 % Umsatzsteuer"
+    );
+    expect(SKR04.get("5425")?.name).toBe(
+      "Innergemeinschaftlicher Erwerb 19 % Vorsteuer und 19 % Umsatzsteuer"
+    );
+    expect(SKR03.get("8100")?.name).toBe(
+      "Steuerfreie Umsätze § 4 Nr. 8 ff. UStG"
+    );
+    expect(SKR04.get("4100")?.name).toBe(
+      "Steuerfreie Umsätze § 4 Nr. 8 ff. UStG"
+    );
+  });
+
+  it("does not expose reserved DATEV account numbers as named accounts", () => {
+    for (const konto of ["1300", "1775", "2000", "2010", "3500", "4905", "8600", "8735"]) {
+      expect(SKR03.exists(konto)).toBe(false);
+    }
+    for (const konto of ["4735", "4900", "5500"]) {
+      expect(SKR04.exists(konto)).toBe(false);
+    }
   });
 });
 

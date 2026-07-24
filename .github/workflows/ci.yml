@@ -56,5 +56,8 @@ jobs:
       - name: Validate skr03.json against schema
         run: npx ajv validate -s schemas/skr03.schema.json -d src/data/skr03.json --spec=draft2020 -c ajv-formats
 
+      - name: Validate skr04.json against schema
+        run: npx ajv validate -s schemas/skr04.schema.json -d src/data/skr04.json --spec=draft2020 -c ajv-formats
+
       - name: Validate mcc_skr_mapping.json against schema
         run: npx ajv validate -s schemas/mcc_skr_mapping.schema.json -d src/data/mcc_skr_mapping.json --spec=draft2020 -c ajv-formats

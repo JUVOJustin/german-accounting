@@ -32,7 +32,7 @@ const suggestion = suggestAccount("5812"); // restaurant
 // }
 
 // SaaS subscriptions (GitHub, Slack, Notion, Figma...)
-suggestAccount("5817").primary.konto; // "4969" — Software-Nutzungsrechte
+suggestAccount("5817").primary.konto; // "4964" — zeitlich befristete Überlassung von Rechten (Lizenzen)
 
 // Target SKR04 instead of SKR03
 suggestAccount("5812", "SKR04").primary.konto; // "6640"
@@ -63,7 +63,7 @@ SKR03.size                  // → number
 suggestAccount(mcc: string, skr?: "SKR03" | "SKR04"): MCCSuggestion | undefined
 ```
 
-MCC range entries (airlines `3000–3350`, hotels `3351–3500`, car rentals `3501–3999`) are expanded at load time. Any code in those ranges resolves correctly.
+MCC range entries (airlines `3000–3350`, car rentals `3351–3500`, lodging `3501–3999`) are expanded at load time. Any code in those ranges resolves correctly.
 
 When `skr = "SKR04"`, the primary account is the `skr04_primary` value. `name` is `null` and `alternatives` is empty (no SKR04 name data in v0.1).
 
@@ -117,6 +117,20 @@ The JSON files are the primary product. Download them from [GitHub Releases](htt
 
 JSON Schemas are in [`schemas/`](schemas/) and validated by CI on every push.
 
+### Verifying against the official DATEV charts
+
+Every account number and designation can be verified deterministically against
+the official DATEV chart PDFs (which are copyrighted and therefore not part of
+this repository):
+
+```bash
+npm run verify:datev -- datev/skr03-2026.pdf datev/skr04-2026.pdf
+```
+
+See [`docs/datev-verification.md`](docs/datev-verification.md) for where to
+download the charts, what the script checks, and the workflow for upgrading to
+a new chart year.
+
 ### Data schema — `skr03.json`
 
 ```jsonc
@@ -159,6 +173,12 @@ JSON Schemas are in [`schemas/`](schemas/) and validated by CI on every push.
   ]
 }
 ```
+
+### MCC source and currency
+
+The MCC data is a curated set of accounting suggestions, not a complete reproduction of the MCC catalogue. Code definitions are checked against [ISO 18245:2023](https://www.iso.org/standard/79450.html) and the public [Mastercard Quick Reference Booklet — Merchant Edition (25 February 2025)](https://www.mastercard.us/content/dam/public/mastercardcom/na/global-site/documents/mastercard-quick-reference-booklet-merchant.pdf). The exact source URLs and the last verification date are also recorded in [`src/data/mcc_skr_mapping.json`](src/data/mcc_skr_mapping.json).
+
+Card networks can introduce or regionally assign MCCs after the recorded review date. Treat an unknown MCC as unmapped and verify it with the applicable network documentation before adding an accounting suggestion.
 
 ---
 
